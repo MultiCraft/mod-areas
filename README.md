@@ -1,11 +1,5 @@
-Areas mod for Minetest
-======================
-
-Dependencies
-------------
-
-Minetest 5.0.0+ is recommended, but 0.4.16+ should work as well.
-
+Areas mod for MultiCraft
+========================
 
 Configuration
 -------------
@@ -13,7 +7,7 @@ Configuration
 Open the tab `Settings -> All Settings -> Mods -> areas` to get a list of all
 possible settings.
 
-For server owners: Check `settingtypes.txt` and modify your `minetest.conf`
+For server owners: Check `settingtypes.txt` and modify your `multicraft.conf`
 according to the wanted setting changes.
 
 
