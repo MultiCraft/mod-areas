@@ -4,6 +4,10 @@ minetest.register_chatcommand("protect", {
 	description = "Protect your own area",
 	privs = {[areas.config.self_protection_privilege]=true},
 	func = function(name, param)
+	
+		minetest.log("warning", "/protect invoked, owner="..name..
+			" AreaName="..param)
+	
 		if param == "" then
 			return false, "Invalid usage, see /help protect."
 		end
@@ -176,6 +180,10 @@ minetest.register_chatcommand("find_areas", {
 minetest.register_chatcommand("list_areas", {
 	description = "List your areas, or all areas if you are an admin.",
 	func = function(name, param)
+	
+		minetest.log("warning", "/list_areas invoked, owner="..name..
+			" AreaName="..param)
+			
 		local admin = minetest.check_player_privs(name, areas.adminPrivs)
 		local areaStrings = {}
 		for id, area in pairs(areas.areas) do
@@ -218,6 +226,10 @@ minetest.register_chatcommand("remove_area", {
 	description = "Remove an area using an id",
 	func = function(name, param)
 		local id = tonumber(param)
+		
+		minetest.log("warning", "/remove_area invoked, owner="..name..
+			" AreaName="..param)
+		
 		if not id then
 			return false, "Invalid usage, see /help remove_area"
 		end
