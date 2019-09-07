@@ -1,6 +1,6 @@
 -- Areas mod by ShadowNinja
 -- Based on node_ownership
--- License: LGPLv2+
+-- License: LGPLv3+
 
 areas = {}
 
@@ -14,7 +14,6 @@ dofile(areas.modpath.."/internal.lua")
 dofile(areas.modpath.."/chatcommands.lua")
 dofile(areas.modpath.."/pos.lua")
 dofile(areas.modpath.."/interact.lua")
-dofile(areas.modpath.."/legacy.lua")
 dofile(areas.modpath.."/hud.lua")
 
 areas:load()
@@ -23,7 +22,7 @@ minetest.register_privilege("areas", {
 	description = "Can administer areas."
 })
 minetest.register_privilege("areas_high_limit", {
-	description = "Can can more, bigger areas."
+	description = "Can protect more, bigger areas."
 })
 
 if not minetest.registered_privileges[areas.config.self_protection_privilege] then

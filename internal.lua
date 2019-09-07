@@ -1,4 +1,3 @@
-
 function areas:player_exists(name)
 	return minetest.get_auth_handler().get_auth(name) ~= nil
 end

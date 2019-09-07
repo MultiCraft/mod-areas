@@ -106,7 +106,8 @@ License
 -------
 
 Copyright (C) 2013 ShadowNinja
+Copyright (C) 2019 MultiCraft Development Team
 
-Licensed under the GNU LGPL version 2.1 or later.
-See LICENSE.txt and http://www.gnu.org/licenses/lgpl-2.1.txt
+Licensed under the GNU LGPL version 3.0 or later.
+See https://www.gnu.org/licenses/lgpl-3.0.txt
 

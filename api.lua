@@ -1,6 +1,5 @@
 local hudHandlers = {}
 
-
 areas.registered_on_adds = {}
 areas.registered_on_removes = {}
 areas.registered_on_moves = {}

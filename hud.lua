@@ -1,5 +1,4 @@
 -- This is inspired by the landrush mod by Bremaweb
-
 areas.hud = {}
 areas.hud.refresh = 0
 
