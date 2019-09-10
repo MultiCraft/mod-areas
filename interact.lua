@@ -1,8 +1,8 @@
 local old_is_protected = minetest.is_protected
 
 local disallowed = {
-	["^[0-9]+$"] = "You play using an unofficial client. Your actions are limited. "..
-			"Download \"MultiCraft - Build and Mine!\" on Google Play / App Store to play ad-free!"
+	["^[A-Za-z]+[0-9][0-9][0-9]"] = "You play using an unofficial client. Your actions are limited. "..
+			"Download \"MultiCraft ― Build and Mine!\" on Google Play / App Store to play ad-free!"
 }
 
 -- Disable some actions for Guests
