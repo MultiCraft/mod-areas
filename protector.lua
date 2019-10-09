@@ -1,4 +1,4 @@
-local creative_mode = minetest.setting_getbool("creative_mode")
+local creative_mode = minetest.settings:get_bool("creative_mode")
 
 local function cyan(str)
 	return minetest.colorize("#00FFFF", str)
@@ -8,7 +8,7 @@ local function red(str)
 	return minetest.colorize("#FF5555", str)
 end
 
-local radius = minetest.setting_get("areasprotector_radius") or 8
+local radius = minetest.settings:get("areasprotector_radius") or 8
 
 local function remove_display(pos)
 	local objs = minetest.get_objects_inside_radius(pos, 0.5)
