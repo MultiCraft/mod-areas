@@ -5,13 +5,21 @@ local disallowed = {
 			"Download \"MultiCraft ― Build and Mine!\" on Google Play / App Store to play ad-free!"
 }
 
+local function old_version(name)
+	local info = minetest.get_player_information(name)
+	if info and info.version_string and info.version_string < "0.4.16" then
+		return true
+	end
+end
+
 -- Disable some actions for Guests
 function minetest.is_protected_action(pos, name)
-	local lname = name:lower()
-	for re, reason in pairs(disallowed) do
-		if lname:find(re) then
-			minetest.chat_send_player(name, reason)
-			return true
+	for r, reason in pairs(disallowed) do
+		if name:lower():find(r) then
+			if old_version(name) then
+				minetest.chat_send_player(name, reason)
+				return true
+			end
 		end
 	end
 
@@ -39,4 +47,3 @@ minetest.register_on_protection_violation(function(pos, name)
 				table.concat(owners, ", ")))
 	end
 end)
-
