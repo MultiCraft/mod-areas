@@ -16,12 +16,10 @@ function areas:registerOnMove(func)
 	table.insert(areas.registered_on_moves, func)
 end
 
-
 --- Adds a function as a HUD handler, it will be able to add items to the Areas HUD element.
 function areas:registerHudHandler(handler)
 	table.insert(hudHandlers, handler)
 end
-
 
 function areas:getExternalHudEntries(pos)
 	local areas = {}
@@ -113,7 +111,7 @@ end
 -- Note that this fails and returns false when the specified area is fully
 -- owned by the player, but with multiple protection zones, none of which
 -- cover the entire checked area.
--- @param name (optional) Player name.  If not specified checks for any intersecting areas.
+-- @param name (optional) Player name. If not specified checks for any intersecting areas.
 -- @param allow_open Whether open areas should be counted as if they didn't exist.
 -- @return Boolean indicating whether the player can interact in that area.
 -- @return Un-owned intersecting area ID, if found.

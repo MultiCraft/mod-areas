@@ -8,13 +8,13 @@ local function red(str)
 	return minetest.colorize("#FF5555", str)
 end
 
-minetest.register_node(":areasprotector:protector", {
+minetest.register_node("areas:protector", {
 	description = "Protector Block",
 	groups = {cracky = 1},
 	tiles = {
 		"default_stonebrick_carved.png",
 		"default_stonebrick_carved.png",
-		"default_stonebrick_carved.png^areasprotector_stone.png"
+		"default_stonebrick_carved.png^areas_protector_stone.png"
 	},
 	paramtype = "light",
 	drawtype = "nodebox",
@@ -40,7 +40,7 @@ minetest.register_node(":areasprotector:protector", {
 			minetest.chat_send_player(name,
 				("The area from %s to %s has been protected as #%s")
 				:format(cyan(minetest.pos_to_string(pos1)), cyan(minetest.pos_to_string(pos2)), cyan(id)))
-			minetest.set_node(pos, {name = "areasprotector:protector"})
+			minetest.set_node(pos, {name = "areas:protector"})
 			local meta = minetest.get_meta(pos)
 			meta:set_string("infotext", ("Protecting area %d, Owned by %s"):format(id, name))
 			meta:set_int("area_id", id)
@@ -66,29 +66,29 @@ minetest.register_node(":areasprotector:protector", {
 		local objs = minetest.get_objects_inside_radius(pos, .5) -- a radius of .5 since the entity serialization seems to be not that precise
 		local displayed = false
 		for _, o in pairs(objs) do
-			if not o:is_player() and o:get_luaentity().name == "areasprotector:display" then
+			if not o:is_player() and o:get_luaentity().name == "areas:display" then
 				o:remove()
 				return
 			end
 		end
 		if not displayed then -- nothing was removed: there wasn't the entity
-			minetest.add_entity(pos, "areasprotector:display")
+			minetest.add_entity(pos, "areas:display")
 		end
 	end
 })
 
 -- entities code below (and above) mostly copied-pasted from Zeg9's protector mod
 
-minetest.register_entity(":areasprotector:display", {
+minetest.register_entity("areas:display", {
 	physical = false,
 	collisionbox = {0},
 	visual = "wielditem",
 	visual_size = {x = 1.0 / 1.5, y = 1.0 / 1.5}, -- wielditem seems to be scaled to 1.5 times original node size
-	textures = {"areasprotector:display_node"},
+	textures = {"areas:display_node"},
 	timer = 0,
 	on_step = function(self, dtime)
 		self.timer = self.timer + dtime
-		if self.timer > 4 or minetest.get_node(self.object:getpos()).name ~= "areasprotector:protector" then
+		if self.timer > 4 or minetest.get_node(self.object:getpos()).name ~= "areas:protector" then
 			self.object:remove()
 		end
 	end
@@ -96,8 +96,8 @@ minetest.register_entity(":areasprotector:display", {
 
 local nb_radius = radius + 0.55
 
-minetest.register_node(":areasprotector:display_node", {
-	tiles = {"areasprotector_display.png"},
+minetest.register_node("areas:display_node", {
+	tiles = {"areas_protector_display.png"},
 	walkable = false,
 	drawtype = "nodebox",
 	node_box = {
@@ -123,7 +123,7 @@ minetest.register_node(":areasprotector:display_node", {
 })
 
 minetest.register_craft({
-	output = "areasprotector:protector",
+	output = "areas:protector",
 	type = "shapeless",
 	recipe = {
 		"default:stonebrickcarved", "default:stonebrickcarved", "default:stonebrickcarved",
@@ -131,3 +131,7 @@ minetest.register_craft({
 		"default:stonebrickcarved", "default:stonebrickcarved", "default:stonebrickcarved"
 	}
 })
+
+-- Aliases
+minetest.register_alias("areasprotector:protector", "areas:protector")
+minetest.register_alias("areasprotector:display_node", "areas:display_node")

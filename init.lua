@@ -36,4 +36,3 @@ if minetest.settings:get_bool("log_mods") then
 	local diffTime = os.clock() - areas.startTime
 	minetest.log("action", "areas loaded in "..diffTime.."s.")
 end
-

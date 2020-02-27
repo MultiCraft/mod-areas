@@ -1,4 +1,3 @@
-
 minetest.register_chatcommand("protect", {
 	params = "<AreaName>",
 	description = "Protect your own area",
@@ -75,7 +74,7 @@ minetest.register_chatcommand("set_owner", {
 
 minetest.register_chatcommand("add_owner", {
 	params = "<ParentID> <Player> <AreaName>",
-	description = "Give a player access to a sub-area beetween two"
+	description = "Give a player access to a sub-area between two"
 		.." positions that have already been protected,"
 		.." Use set_owner if you don't want the parent to be set.",
 	func = function(name, param)
@@ -167,7 +166,12 @@ minetest.register_chatcommand("find_areas", {
 			if str:find(param) then
 				table.insert(matches, str)
 			end
+
+			if #matches > 10 then
+				break
+			end
 		end
+
 		if #matches > 0 then
 			return true, table.concat(matches, "\n")
 		else
@@ -193,7 +197,10 @@ minetest.register_chatcommand("list_areas", {
 		end
 		if #areaStrings == 0 then
 			return true, "No visible areas."
-		end
+		elseif #areaStrings > 100 then
+            return true, "Too many areas to list."
+        end
+
 		return true, table.concat(areaStrings, "\n")
 	end
 })
