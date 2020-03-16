@@ -46,7 +46,7 @@ end
 function areas:checkAreaStoreId(sid)
 	if not sid then
 		minetest.log("error", "AreaStore failed to find an ID for an "
-			.."area! Falling back to iterative area checking.")
+			.. "area! Falling back to iterative area checking.")
 		self.store = nil
 		self.store_ids = nil
 	end
@@ -237,7 +237,7 @@ function areas:canPlayerAddArea(pos1, pos2, name)
 			self.config.self_protection_max_areas
 	if count >= max_areas then
 		return false, "You have reached the maximum amount of"
-				.." areas that you are allowed to protect."
+				.. " areas that you are allowed to protect."
 	end
 
 	-- Check intersecting areas

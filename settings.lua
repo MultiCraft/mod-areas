@@ -3,7 +3,7 @@ local world_path = minetest.get_worldpath()
 areas.config = {}
 
 local function setting(tp, name, default)
-	local full_name = "areas."..name
+	local full_name = "areas." .. name
 	local value
 	if tp == "boolean" then
 		value = minetest.settings:get_bool(full_name)
@@ -14,8 +14,9 @@ local function setting(tp, name, default)
 	elseif tp == "number" then
 		value = tonumber(minetest.settings:get(full_name))
 	else
-		error("Invalid setting type!")
+		error("Cannot parse setting type " .. tp)
 	end
+
 	if value == nil then
 		value = default
 	end
@@ -37,6 +38,3 @@ setting("number",   "self_protection_max_areas", 4)
 -- For players with the areas_high_limit privilege.
 setting("position", "self_protection_max_size_high", {x = 512, y = 512, z = 512})
 setting("number",   "self_protection_max_areas_high", 32)
-
--- configure the refresh delay for the name displays in the HUD
-setting("number", "tick", 1)
