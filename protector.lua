@@ -1,3 +1,5 @@
+local S = intllib.make_gettext_pair()
+
 local radius = minetest.settings:get("areasprotector_radius") or 8
 
 local function cyan(str)
@@ -9,7 +11,7 @@ local function red(str)
 end
 
 minetest.register_node("areas:protector", {
-	description = "Protector Block",
+	description = S("Protector Block"),
 	groups = {cracky = 1},
 	tiles = {
 		"default_stonebrick_carved.png",
@@ -32,17 +34,17 @@ minetest.register_node("areas:protector", {
 		if not minetest.is_protected_action(pos, name) then
 			local perm, err = areas:canPlayerAddArea(pos1, pos2, name)
 			if not perm then
-				minetest.chat_send_player(name, red("You are not allowed to protect that area: ") .. err)
+				minetest.chat_send_player(name, red(S("You are not allowed to protect that area:") .. " ") .. err)
 				return itemstack
 			end
 			local id = areas:add(name, "Protector Block", pos1, pos2)
 			areas:save()
 			minetest.chat_send_player(name,
-				("The area from %s to %s has been protected as #%s")
+				(S("The area from %s to %s has been protected as #%s"))
 				:format(cyan(minetest.pos_to_string(pos1)), cyan(minetest.pos_to_string(pos2)), cyan(id)))
 			minetest.set_node(pos, {name = "areas:protector"})
 			local meta = minetest.get_meta(pos)
-			meta:set_string("infotext", ("Protecting area %d, Owned by %s"):format(id, name))
+			meta:set_string("infotext", (S("Protecting area %d, Owned by %s")):format(id, name))
 			meta:set_int("area_id", id)
 			meta:set_string("owner", name)
 			itemstack:take_item()
