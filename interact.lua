@@ -45,5 +45,14 @@ minetest.register_on_protection_violation(function(pos, name)
 			("%s is protected by %s."):format(
 				minetest.pos_to_string(pos),
 				table.concat(owners, ", ")))
+
+		-- Little damage player
+		local player = minetest.get_player_by_name(name)
+		if player and player:is_player() then
+			local hp = player:get_hp()
+			if hp and hp > 1 then
+				player:set_hp(hp - 1)
+			end
+		end
 	end
 end)
