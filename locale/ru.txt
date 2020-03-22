@@ -1,5 +1,7 @@
 %s is protected by %s.=%s защищено %s.
 
+Areas:=Зоны:
+
 #Protector Block
 Protector Block=Защитный Блок
 You are not allowed to protect that area:=Вам не разрешено защищать эту область:

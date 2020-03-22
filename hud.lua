@@ -1,4 +1,7 @@
 -- This is inspired by the landrush mod by Bremaweb
+
+local S = intllib.make_gettext_pair()
+
 areas.hud = {}
 
 hud.register("areas", {
@@ -37,7 +40,7 @@ minetest.register_playerstep(function(_, playernames)
 
 		local areaString = ""
 		if #areaStrings > 0 then
-			areaString = "Areas:"
+			areaString = S("Areas:")
 			areaString = areaString.."\n"..
 				table.concat(areaStrings, "\n")
 		end

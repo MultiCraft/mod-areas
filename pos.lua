@@ -1,4 +1,5 @@
 local S = intllib.make_gettext_pair()
+
 -- I could depend on WorldEdit for this, but you need to have the 'worldedit'
 -- permission to use those commands and you don't have
 -- /area_pos{1,2} [X Y Z|X,Y,Z].

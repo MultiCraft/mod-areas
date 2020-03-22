@@ -199,7 +199,7 @@ minetest.register_chatcommand("list_areas", {
 		if #areaStrings == 0 then
 			return true, S("No visible areas.")
 		elseif #areaStrings > 100 then
-            return true, S(Too many areas to list.")
+            return true, S("Too many areas to list.")
         end
 
 		return true, table.concat(areaStrings, "\n")

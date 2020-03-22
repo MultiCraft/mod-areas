@@ -90,21 +90,6 @@ The area intersects with @1 [@2] (@3).=
 
 You have reached the maximum amount of areas that you are allowed to protect.=
 
-
-### legacy.lua ###
-
-<version>=
-Converted areas saved. Done.=
-Converting areas…=
-Error loading legacy file: @1=
-Invalid version number. (0 allowed)=
-Legacy file loaded.=
-
-Loads, converts, and saves the areas from a legacy save file.=
-
-Table format updated.=
-unnamed=
-
 ### pos.lua ###
 
 <not set>=
