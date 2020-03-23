@@ -90,7 +90,7 @@ minetest.register_entity("areas:display", {
 	timer = 0,
 	on_step = function(self, dtime)
 		self.timer = self.timer + dtime
-		if self.timer > 4 or minetest.get_node(self.object:getpos()).name ~= "areas:protector" then
+		if self.timer > 4 or minetest.get_node(self.object:get_pos()).name ~= "areas:protector" then
 			self.object:remove()
 		end
 	end
