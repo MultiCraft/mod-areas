@@ -19,43 +19,38 @@ minetest.register_playerstep(function(_, playernames)
 		local player = minetest.get_player_by_name(name)
 		if not player or not player:is_player() then return end
 		local pos = vector.round(player:get_pos())
-		pos = vector.apply(pos, function(p)
-			return math.max(math.min(p, 2147483), -2147483)
-		end)
-		local areaStrings = {}
+		if minetest.is_valid_pos(pos) then
+			local areaStrings = {}
 
-		for id, area in pairs(areas:getAreasAtPos(pos)) do
-			table.insert(areaStrings, ("%s [%u] (%s%s)")
+			for id, area in pairs(areas:getAreasAtPos(pos)) do					
+				areaStrings[#areaStrings+1] = ("%s [%u] (%s%s)")
 					:format(area.name, id, area.owner,
-					area.open and ":open" or ""))
-		end
-
-		for i, area in pairs(areas:getExternalHudEntries(pos)) do
+						area.open and ":open" or "")
+			end
+			
 			local str = ""
-			if area.name then str = area.name .. " " end
-			if area.id then str = str.."["..area.id.."] " end
-			if area.owner then str = str.."("..area.owner..")" end
-			table.insert(areaStrings, str)
-		end
+			for _, area in pairs(areas:getExternalHudEntries(pos)) do
+				if area.name then str = area.name .. " " end
+				if area.id then str = str .. "[" .. area.id .. "] " end
+				if area.owner then str = str .. "(" .. area.owner .. ")" end
+				areaStrings[#areaStrings+1] = str
+			end
 
-		local areaString = ""
-		if #areaStrings > 0 then
-			areaString = S("Areas:")
-			areaString = areaString.."\n"..
-				table.concat(areaStrings, "\n")
-		end
+			local areaString = ""
+			if #areaStrings > 0 then
+				areaString = S("Areas:")
+				areaString = areaString .. "\n" ..
+					table.concat(areaStrings, "\n")
+			end
 
-		if not areas.hud[name] then
-			areas.hud[name] = {}
-			hud.change_item(player, "areas", {text = areaString})
-			areas.hud[name].oldAreas = areaString
-			return
-		elseif areas.hud[name].oldAreas ~= areaString then
-			hud.change_item(player, "areas", {text = areaString})
-			areas.hud[name].oldAreas = areaString
+			local phud = areas.hud[name] or {}
+			if not phud.oldAreas or phud.oldAreas ~= areaString then
+				hud.change_item(player, "areas", {text = areaString})
+				phud.oldAreas = areaString
+			end
 		end
 	end
-end, true) -- Force this callback to run every step for smoother animations
+end, true) -- Force this callback to run every step to display actual information
 
 minetest.register_on_leaveplayer(function(player)
 	areas.hud[player:get_player_name()] = nil
