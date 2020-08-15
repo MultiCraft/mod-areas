@@ -7,7 +7,7 @@
 <NewOwner>=
 <ParentID>=
 <PlayerName>=
-<newName>=
+<NewName>=
 @1 has given you control over the area "@2" (ID @3).=
 @1 spanning up to @2x@3x@4.=
 A regular expression is required.=

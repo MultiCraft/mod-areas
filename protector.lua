@@ -40,11 +40,11 @@ minetest.register_node("areas:protector", {
 			local id = areas:add(name, "Protector Block", pos1, pos2)
 			areas:save()
 			minetest.chat_send_player(name,
-				(S("The area from %s to %s has been protected as #%s"))
-				:format(cyan(minetest.pos_to_string(pos1)), cyan(minetest.pos_to_string(pos2)), cyan(id)))
+				(S("The area from @1 to @1 has been protected as ID @1",
+				cyan(minetest.pos_to_string(pos1)), cyan(minetest.pos_to_string(pos2)), cyan(id))))
 			minetest.set_node(pos, {name = "areas:protector"})
 			local meta = minetest.get_meta(pos)
-			meta:set_string("infotext", (S("Protecting area %d, Owned by %s")):format(id, name))
+			meta:set_string("infotext", (S("Protecting area @1, Owned by @1", id, name)))
 			meta:set_int("area_id", id)
 			meta:set_string("owner", name)
 			itemstack:take_item()
@@ -56,10 +56,11 @@ minetest.register_node("areas:protector", {
 		if oldmetadata and oldmetadata.fields then
 			local owner = oldmetadata.fields.owner
 			local id = tonumber(oldmetadata.fields.area_id)
-			local playername = digger:get_player_name()
+			local name = digger:get_player_name()
 			if areas.areas[id] and areas:isAreaOwner(id, owner) then
 				areas:remove(id)
 				areas:save()
+				minetest.chat_send_player(name, (S("Removed area @1", cyan(id))))
 			end
 		end
 	end,
