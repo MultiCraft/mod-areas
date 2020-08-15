@@ -1,9 +1,117 @@
-%s is protected by %s.=%s защищено %s.
+# textdomain: areas
 
+
+### chatcommands.lua ###
+
+<AreaName>=<НазваниеЗоны>
+<NewOwner>=<НовыйВладелец>
+<ParentID>=<РодственныйID>
+<PlayerName>=<ИмяИгрока>
+<NewName>=<НовоеИмя>
+@1 has given you control over the area "@2" (ID @3).=@1 дал вам контроль над областью "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 охватывает до @2x@3x@4.
+A regular expression is required.=Требуется регулярное выражение.
+Area @1 does not exist or is not owned by you.=Область @1 не существует или не принадлежит вам.
+Area closed for faction members.=Зона закрыта для членов фракции.
+Area closed.=Зона закрыта.
+Area does not exist.=Зона не существует.
+Area opened for faction members.=
+Area opened.=Зона открыта.
+Area protected. ID: @1=Зона защищена. ID: @1
+Area renamed.=Зона переименована.
+Area successfully moved.=Зона успешно перемещена.
+Change the owner of an area using its ID=Сменить владельца зоны, используя его ID
+Find areas using a Lua regular expression=Найти области с помощью регулярного выражения Lua
+Get information about area configuration and usage.=Получите информацию о конфигурации и использовании зоны.
+
+Give a player access to a sub-area beetween two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Предоставьте игроку доступ к подобласти между двумя позициями, которые уже были защищены, Используйте set_owner, если вы не хотите, чтобы родитель был установлен.
+
+Invalid regular expression.=Неверное регулярное выражение.
+Limit: @1 areas=Лимит: @1 зон
+Limit: no area count limit=Лимит: нет ограничения по количеству зон
+List your areas, or all areas if you are an admin.=Список ваших зон, или всех зон, если вы admin.
+Move (or resize) an area to the current positions.=Переместить (или изменить размер) зоны до текущешл положения.
+No matches found.=Совпадения не найдены.
+No visible areas.=Нет видимых зон.
+Owner changed.=Владелец изменён.
+Players with the "@1" privilege can protect up to @2 areas=Игроки с привилегией "@1" могут защитить до @2 областей
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Защитите область между двумя позициями и предоставьте игроку доступ к ней, без устанавки родительской области на любую существующую область
+
+Protect your own area=Защищает вашу территорию
+Recursively remove areas using an ID=Рекурсивно удаляет зоны используя их ID
+Remove an area using an ID=Удаляет зону испольузя её ID
+Removed area @1=Удалена зона @1
+Removed area @1 and it's sub areas.=Удалена зона @1 и её подзоны.
+Rename an area that you own=Переименовывает зону которой вы владеете
+Self protection is disabled.=Защита отключена.
+Self protection is enabled.=Защита включена.
+That area doesn't exist.=Эта зона не существует.
+The player "@1" does not exist.=Игрок "@1" не существует.
+Toggle an area open (anyone can interact) or closed=Делает зону открытой (любой может взаимодействовать) или закрытой
+Toggle an area open/closed for members in your faction.=Переключить сотояние открыто/закрыто для членов вашей фракции.
+You are an area administrator ("areas" privilege).=Вы являетесь администратором зон (привилегия "areas").
+You can protect areas=Вы можете защитить зону
+You can't protect that area.=Вы не можете защитить зону.
+You can't protect that area: @1=Вы можете защитить зону: @1
+You don't have the necessary privilege ("@1").=Вы не имеете нужной привилегии ("@1").
+You don't own that area.=Вы не владеете этой зоной.
+You have @1 areas.=Вы имеете @1 зон.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Вам предоставлен контроль над зоной #@1. Введите /list_areas, чтобы показать ваши зоны.
+
+You have extended area protection limits ("areas_high_limit" privilege).=У вас есть расширенные пределы защиты зоны (привилегия "area_high_limit").
+
+You have the necessary privilege ("@1").=У вас есть необходимая привилегия ("@1").
+You need to select an area first.=Вам нужно выбрать зону вначале.
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=
+Invalid usage, see /help @1.=Неправильное использование, смотрите /help @1.
+
+### hud.lua ###
+
+:open=:открыта
 Areas:=Зоны:
 
-#Protector Block
+### interact.lua ###
+
+@1 is protected by @2.=@1 защищено @2.
+
+### internal.lua ###
+
+Area is too big.=Зона слишком большая.
+
+Self protection is disabled or you do not have the necessary privilege.=Защита отключена или у вас нет необходимой привилегии.
+
+The area intersects with @1 [@2] (@3).=Область пересекается с @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Вы достигли максимального количества областей, которые вам разрешено защищать.
+
+### pos.lua ###
+
+<not set>=<не установлено>
+Area @1 selected.=Зона @1 выбрана.
+Area position @1 set to @2=Позиция зоны @1 установлена в @2
+Position @1 set to @2=Позиция @1 установлена в @2
+Position @1: =Позиция @1: 
+Select an area by ID.=Выберите зону по ID.
+Select position @1 by punching a node.=Выберите позицию @1 ударом по блоку.
+Select positions by punching two nodes.=Выберите позиции ударами по двум блокам.
+
+Set area protection region position @1 to your location or the one specified=Установите положение области защиты @1 на ваше местоположение, или указанное.
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Установите зону защиты области, позицию 1 или позицию 2, ударяя узлы, или отобразите область
+
+The area @1 does not exist.=Зона @1 не существует
+Unable to get position.=Невозможно получить позицию.
+Unknown subcommand: @1=Неизвестная подкоманда: @1
+
+### protector.lua ###
+
 Protector Block=Защитный Блок
 You are not allowed to protect that area:=Вам не разрешено защищать эту область:
-The area from %s to %s has been protected as #%s=Зона от %s до %s была защещена, #%s
-Protecting area %d, Owned by %s=Защищённая зона %d, Владелец: %s
+The area from @1 to @1 has been protected as ID @1=Зона от @1 до @1 была защещена, ID @1
+Protecting area @1, Owned by @1=Защищённая зона @1, Владелец: @1
