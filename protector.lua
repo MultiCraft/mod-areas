@@ -135,6 +135,11 @@ minetest.register_craft({
 	}
 })
 
+-- MVPS stopper
+if mesecon and mesecon.register_mvps_stopper then
+	mesecon.register_mvps_stopper("areas:protector")
+end
+
 -- Aliases
 minetest.register_alias("areasprotector:protector", "areas:protector")
 minetest.register_alias("areasprotector:display_node", "areas:display_node")
