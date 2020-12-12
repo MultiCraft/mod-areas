@@ -34,7 +34,7 @@ setting("string", "filename", world_path.."/areas.dat")
 setting("boolean",  "self_protection", true)
 setting("string",   "self_protection_privilege", "interact")
 setting("position", "self_protection_max_size", {x = 64, y = 128, z = 64})
-setting("number",   "self_protection_max_areas", 4)
+setting("number",   "self_protection_max_areas", 8)
 -- For players with the areas_high_limit privilege.
 setting("position", "self_protection_max_size_high", {x = 512, y = 512, z = 512})
 setting("number",   "self_protection_max_areas_high", 32)
