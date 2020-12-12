@@ -3,12 +3,14 @@ local S = intllib.make_gettext_pair()
 local radius = minetest.settings:get("areasprotector_radius") or 8
 
 local function cyan(str)
-	return minetest.colorize("#00FFFF", str)
+	return minetest.colorize("#7CFC00", str)
 end
 
 local function red(str)
-	return minetest.colorize("#FF5555", str)
+	return minetest.colorize("#FF0000", str)
 end
+
+local vadd, vnew = vector.add, vector.new
 
 minetest.register_node("areas:protector", {
 	description = S("Protector Block"),
@@ -19,16 +21,12 @@ minetest.register_node("areas:protector", {
 		"default_stonebrick_carved.png^areas_protector_stone.png"
 	},
 	paramtype = "light",
-	drawtype = "nodebox",
-	node_box = {
-		type = "fixed",
-		fixed = {-0.5, -0.5, -0.5, 0.5, 0.5, 0.5}
-	},
+	node_placement_prediction = "",
 
 	on_place = function(itemstack, player, pointed)
 		local pos = pointed.above
-		local pos1 = vector.add(pos, vector.new(radius, radius, radius))
-		local pos2 = vector.add(pos, vector.new(-radius, -radius, -radius))
+		local pos1 = vadd(pos, vnew(radius, radius, radius))
+		local pos2 = vadd(pos, vnew(-radius, -radius, -radius))
 		local name = player:get_player_name()
 
 		if not minetest.is_protected_action(pos, name) then
@@ -37,6 +35,11 @@ minetest.register_node("areas:protector", {
 				minetest.chat_send_player(name, red(S("You are not allowed to protect that area:") .. " ") .. err)
 				return itemstack
 			end
+			if minetest.find_node_near(pos, 4, {"areas:protector"}) then
+				minetest.chat_send_player(name, red(S("You have already protected this area.")))
+				return itemstack
+			end
+			
 			local id = areas:add(name, "Protector Block", pos1, pos2)
 			areas:save()
 			minetest.chat_send_player(name,
@@ -66,7 +69,7 @@ minetest.register_node("areas:protector", {
 	end,
 
 	on_punch = function(pos)
-		local objs = minetest.get_objects_inside_radius(pos, .5) -- a radius of .5 since the entity serialization seems to be not that precise
+		local objs = minetest.get_objects_inside_radius(pos, 0.5) -- a radius of 0.5 since the entity serialization seems to be not that precise
 		local displayed = false
 		for _, o in pairs(objs) do
 			if not o:is_player() and o:get_luaentity().name == "areas:display" then
