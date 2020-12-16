@@ -14,13 +14,13 @@ local vadd, vnew = vector.add, vector.new
 
 minetest.register_node("areas:protector", {
 	description = S("Protector Block"),
-	groups = {cracky = 1},
 	tiles = {
 		"default_stonebrick_carved.png",
 		"default_stonebrick_carved.png",
 		"default_stonebrick_carved.png^areas_protector_stone.png"
 	},
 	paramtype = "light",
+	groups = {cracky = 1, not_cuttable = 1},
 	node_placement_prediction = "",
 
 	on_place = function(itemstack, player, pointed)
@@ -32,7 +32,7 @@ minetest.register_node("areas:protector", {
 		if not minetest.is_protected_action(pos, name) then
 			local perm, err = areas:canPlayerAddArea(pos1, pos2, name)
 			if not perm then
-				minetest.chat_send_player(name, red(S("You are not allowed to protect that area:") .. " ") .. err)
+				minetest.chat_send_player(name, red(S("You are not allowed to protect that area: @1", err)))
 				return itemstack
 			end
 			if minetest.find_node_near(pos, 4, {"areas:protector"}) then
@@ -40,7 +40,7 @@ minetest.register_node("areas:protector", {
 				return itemstack
 			end
 			
-			local id = areas:add(name, "Protector Block", pos1, pos2)
+			local id = areas:add(name, S("Protector Block"), pos1, pos2)
 			areas:save()
 			minetest.chat_send_player(name,
 				(S("The area from @1 to @1 has been protected as ID @1",

@@ -112,7 +112,7 @@ Unknown subcommand: @1=Неизвестная подкоманда: @1
 ### protector.lua ###
 
 Protector Block=Защитный Блок
-You are not allowed to protect that area:=Вам не разрешено защищать эту область:
+You are not allowed to protect that area: @1=Вам не разрешено защищать эту область: @1
 You have already protected this area.=Вы уже защитили эту область.
 The area from @1 to @1 has been protected as ID @1=Зона от @1 до @1 была защещена, ID @1
 Protecting area @1, Owned by @1=Защищённая зона @1, Владелец: @1
