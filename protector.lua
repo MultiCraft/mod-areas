@@ -47,7 +47,7 @@ minetest.register_node("areas:protector", {
 				cyan(minetest.pos_to_string(pos1)), cyan(minetest.pos_to_string(pos2)), cyan(id))))
 			minetest.set_node(pos, {name = "areas:protector"})
 			local meta = minetest.get_meta(pos)
-			meta:set_string("infotext", (S("Protecting area @1, Owned by @1", id, name)))
+			meta:set_string("infotext", (S("Protected area @1, Owned by @1", id, name)))
 			meta:set_int("area_id", id)
 			meta:set_string("owner", name)
 			itemstack:take_item()

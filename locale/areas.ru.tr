@@ -15,7 +15,7 @@ Area @1 does not exist or is not owned by you.=Область @1 не сущес
 Area closed for faction members.=Зона закрыта для членов фракции.
 Area closed.=Зона закрыта.
 Area does not exist.=Зона не существует.
-Area opened for faction members.=
+Area opened for faction members.=Зона открыта для членов фракции.
 Area opened.=Зона открыта.
 Area protected. ID: @1=Зона защищена. ID: @1
 Area renamed.=Зона переименована.
@@ -30,17 +30,17 @@ Invalid regular expression.=Неверное регулярное выражен
 Limit: @1 areas=Лимит: @1 зон
 Limit: no area count limit=Лимит: нет ограничения по количеству зон
 List your areas, or all areas if you are an admin.=Список ваших зон, или всех зон, если вы admin.
-Move (or resize) an area to the current positions.=Переместить (или изменить размер) зоны до текущешл положения.
+Move (or resize) an area to the current positions.=Переместить (или изменить размер) зоны до текущего положения.
 No matches found.=Совпадения не найдены.
 No visible areas.=Нет видимых зон.
 Owner changed.=Владелец изменён.
 Players with the "@1" privilege can protect up to @2 areas=Игроки с привилегией "@1" могут защитить до @2 областей
 
-Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Защитите область между двумя позициями и предоставьте игроку доступ к ней, без устанавки родительской области на любую существующую область
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Защитите область между двумя позициями и предоставьте игроку доступ к ней, без установки родительской области на любую существующую область
 
 Protect your own area=Защищает вашу территорию
 Recursively remove areas using an ID=Рекурсивно удаляет зоны используя их ID
-Remove an area using an ID=Удаляет зону испольузя её ID
+Remove an area using an ID=Удаляет зону используя её ID
 Removed area @1=Удалена зона @1
 Removed area @1 and it's sub areas.=Удалена зона @1 и её подзоны.
 Rename an area that you own=Переименовывает зону которой вы владеете
@@ -49,7 +49,7 @@ Self protection is enabled.=Защита включена.
 That area doesn't exist.=Эта зона не существует.
 The player "@1" does not exist.=Игрок "@1" не существует.
 Toggle an area open (anyone can interact) or closed=Делает зону открытой (любой может взаимодействовать) или закрытой
-Toggle an area open/closed for members in your faction.=Переключить сотояние открыто/закрыто для членов вашей фракции.
+Toggle an area open/closed for members in your faction.=Переключить состояние открыто/закрыто для членов вашей фракции.
 You are an area administrator ("areas" privilege).=Вы являетесь администратором зон (привилегия "areas").
 You can protect areas=Вы можете защитить зону
 You can't protect that area.=Вы не можете защитить зону.
@@ -68,7 +68,7 @@ You need to select an area first.=Вам нужно выбрать зону вн
 ### chatcommands.lua ###
 ### pos.lua ###
 
-<ID>=
+<ID>=<ID>
 Invalid usage, see /help @1.=Неправильное использование, смотрите /help @1.
 
 ### hud.lua ###
@@ -114,5 +114,5 @@ Unknown subcommand: @1=Неизвестная подкоманда: @1
 Protector Block=Защитный Блок
 You are not allowed to protect that area: @1=Вам не разрешено защищать эту область: @1
 You have already protected this area.=Вы уже защитили эту область.
-The area from @1 to @1 has been protected as ID @1=Зона от @1 до @1 была защещена, ID @1
-Protecting area @1, Owned by @1=Защищённая зона @1, Владелец: @1
+The area from @1 to @1 has been protected as ID @1=Зона от @1 до @1 была защищена, ID @1
+Protected area @1, Owned by @1=Защищённая зона @1, Владелец: @1
