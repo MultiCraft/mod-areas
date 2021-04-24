@@ -39,7 +39,7 @@ minetest.register_node("areas:protector", {
 				minetest.chat_send_player(name, red(S("You have already protected this area.")))
 				return itemstack
 			end
-			
+
 			local id = areas:add(name, S("Protector Block"), pos1, pos2)
 			areas:save()
 			minetest.chat_send_player(name,
@@ -69,7 +69,8 @@ minetest.register_node("areas:protector", {
 	end,
 
 	on_punch = function(pos)
-		local objs = minetest.get_objects_inside_radius(pos, 0.5) -- a radius of 0.5 since the entity serialization seems to be not that precise
+		-- a radius of 0.5 since the entity serialization seems to be not that precise
+		local objs = minetest.get_objects_inside_radius(pos, 0.5)
 		local displayed = false
 		for _, o in pairs(objs) do
 			if not o:is_player() and o:get_luaentity().name == "areas:display" then
@@ -84,12 +85,12 @@ minetest.register_node("areas:protector", {
 })
 
 -- entities code below (and above) mostly copied-pasted from Zeg9's protector mod
-
 minetest.register_entity("areas:display", {
 	physical = false,
 	collisionbox = {0},
 	visual = "wielditem",
-	visual_size = {x = 1.0 / 1.5, y = 1.0 / 1.5}, -- wielditem seems to be scaled to 1.5 times original node size
+	-- wielditem seems to be scaled to 1.5 times original node size
+	visual_size = {x = 1.0 / 1.5, y = 1.0 / 1.5},
 	textures = {"areas:display_node"},
 	timer = 0,
 	on_step = function(self, dtime)

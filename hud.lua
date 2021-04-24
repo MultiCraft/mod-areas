@@ -22,12 +22,12 @@ minetest.register_playerstep(function(_, playernames)
 		if minetest.is_valid_pos(pos) then
 			local areaStrings = {}
 
-			for id, area in pairs(areas:getAreasAtPos(pos)) do					
+			for id, area in pairs(areas:getAreasAtPos(pos)) do
 				areaStrings[#areaStrings+1] = ("%s [%u] (%s%s)")
 					:format(area.name, id, area.owner,
 						area.open and ":open" or "")
 			end
-			
+
 			local str = ""
 			for _, area in pairs(areas:getExternalHudEntries(pos)) do
 				if area.name then str = area.name .. " " end
