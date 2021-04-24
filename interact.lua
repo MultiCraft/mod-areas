@@ -1,4 +1,4 @@
-local S = intllib.make_gettext_pair()
+local S = areas.S
 
 local old_is_protected = minetest.is_protected
 
@@ -52,7 +52,7 @@ minetest.register_on_protection_violation(function(pos, name)
 		local player = minetest.get_player_by_name(name)
 		if player and player:is_player() then
 			local hp = player:get_hp()
-			if hp and hp > 1 then
+			if hp and hp > 2 then
 				player:set_hp(hp - 1)
 			end
 		end

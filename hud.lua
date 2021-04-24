@@ -1,8 +1,11 @@
 -- This is inspired by the landrush mod by Bremaweb
 
-local S = intllib.make_gettext_pair()
+local S = areas.S
 
 areas.hud = {}
+
+local vround = vector.round
+local tconcat = table.concat
 
 hud.register("areas", {
 	hud_elem_type = "text",
@@ -18,7 +21,7 @@ minetest.register_playerstep(function(_, playernames)
 	for _, name in pairs(playernames) do
 		local player = minetest.get_player_by_name(name)
 		if not player or not player:is_player() then return end
-		local pos = vector.round(player:get_pos())
+		local pos = vround(player:get_pos())
 		if minetest.is_valid_pos(pos) then
 			local areaStrings = {}
 
@@ -40,7 +43,7 @@ minetest.register_playerstep(function(_, playernames)
 			if #areaStrings > 0 then
 				areaString = S("Areas:")
 				areaString = areaString .. "\n" ..
-					table.concat(areaStrings, "\n")
+					tconcat(areaStrings, "\n")
 			end
 
 			local phud = areas.hud[name] or {}

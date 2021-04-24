@@ -1,4 +1,4 @@
-local S = intllib.make_gettext_pair()
+local S = areas.S
 
 function areas:player_exists(name)
 	return minetest.get_auth_handler().get_auth(name) ~= nil
@@ -158,7 +158,6 @@ end
 function areas:move(id, area, pos1, pos2)
 	area.pos1 = pos1
 	area.pos2 = pos2
-
 
 	for i=1, #areas.registered_on_moves do
 		areas.registered_on_moves[i](id, area, pos1, pos2)

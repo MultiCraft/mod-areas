@@ -4,7 +4,9 @@
 
 areas = {}
 
-areas.adminPrivs = {areas=true}
+areas.S = intllib.make_gettext_pair()
+
+areas.adminPrivs = {areas = true}
 areas.startTime = os.clock()
 
 areas.modpath = minetest.get_modpath("areas")
@@ -19,16 +21,20 @@ dofile(areas.modpath.."/protector.lua")
 
 areas:load()
 
+local S = areas.S
+
 minetest.register_privilege("areas", {
-	description = "Can administer areas."
+	description = S("Can administer areas."),
+	give_to_singleplayer = false
 })
 minetest.register_privilege("areas_high_limit", {
-	description = "Can protect more, bigger areas."
+	description = S("Can protect more, bigger areas."),
+	give_to_singleplayer = false
 })
 
 if not minetest.registered_privileges[areas.config.self_protection_privilege] then
 	minetest.register_privilege(areas.config.self_protection_privilege, {
-		description = "Can protect areas.",
+		description = S("Can protect areas."),
 	})
 end
 

@@ -1,4 +1,4 @@
-local S = intllib.make_gettext_pair()
+local S = areas.S
 
 local radius = minetest.settings:get("areasprotector_radius") or 8
 
@@ -43,11 +43,11 @@ minetest.register_node("areas:protector", {
 			local id = areas:add(name, S("Protector Block"), pos1, pos2)
 			areas:save()
 			minetest.chat_send_player(name,
-				(S("The area from @1 to @1 has been protected as ID @1",
+				(S("The area from @1 to @2 has been protected as ID @3",
 				cyan(minetest.pos_to_string(pos1)), cyan(minetest.pos_to_string(pos2)), cyan(id))))
 			minetest.set_node(pos, {name = "areas:protector"})
 			local meta = minetest.get_meta(pos)
-			meta:set_string("infotext", (S("Protected area @1, Owned by @1", id, name)))
+			meta:set_string("infotext", S("Protected area @1, Owned by @2", id, name))
 			meta:set_int("area_id", id)
 			meta:set_string("owner", name)
 			itemstack:take_item()

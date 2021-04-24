@@ -1,4 +1,4 @@
-local S = intllib.make_gettext_pair()
+local S = areas.S
 
 -- I could depend on WorldEdit for this, but you need to have the 'worldedit'
 -- permission to use those commands and you don't have

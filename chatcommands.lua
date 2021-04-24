@@ -1,4 +1,4 @@
-local S = intllib.make_gettext_pair()
+local S = areas.S
 
 minetest.register_chatcommand("protect", {
 	params = S("<AreaName>"),
@@ -79,8 +79,7 @@ minetest.register_chatcommand("add_owner", {
 		.." positions that have already been protected,"
 		.." Use set_owner if you don't want the parent to be set."),
 	func = function(name, param)
-		local pid, ownerName, areaName
-				= param:match('^(%d+) ([^ ]+) (.+)$')
+		local pid, ownerName, areaName = param:match('^(%d+) ([^ ]+) (.+)$')
 
 		if not pid then
 			minetest.chat_send_player(name, S("Invalid usage, see /help @1.", "add_owner"))
@@ -120,7 +119,7 @@ minetest.register_chatcommand("add_owner", {
 
 
 minetest.register_chatcommand("rename_area", {
-	params = S("<ID>").." "..S("<NewName>"),
+	params = S("<ID>").." "..S("<newName>"),
 	description = S("Rename an area that you own"),
 	func = function(name, param)
 		local id, newName = param:match("^(%d+)%s(.+)$")
@@ -199,8 +198,8 @@ minetest.register_chatcommand("list_areas", {
 		if #areaStrings == 0 then
 			return true, S("No visible areas.")
 		elseif #areaStrings > 100 then
-            return true, S("Too many areas to list.")
-        end
+			return true, S("Too many areas to list.")
+		end
 
 		return true, table.concat(areaStrings, "\n")
 	end
@@ -381,7 +380,6 @@ minetest.register_chatcommand("area_info", {
 				area_num = area_num + 1
 			end
 		end
-
 		table.insert(lines, S("You have @1 areas.", area_num))
 
 		-- Area limit
@@ -417,8 +415,7 @@ minetest.register_chatcommand("area_info", {
 
 
 minetest.register_chatcommand("areas_cleanup", {
-	params = "<id>",
-	description = "Removes all ownerless areas",
+	description = S("Removes all ownerless areas"),
 	privs = areas.adminPrivs,
 	func = function()
 		local total, count = 0, 0
@@ -436,6 +433,7 @@ minetest.register_chatcommand("areas_cleanup", {
 		end
 		areas:save()
 
-		return true, "Total areas: " .. total .. ", Removed: " .. count .. " areas! New count: " .. total - count
+		return true, "Total areas: " .. total .. ", Removed: " ..
+			count .. " areas. New count: " .. (total - count)
 	end
 })
