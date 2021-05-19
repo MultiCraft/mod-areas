@@ -101,7 +101,8 @@ function areas:add(owner, name, pos1, pos2, parent)
 		pos1 = pos1,
 		pos2 = pos2,
 		owner = owner,
-		parent = parent
+		parent = parent,
+		canPvP = nil
 	}
 
 	for i=1, #areas.registered_on_adds do
@@ -170,6 +171,17 @@ function areas:move(id, area, pos1, pos2)
 			self.store_ids[id] = sid
 		end
 	end
+end
+
+-- Check if PvP is enabled in an area
+-- @returns true or false (enabled or disabled)
+function areas:canPvP(id)
+	local area = self.areas[id]
+	if not area then
+		return true
+	end
+	-- canPvP is nil when false
+	return area.canPvP or false
 end
 
 -- Checks if a area between two points is entirely contained by another area.

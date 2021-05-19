@@ -1,5 +1,7 @@
 local S = areas.S
 
+local enable_damage = minetest.settings:get_bool("enable_damage")
+
 local old_is_protected = minetest.is_protected
 
 local disallowed = {
@@ -51,10 +53,54 @@ minetest.register_on_protection_violation(function(pos, name)
 		-- Little damage player
 		local player = minetest.get_player_by_name(name)
 		if player and player:is_player() then
-			local hp = player:get_hp()
-			if hp and hp > 2 then
-				player:set_hp(hp - 1)
+			if enable_damage then
+				local hp = player:get_hp()
+				if hp and hp > 2 then
+					player:set_hp(hp - 1)
+				end
+			end
+			local player_pos = player:get_pos()
+			if pos.y < player_pos.y then
+				player:set_pos({
+					x = player_pos.x,
+					y = player_pos.y + 1,
+					z = player_pos.z
+				})
 			end
 		end
 	end
+end)
+
+minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch, _, _, damage)
+	if not enable_damage then
+		return false
+	end
+
+	-- If it's a mob, deal damage as usual
+	if not hitter or not hitter:is_player() then
+		return false
+	end
+
+	-- It is possible to use cheats
+	if time_from_last_punch < 0.25 then
+		minetest.chat_send_player(hitter:get_player_name(), S("Wow, wow, take it easy!"))
+		return true
+	end
+
+	-- Check if the victim is in an area with allowed PvP or in an unprotected area
+	local inAreas = areas:getAreasAtPos(player:get_pos())
+	-- If the table is empty, PvP is not allowed
+	if not next(inAreas) then
+		return true
+	end
+	-- Do any of the areas have allowed PvP?
+	for id, area in pairs(inAreas) do
+		if area.canPvP then
+			return false
+		end
+	end
+
+	-- Otherwise, it doesn't do damage
+	minetest.chat_send_player(hitter:get_player_name(), S("PvP is not allowed in this area!"))
+	return true
 end)

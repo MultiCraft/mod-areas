@@ -5,7 +5,6 @@ minetest.register_chatcommand("protect", {
 	description = S("Protect your own area"),
 	privs = {[areas.config.self_protection_privilege]=true},
 	func = function(name, param)
-
 		minetest.log("warning", "/protect invoked, owner = " .. name ..
 			" AreaName = " .. param)
 
@@ -184,7 +183,6 @@ minetest.register_chatcommand("find_areas", {
 minetest.register_chatcommand("list_areas", {
 	description = S("List your areas, or all areas if you are an admin."),
 	func = function(name, param)
-
 		minetest.log("warning", "/list_areas invoked, owner = " .. name ..
 			" AreaName = " .. param)
 
@@ -433,7 +431,63 @@ minetest.register_chatcommand("areas_cleanup", {
 		end
 		areas:save()
 
-		return true, "Total areas: " .. total .. ", Removed: " ..
-			count .. " areas. New count: " .. (total - count)
+		return true, S("Total areas: @1, Removed: @1 areas. New count: @3.",
+			total, count, (total - count))
+	end
+})
+
+-- Get a table with all connected players with a position
+local function player_list()
+	local list = {}
+	for _, player in pairs(minetest.get_connected_players()) do
+		local pos = player:get_pos()
+		if minetest.is_valid_pos(pos) then
+			local name = player:get_player_name()
+			list[#list + 1] = {name = name, pos = pos}
+		end
+	end
+
+	return list
+end
+
+minetest.register_chatcommand("area_pvp", {
+	description = "Toggle PvP in an area",
+	params = "<ID>",
+	func = function(name, param)
+	local id = tonumber(param)
+		if not id then
+			return false, S("Invalid usage, see /help @1.", "area_pvp")
+		end
+
+		if not areas:isAreaOwner(id, name) then
+			return false,
+				S("Area @1 does not exist or is not owned by you.", id)
+		end
+
+		local canPvP = areas.areas[id].canPvP
+
+		if not canPvP then
+			local players = {}
+			for _, info in pairs(player_list()) do
+				local inAreas = areas:getAreasAtPos(info.pos)
+				for areaid, area in pairs(inAreas) do
+					if name ~= info.name and id == areaid then
+						players[#players + 1] = info.name
+					end
+				end
+			end
+
+			if next(players) then
+				return false,
+					S("You cannot enable PvP, there are other players in the area: @1.",
+					table.concat(players, ", "))
+			end
+		end
+
+		-- Save false as nil to avoid inflating the DB.
+		areas.areas[id].canPvP = not canPvP or nil
+		areas:save()
+		return true, S("PvP is @1 in area @2.",
+			not canPvP and S("enabled") or S("disabled"), id)
 	end
 })

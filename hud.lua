@@ -26,9 +26,11 @@ minetest.register_playerstep(function(_, playernames)
 			local areaStrings = {}
 
 			for id, area in pairs(areas:getAreasAtPos(pos)) do
-				areaStrings[#areaStrings+1] = ("%s [%u] (%s%s)")
+				areaStrings[#areaStrings+1] = ("%s [%u] (%s)%s%s%s")
 					:format(area.name, id, area.owner,
-						area.open and ":open" or "")
+						area.open and (" " .. S("Open")) or "",
+						(area.open and area.canPvP and " | " or ""), -- shitcode detected XD
+						area.canPvP and (" " .. S("PvP enabled")) or "")
 			end
 
 			local str = ""
