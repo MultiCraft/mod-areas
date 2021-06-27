@@ -71,9 +71,9 @@ minetest.register_on_protection_violation(function(pos, name)
 	end
 end)
 
-minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch, _, _, damage)
+minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 	if not enable_damage then
-		return false
+		return true
 	end
 
 	-- If it's a mob, deal damage as usual
@@ -87,16 +87,33 @@ minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch, 
 		return true
 	end
 
-	-- Check if the victim is in an area with allowed PvP or in an unprotected area
-	local inAreas = areas:getAreasAtPos(player:get_pos())
+	local hitterInPvP
+	-- Check if the hitter is in an area with allowed PvP
+	local hitterAreas = areas:getAreasAtPos(hitter:get_pos())
 	-- If the table is empty, PvP is not allowed
-	if not next(inAreas) then
+	if not next(hitterAreas) then
 		return true
 	end
 	-- Do any of the areas have allowed PvP?
-	for id, area in pairs(inAreas) do
+	for id, area in pairs(hitterAreas) do
 		if area.canPvP then
-			return false
+			hitterInPvP = true
+			break
+		end
+	end
+
+	if hitterInPvP then
+		-- Check if the victim is in an area with allowed PvP
+		local victimAreas = areas:getAreasAtPos(player:get_pos())
+		-- If the table is empty, PvP is not allowed
+		if not next(victimAreas) then
+			return true
+		end
+		-- Do any of the areas have allowed PvP?
+		for id, area in pairs(victimAreas) do
+			if area.canPvP then
+				return false
+			end
 		end
 	end
 
