@@ -27,9 +27,9 @@ minetest.register_node("areas:protector", {
 		local pos = pointed.above
 		local pos1 = vadd(pos, vnew(radius, radius, radius))
 		local pos2 = vadd(pos, vnew(-radius, -radius, -radius))
-		local name = player:get_player_name()
+		local name = player and player:get_player_name()
 
-		if not minetest.is_protected_action(pos, name) then
+		if name and not minetest.is_protected(pos, name) then
 			local perm, err = areas:canPlayerAddArea(pos1, pos2, name)
 			if not perm then
 				minetest.chat_send_player(name, red(S("You are not allowed to protect that area: @1", err)))
@@ -59,7 +59,7 @@ minetest.register_node("areas:protector", {
 		if oldmetadata and oldmetadata.fields then
 			local owner = oldmetadata.fields.owner
 			local id = tonumber(oldmetadata.fields.area_id)
-			local name = digger:get_player_name()
+			local name = digger and digger:get_player_name() or ""
 			if areas.areas[id] and areas:isAreaOwner(id, owner) then
 				areas:remove(id)
 				areas:save()
