@@ -431,7 +431,7 @@ minetest.register_chatcommand("areas_cleanup", {
 		end
 		areas:save()
 
-		return true, S("Total areas: @1, Removed: @1 areas. New count: @3.",
+		return true, S("Total areas: @1, Removed: @2 areas. New count: @3.",
 			total, count, (total - count))
 	end
 })
