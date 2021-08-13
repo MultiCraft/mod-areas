@@ -4,7 +4,17 @@
 
 areas = {}
 
-areas.S = intllib.make_gettext_pair()
+local translator = minetest.get_translator
+local S = translator and translator("areas") or intllib.make_gettext_pair()
+
+if translator and not minetest.is_singleplayer() then
+	local lang = minetest.settings:get("language")
+	if lang and lang == "ru" then
+		S = intllib.make_gettext_pair()
+	end
+end
+
+areas.S = S
 
 areas.adminPrivs = {areas = true}
 areas.startTime = os.clock()
@@ -21,8 +31,6 @@ dofile(areas.modpath.."/protector.lua")
 
 areas:load()
 
-local S = areas.S
-
 minetest.register_privilege("areas", {
 	description = S("Can administer areas."),
 	give_to_singleplayer = false
@@ -34,11 +42,11 @@ minetest.register_privilege("areas_high_limit", {
 
 if not minetest.registered_privileges[areas.config.self_protection_privilege] then
 	minetest.register_privilege(areas.config.self_protection_privilege, {
-		description = S("Can protect areas."),
+		description = S("Can protect areas.")
 	})
 end
 
 if minetest.settings:get_bool("log_mods") then
 	local diffTime = os.clock() - areas.startTime
-	minetest.log("action", "areas loaded in "..diffTime.."s.")
+	minetest.log("action", "areas loaded in " .. diffTime .. "s.")
 end
