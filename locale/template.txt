@@ -24,15 +24,16 @@ Change the owner of an area using its ID=
 Find areas using a Lua regular expression=
 Get information about area configuration and usage.=
 
-Give a player access to a sub-area beetween two positions that have already been protected, Use set_owner if you don't want the parent to be set.=
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=
 
 Invalid regular expression.=
 Limit: @1 areas=
 Limit: no area count limit=
-List your areas, or all areas if you are an admin.=
+List your areas=
 Move (or resize) an area to the current positions.=
 No matches found.=
 No visible areas.=
+Too many areas to list all!=
 Owner changed.=
 Players with the "@1" privilege can protect up to @2 areas=
 

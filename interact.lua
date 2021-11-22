@@ -3,38 +3,6 @@ local S = areas.S
 local enable_damage = minetest.settings:get_bool("enable_damage")
 
 local old_is_protected = minetest.is_protected
-
-local disallowed = {
-	["^[A-Za-z]+[0-9][0-9][0-9]"] = "You play using an unofficial client. Your actions are limited. "..
-			"Download \"MultiCraft ― Build and Mine!\" on Google Play / App Store to play ad-free!"
-}
-
-local function old_version(name)
-	local info = minetest.get_player_information(name)
-	if info and info.version_string and info.version_string < "0.4.16" then
-		return true
-	end
-end
-
--- Disable some actions for Guests
-function minetest.is_protected_action(pos, name)
-	for r, reason in pairs(disallowed) do
-		if name:lower():find(r) then
-			if old_version(name) then
-				minetest.chat_send_player(name, reason)
-				return true
-			end
-		end
-	end
-
-	if not areas:canInteract(pos, name) then
-		return true
-	end
-	return old_is_protected(pos, name)
-end
-
---==--
-
 function minetest.is_protected(pos, name)
 	if not areas:canInteract(pos, name) then
 		return true
@@ -81,9 +49,11 @@ minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 		return false
 	end
 
+	local player_name = hitter:get_player_name()
+
 	-- It is possible to use cheats
 	if time_from_last_punch < 0.25 then
-		minetest.chat_send_player(hitter:get_player_name(), S("Wow, wow, take it easy!"))
+		minetest.chat_send_player(player_name, S("Wow, wow, take it easy!"))
 		return true
 	end
 
@@ -95,7 +65,7 @@ minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 		return true
 	end
 	-- Do any of the areas have allowed PvP?
-	for id, area in pairs(hitterAreas) do
+	for _, area in pairs(hitterAreas) do
 		if area.canPvP then
 			hitterInPvP = true
 			break
@@ -110,7 +80,7 @@ minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 			return true
 		end
 		-- Do any of the areas have allowed PvP?
-		for id, area in pairs(victimAreas) do
+		for _, area in pairs(victimAreas) do
 			if area.canPvP then
 				return false
 			end
@@ -118,6 +88,6 @@ minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 	end
 
 	-- Otherwise, it doesn't do damage
-	minetest.chat_send_player(hitter:get_player_name(), S("PvP is not allowed in this area!"))
+	minetest.chat_send_player(player_name, S("PvP is not allowed in this area!"))
 	return true
 end)

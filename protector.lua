@@ -23,19 +23,22 @@ minetest.register_node("areas:protector", {
 	groups = {cracky = 1, not_cuttable = 1},
 	node_placement_prediction = "",
 
-	on_place = function(itemstack, player, pointed)
-		local pos = pointed.above
-		local pos1 = vadd(pos, vnew(radius, radius, radius))
-		local pos2 = vadd(pos, vnew(-radius, -radius, -radius))
+	on_place = function(itemstack, player, pointed_thing)
+		local pos = pointed_thing.above
 		local name = player and player:get_player_name()
 
-		if name and not minetest.is_protected(pos, name) then
+		if not name or not minetest.is_protected(pos, name) then
+			local pos1 = vadd(pos, vnew(radius, radius, radius))
+			local pos2 = vadd(pos, vnew(-radius, -radius, -radius))
 			local perm, err = areas:canPlayerAddArea(pos1, pos2, name)
+
 			if not perm then
-				minetest.chat_send_player(name, red(S("You are not allowed to protect that area: @1", err)))
+				minetest.chat_send_player(name,
+					red(S("You are not allowed to protect that area: @1", err)))
 				return itemstack
 			end
-			if minetest.find_node_near(pos, 4, {"areas:protector"}) then
+
+			if minetest.find_node_near(pos, radius / 2, {"areas:protector"}) then
 				minetest.chat_send_player(name, red(S("You have already protected this area.")))
 				return itemstack
 			end
@@ -43,16 +46,19 @@ minetest.register_node("areas:protector", {
 			local id = areas:add(name, S("Protector Block"), pos1, pos2)
 			areas:save()
 			minetest.chat_send_player(name,
-				(S("The area from @1 to @2 has been protected as ID @3",
-				cyan(minetest.pos_to_string(pos1)), cyan(minetest.pos_to_string(pos2)), cyan(id))))
+				S("The area from @1 to @2 has been protected as ID @3",
+				cyan(minetest.pos_to_string(pos1)), cyan(minetest.pos_to_string(pos2)), cyan(id))
+			)
+
 			minetest.set_node(pos, {name = "areas:protector"})
 			local meta = minetest.get_meta(pos)
 			meta:set_string("infotext", S("Protected area @1, Owned by @2", id, name))
 			meta:set_int("area_id", id)
 			meta:set_string("owner", name)
 			itemstack:take_item()
-			return itemstack
 		end
+
+		return itemstack
 	end,
 
 	after_dig_node = function(_, _, oldmetadata, digger)
@@ -63,7 +69,7 @@ minetest.register_node("areas:protector", {
 			if areas.areas[id] and areas:isAreaOwner(id, owner) then
 				areas:remove(id)
 				areas:save()
-				minetest.chat_send_player(name, (S("Removed area @1", cyan(id))))
+				minetest.chat_send_player(name, S("Removed area @1", cyan(id)))
 			end
 		end
 	end,
@@ -71,16 +77,14 @@ minetest.register_node("areas:protector", {
 	on_punch = function(pos)
 		-- a radius of 0.5 since the entity serialization seems to be not that precise
 		local objs = minetest.get_objects_inside_radius(pos, 0.5)
-		local displayed = false
-		for _, o in pairs(objs) do
-			if not o:is_player() and o:get_luaentity().name == "areas:display" then
-				o:remove()
+		for _, obj in pairs(objs) do
+			if not obj:is_player() and obj:get_luaentity().name == "areas:display" then
+				obj:remove()
 				return
 			end
 		end
-		if not displayed then -- nothing was removed: there wasn't the entity
-			minetest.add_entity(pos, "areas:display")
-		end
+
+		minetest.add_entity(pos, "areas:display")
 	end
 })
 
@@ -95,7 +99,8 @@ minetest.register_entity("areas:display", {
 	timer = 0,
 	on_step = function(self, dtime)
 		self.timer = self.timer + dtime
-		if self.timer > 4 or minetest.get_node(self.object:get_pos()).name ~= "areas:protector" then
+		if self.timer > 4 or
+				minetest.get_node(self.object:get_pos()).name ~= "areas:protector" then
 			self.object:remove()
 		end
 	end
@@ -120,7 +125,7 @@ minetest.register_node("areas:display_node", {
 			-- bottom
 			{-nb_radius, -nb_radius, -nb_radius, nb_radius, -nb_radius, nb_radius},
 			-- middle (surround protector)
-			{-.55, -.55, -.55, .55, .55, .55}
+			{-0.55, -0.55, -0.55, 0.55, 0.55, 0.55}
 		}
 	},
 	selection_box = {type = "regular"},

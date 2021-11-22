@@ -1,4 +1,4 @@
-unused_args = false
+max_line_length = 100
 
 read_globals = {
 	"DIR_DELIM",
@@ -20,3 +20,5 @@ globals = {
 	-- mod namespace
 	"areas"
 }
+
+ignore = {"212/self"}

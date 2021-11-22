@@ -151,7 +151,7 @@ function areas:setPos2(playerName, pos)
 end
 
 
-minetest.register_on_punchnode(function(pos, node, puncher)
+minetest.register_on_punchnode(function(pos, _, puncher)
 	local name = puncher:get_player_name()
 	-- Currently setting position
 	if name ~= "" and areas.set_pos[name] then
@@ -231,7 +231,7 @@ minetest.register_entity("areas:pos1", {
 		            "areas_pos1.png", "areas_pos1.png"},
 		collisionbox = {-0.55, -0.55, -0.55, 0.55, 0.55, 0.55},
 	},
-	on_step = function(self, dtime)
+	on_step = function(self)
 		if self.active == nil then
 			self.object:remove()
 		end
@@ -252,7 +252,7 @@ minetest.register_entity("areas:pos2", {
 		            "areas_pos2.png", "areas_pos2.png"},
 		collisionbox = {-0.55, -0.55, -0.55, 0.55, 0.55, 0.55},
 	},
-	on_step = function(self, dtime)
+	on_step = function(self)
 		if self.active == nil then
 			self.object:remove()
 		end

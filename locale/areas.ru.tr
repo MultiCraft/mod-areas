@@ -24,15 +24,16 @@ Change the owner of an area using its ID=Сменить владельца зо�
 Find areas using a Lua regular expression=Найти области с помощью регулярного выражения Lua
 Get information about area configuration and usage.=Получите информацию о конфигурации и использовании зоны.
 
-Give a player access to a sub-area beetween two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Предоставьте игроку доступ к подобласти между двумя позициями, которые уже были защищены, Используйте set_owner, если вы не хотите, чтобы родитель был установлен.
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Предоставьте игроку доступ к подобласти между двумя позициями, которые уже были защищены, Используйте set_owner, если вы не хотите, чтобы родитель был установлен.
 
 Invalid regular expression.=Неверное регулярное выражение.
 Limit: @1 areas=Лимит: @1 зон
 Limit: no area count limit=Лимит: нет ограничения по количеству зон
-List your areas, or all areas if you are an admin.=Список ваших зон, или всех зон, если вы admin.
+List your areas=Список ваших зон
 Move (or resize) an area to the current positions.=Переместить (или изменить размер) зоны до текущего положения.
 No matches found.=Совпадения не найдены.
 No visible areas.=Нет видимых зон.
+Too many areas to list all!=Слишком много зон, чтобы показать все.
 Owner changed.=Владелец изменён.
 Players with the "@1" privilege can protect up to @2 areas=Игроки с привилегией "@1" могут защитить до @2 областей
 

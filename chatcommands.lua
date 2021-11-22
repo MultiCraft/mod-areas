@@ -74,7 +74,7 @@ minetest.register_chatcommand("set_owner", {
 
 minetest.register_chatcommand("add_owner", {
 	params = S("<ParentID>").." "..S("<PlayerName>").." "..S("<AreaName>"),
-	description = S("Give a player access to a sub-area beetween two"
+	description = S("Give a player access to a sub-area between two"
 		.." positions that have already been protected,"
 		.." Use set_owner if you don't want the parent to be set."),
 	func = function(name, param)
@@ -146,7 +146,7 @@ minetest.register_chatcommand("find_areas", {
 	params = "<regexp>",
 	description = S("Find areas using a Lua regular expression"),
 	privs = areas.adminPrivs,
-	func = function(name, param)
+	func = function(_, param)
 		if param == "" then
 			return false, S("A regular expression is required.")
 		end
@@ -160,7 +160,7 @@ minetest.register_chatcommand("find_areas", {
 		end
 
 		local matches = {}
-		for id, area in pairs(areas.areas) do
+		for id in pairs(areas.areas) do
 			local str = areas:toString(id)
 			if str:find(param) then
 				table.insert(matches, str)
@@ -181,22 +181,21 @@ minetest.register_chatcommand("find_areas", {
 
 
 minetest.register_chatcommand("list_areas", {
-	description = S("List your areas, or all areas if you are an admin."),
-	func = function(name, param)
-		minetest.log("warning", "/list_areas invoked, owner = " .. name ..
-			" AreaName = " .. param)
-
-		local admin = minetest.check_player_privs(name, areas.adminPrivs)
+	description = S("List your areas"),
+	func = function(name)
 		local areaStrings = {}
-		for id, area in pairs(areas.areas) do
-			if admin or areas:isAreaOwner(id, name) then
+		for id in pairs(areas.areas) do
+			if areas:isAreaOwner(id, name) then
 				table.insert(areaStrings, areas:toString(id))
+				if #areaStrings > 50 then
+					minetest.chat_send_player(name, S("Too many areas to list all."))
+					break
+				 end
 			end
 		end
+
 		if #areaStrings == 0 then
-			return true, S("No visible areas.")
-		elseif #areaStrings > 100 then
-			return true, S("Too many areas to list.")
+			return false, S("No visible areas.")
 		end
 
 		return true, table.concat(areaStrings, "\n")
@@ -332,7 +331,7 @@ minetest.register_chatcommand("move_area", {
 
 minetest.register_chatcommand("area_info", {
 	description = S("Get information about area configuration and usage."),
-	func = function(name, param)
+	func = function(name)
 		local lines = {}
 		local privs = minetest.get_player_privs(name)
 
@@ -373,7 +372,7 @@ minetest.register_chatcommand("area_info", {
 
 		-- Area count
 		local area_num = 0
-		for id, area in pairs(areas.areas) do
+		for _, area in pairs(areas.areas) do
 			if area.owner == name then
 				area_num = area_num + 1
 			end
@@ -418,11 +417,8 @@ minetest.register_chatcommand("areas_cleanup", {
 	func = function()
 		local total, count = 0, 0
 
-		local aareas = areas.areas
-		for id, _ in pairs(aareas) do
-			local owner = aareas[id].owner
-
-			if not areas:player_exists(owner) then
+		for id, area in pairs(areas.areas) do
+			if not areas:player_exists(area.owner) then
 				areas:remove(id)
 				count = count + 1
 			end
@@ -454,7 +450,7 @@ minetest.register_chatcommand("area_pvp", {
 	description = "Toggle PvP in an area",
 	params = "<ID>",
 	func = function(name, param)
-	local id = tonumber(param)
+		local id = tonumber(param)
 		if not id then
 			return false, S("Invalid usage, see /help @1.", "area_pvp")
 		end
@@ -470,7 +466,7 @@ minetest.register_chatcommand("area_pvp", {
 			local players = {}
 			for _, info in pairs(player_list()) do
 				local inAreas = areas:getAreasAtPos(info.pos)
-				for areaid, area in pairs(inAreas) do
+				for areaid in pairs(inAreas) do
 					if name ~= info.name and id == areaid then
 						players[#players + 1] = info.name
 					end

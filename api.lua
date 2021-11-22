@@ -35,7 +35,7 @@ function areas:getAreasAtPos(pos)
 
 	if self.store then
 		local a = self.store:get_areas_for_pos(pos, false, true)
-		for store_id, store_area in pairs(a) do
+		for _, store_area in pairs(a) do
 			local id = tonumber(store_area.data)
 			res[id] = self.areas[id]
 		end
@@ -60,7 +60,7 @@ function areas:getAreasIntersectingArea(pos1, pos2)
 	if self.store then
 		local a = self.store:get_areas_in_area(pos1, pos2,
 				true, false, true)
-		for store_id, store_area in pairs(a) do
+		for _, store_area in pairs(a) do
 			local id = tonumber(store_area.data)
 			res[id] = self.areas[id]
 		end
