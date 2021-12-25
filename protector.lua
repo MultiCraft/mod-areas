@@ -110,6 +110,7 @@ local nb_radius = radius + 0.55
 
 minetest.register_node("areas:display_node", {
 	tiles = {"areas_protector_display.png"},
+	use_texture_alpha = "clip",
 	walkable = false,
 	drawtype = "nodebox",
 	node_box = {
