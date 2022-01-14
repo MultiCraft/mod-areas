@@ -182,10 +182,16 @@ minetest.register_chatcommand("find_areas", {
 
 minetest.register_chatcommand("list_areas", {
 	description = S("List your areas"),
-	func = function(name)
+	func = function(name, param)
+		local user = name
+		-- allow admins to check the areas of other players
+		if param ~= "" and minetest.check_player_privs(name, areas.adminPrivs) then
+			user = param
+		end
+
 		local areaStrings = {}
-		for id in pairs(areas.areas) do
-			if areas:isAreaOwner(id, name) then
+		for id, area in pairs(areas.areas) do
+			if area.owner == user then
 				table.insert(areaStrings, areas:toString(id))
 				if #areaStrings > 50 then
 					minetest.chat_send_player(name, S("Too many areas to list all."))
@@ -426,6 +432,7 @@ minetest.register_chatcommand("areas_cleanup", {
 			total = total + 1
 		end
 		areas:save()
+		areas:populateStore()
 
 		return true, S("Total areas: @1, Removed: @2 areas. New count: @3.",
 			total, count, (total - count))
