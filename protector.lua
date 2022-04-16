@@ -28,6 +28,13 @@ minetest.register_node("areas:protector", {
 		local name = player and player:get_player_name()
 
 		if not name or not minetest.is_protected(pos, name) then
+			-- Don't replace nodes that aren't buildable to
+			local old_node = minetest.get_node(pos)
+			local def = minetest.registered_nodes[old_node.name]
+			if not def or not def.buildable_to then
+				return itemstack
+			end
+
 			local pos1 = vadd(pos, vnew(radius, radius, radius))
 			local pos2 = vadd(pos, vnew(-radius, -radius, -radius))
 			local perm, err = areas:canPlayerAddArea(pos1, pos2, name)
