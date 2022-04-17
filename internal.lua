@@ -125,7 +125,6 @@ function areas:remove(id, recurse)
 			-- The subarea parent will be niled out if the
 			-- removed area does not have a parent
 			self.areas[cid].parent = parent
-
 		end
 	end
 
