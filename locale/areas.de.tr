@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<Bereichsname>
+<NewOwner>=<Neuer Besitzer>
+<ParentID>=<Eltern-Id>
+<PlayerName>=<Spielername>
+<newName>=<Neuername>
+@1 has given you control over the area "@2" (ID @3).=@1 Hat Ihnen Die Kontrolle Über Den Bereich "@2" (Id @3) Gegeben.
+@1 spanning up to @2x@3x@4.=@1 Bis Zu @2X@3X@4.
+A regular expression is required.=Ein Regulärer Ausdruck Ist Erforderlich.
+Area @1 does not exist or is not owned by you.=Bereich @1 Existiert Nicht Oder Gehört Ihnen Nicht.
+Area closed for faction members.=Bereich Für Fraktionsmitglieder Gesperrt.
+Area closed.=Bereich Geschlossen.
+Area does not exist.=Fläche Existiert Nicht.
+Area opened for faction members.=Bereich Für Fraktionsmitglieder Geöffnet.
+Area opened.=Bereich Geöffnet.
+Area protected. ID: @1=Bereich Geschützt. Id: @1
+Area renamed.=Bereich Umbenannt.
+Area successfully moved.=Bereich Erfolgreich Verschoben.
+Change the owner of an area using its ID=Ändern Sie Den Eigentümer Eines Bereichs Anhand Seiner Id
+Find areas using a Lua regular expression=Finden Sie Bereiche Mit Einem Regulären Lua-Ausdruck
+Get information about area configuration and usage.=Informieren Sie Sich Über Bereichskonfiguration Und -Nutzung.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Geben Sie Einem Spieler Zugriff Auf Einen Teilbereich Zwischen Zwei Bereits Geschützten Positionen. Verwenden Sie Set_Owner, Wenn Sie Nicht Möchten, Dass Der Übergeordnete Bereich Festgelegt Wird.
+
+Invalid regular expression.=Ungültiger Regulärer Ausdruck.
+Limit: @1 areas=Limit: @1 Bereiche
+Limit: no area count limit=Begrenzung: Keine Begrenzung Der Bereichsanzahl
+List your areas=Listen Sie Ihre Bereiche Auf
+Move (or resize) an area to the current positions.=Verschieben (Oder Ändern Sie Die Größe) Eines Bereichs An Die Aktuellen Positionen.
+No matches found.=Keine Treffer Gefunden.
+No visible areas.=Keine Sichtbaren Bereiche.
+Too many areas to list all!=Zu Viele Bereiche, Um Alle Aufzulisten!
+Owner changed.=Besitzer Gewechselt.
+Players with the "@1" privilege can protect up to @2 areas=Spieler Mit Dem „@1“-Privileg Können Bis Zu @2-Gebiete Schützen
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Schützen Sie Einen Bereich Zwischen Zwei Positionen Und Gewähren Sie Einem Spieler Zugriff Darauf, Ohne Den Übergeordneten Bereich Des Bereichs Auf Einen Vorhandenen Bereich Festzulegen
+
+Protect your own area=Schützen Sie Ihren Eigenen Bereich
+Recursively remove areas using an ID=Bereiche Rekursiv Mit Einer Id Entfernen
+Remove an area using an ID=Entfernen Sie Einen Bereich Mit Einer Id
+Removed area @1=Bereich @1 Entfernt
+Removed area @1 and it's sub areas.=Bereich @1 Und Seine Unterbereiche Entfernt.
+Removes all ownerless areas=Entfernt Alle Besitzerlosen Bereiche
+Rename an area that you own=Benennen Sie Einen Bereich Um, Der Ihnen Gehört
+Self protection is disabled.=Der Selbstschutz Ist Deaktiviert.
+Self protection is enabled.=Selbstschutz Ist Aktiviert.
+That area doesn't exist.=Dieser Bereich Existiert Nicht.
+The player "@1" does not exist.=Der Spieler "@1" Existiert Nicht.
+Toggle an area open (anyone can interact) or closed=Schalten Sie Einen Bereich Offen (Jeder Kann Interagieren) Oder Geschlossen
+Toggle an area open/closed for members in your faction.=Öffne/Schließe Einen Bereich Für Mitglieder Deiner Fraktion.
+You are an area administrator ("areas" privilege).=Sie Sind Bereichsadministrator (Privileg "Bereiche").
+You can protect areas=Sie Können Bereiche Schützen
+You can't protect that area.=Sie Können Diesen Bereich Nicht Schützen.
+You can't protect that area: @1=Sie Können Diesen Bereich Nicht Schützen: @1
+You don't have the necessary privilege ("@1").=Sie Haben Nicht Die Erforderliche Berechtigung ("@1").
+You don't own that area.=Sie Besitzen Diesen Bereich Nicht.
+You have @1 areas.=Sie Haben @1 Bereiche.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Dir Wurde Die Kontrolle Über Gebiet #@1 Gewährt. Geben Sie /List_Areas Ein, Um Ihre Gebiete Anzuzeigen.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Sie Haben Erweiterte Bereichsschutzgrenzen (Privileg "Areas_High_Limit").
+
+You have the necessary privilege ("@1").=Sie Haben Das Nötige Privileg ("@1").
+You need to select an area first.=Sie Müssen Zuerst Einen Bereich Auswählen.
+
+You cannot enable PvP, there are other players in the area: @1.=Du Kannst Pvp Nicht Aktivieren, Es Gibt Andere Spieler In Der Gegend: @1.
+PvP is @1 in area @2.=Pvp Ist @1 Im Gebiet @2.
+enabled=Aktiviert
+disabled=Behindert
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<Id>
+Invalid usage, see /help @1.=Ungültige Verwendung, Siehe /Help @1.
+
+### hud.lua ###
+
+Areas:=Bereiche:
+Open=Offen
+PvP enabled=Pvp Aktiviert
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 Wird Durch @2 Geschützt.
+Wow, wow, take it easy!=Wow, Wow, Bleib Locker!
+PvP is not allowed in this area!=Pvp Ist In Diesem Bereich Nicht Erlaubt!
+
+### internal.lua ###
+
+Area is too big.=Bereich Ist Zu Groß.
+
+Self protection is disabled or you do not have the necessary privilege.=Der Selbstschutz Ist Deaktiviert Oder Sie Verfügen Nicht Über Die Erforderlichen Berechtigungen.
+
+The area intersects with @1 [@2] (@3).=Der Bereich Schneidet Sich Mit @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Sie Haben Die Maximale Anzahl An Bereichen Erreicht, Die Sie Schützen Dürfen.
+
+### pos.lua ###
+
+<not set>=<Nicht Gesetzt>
+Area @1 selected.=Bereich @1 Ausgewählt.
+Area position @1 set to @2=Bereichsposition @1 Auf @2 Gesetzt
+Position @1 set to @2=Position @1 Auf @2 Gesetzt
+Position @1: =Stelle @1:
+Select an area by ID.=Wählen Sie Einen Bereich Nach Id Aus.
+Select position @1 by punching a node.=Wählen Sie Die Position @1, Indem Sie Einen Knoten Stanzen.
+Select positions by punching two nodes.=Wählen Sie Positionen Aus, Indem Sie Zwei Knoten Stanzen.
+
+Set area protection region position @1 to your location or the one specified=Setzen Sie Die Bereichsschutzbereichsposition @1 Auf Ihren Oder Den Angegebenen Standort
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Legen Sie Den Bereichsschutzbereich, Position 1 Oder Position 2 Fest, Indem Sie Knoten Stanzen, Oder Zeigen Sie Den Bereich An
+
+The area @1 does not exist.=Der Bereich @1 Existiert Nicht.
+Unable to get position.=Position Kann Nicht Abgerufen Werden.
+Unknown subcommand: @1=Unbekannter Unterbefehl: @1
+
+### protector.lua ###
+
+Protector Block=Schutzblock
+You are not allowed to protect that area: @1=Sie Dürfen Diesen Bereich Nicht Schützen: @1
+You have already protected this area.=Sie Haben Diesen Bereich Bereits Geschützt.
+The area from @1 to @2 has been protected as ID @3=Der Bereich Von @1 Bis @2 Wurde Als Id @3 Geschützt
+Protected area @1, Owned by @2=Geschütztes Gebiet @1, Eigentum Von @2
