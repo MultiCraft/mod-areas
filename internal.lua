@@ -1,6 +1,9 @@
 local S = areas.S
 
 function areas:player_exists(name)
+	if type(name) ~= "string" then
+		return false
+	end
 	return minetest.get_auth_handler().get_auth(name) ~= nil
 end
 
