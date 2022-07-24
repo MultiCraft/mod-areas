@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<Име на област>
+<NewOwner>=<Нов собственик>
+<ParentID>=<ParentID>
+<PlayerName>=<Име на играч>
+<newName>=<ново име>
+@1 has given you control over the area "@2" (ID @3).=@1 ви е предоставил контрол върху областта "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 с обхват до @2x@3x@4.
+A regular expression is required.=Изисква се регулярен израз.
+Area @1 does not exist or is not owned by you.=Област @1 не съществува или не е ваша собственост.
+Area closed for faction members.=Зоната е затворена за членове на фракцията.
+Area closed.=Затворена зона.
+Area does not exist.=Областта не съществува.
+Area opened for faction members.=Зоната е отворена за членовете на фракцията.
+Area opened.=Открита зона.
+Area protected. ID: @1=Защитена зона. ID: @1
+Area renamed.=Преименуване на района.
+Area successfully moved.=Зоната е успешно преместена.
+Change the owner of an area using its ID=Промяна на собственика на дадена област чрез нейния идентификатор
+Find areas using a Lua regular expression=Намиране на области с помощта на регулярен израз на Lua
+Get information about area configuration and usage.=Получаване на информация за конфигурацията и използването на областта.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Предоставяне на достъп на играч до подобласт между две позиции, които вече са защитени, Използвайте set_owner, ако не искате родителят да бъде зададен.
+
+Invalid regular expression.=Невалиден регулярен израз.
+Limit: @1 areas=Ограничение: @1 области
+Limit: no area count limit=Ограничение: няма ограничение за броя на зоните
+List your areas=Избройте областите си
+Move (or resize) an area to the current positions.=Преместване (или промяна на размера) на област в текущите позиции.
+No matches found.=Не са намерени съвпадения.
+No visible areas.=Няма видими зони.
+Too many areas to list all!=Твърде много области, за да бъдат изброени всички!
+Owner changed.=Смяна на собственика.
+Players with the "@1" privilege can protect up to @2 areas=Играчите с привилегия "@1" могат да защитават до @2 области.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Защитете област между две позиции и дайте достъп на играч до нея, без да задавате родител на областта към някоя съществуваща област
+
+Protect your own area=Защитете собствената си област
+Recursively remove areas using an ID=Рекурсивно премахване на области с помощта на ID
+Remove an area using an ID=Премахване на област с помощта на ID
+Removed area @1=Премахната област @1
+Removed area @1 and it's sub areas.=Премахната е област @1 и нейните подобласти.
+Removes all ownerless areas=Премахва всички зони без собственици
+Rename an area that you own=Преименуване на област, която притежавате
+Self protection is disabled.=Самозащитата е деактивирана.
+Self protection is enabled.=Самозащитата е активирана.
+That area doesn't exist.=Тази област не съществува.
+The player "@1" does not exist.=Играчът "@1" не съществува.
+Toggle an area open (anyone can interact) or closed=Превключване на отворена (всеки може да взаимодейства) или затворена област
+Toggle an area open/closed for members in your faction.=Превключете дадена област като отворена/затворена за членовете на вашата фракция.
+You are an area administrator ("areas" privilege).=Вие сте администратор на област (привилегия "области").
+You can protect areas=Можете да защитите области
+You can't protect that area.=Не можете да защитите тази област.
+You can't protect that area: @1=Не можете да защитите тази област: @1
+You don't have the necessary privilege ("@1").=Нямате необходимата привилегия ("@1").
+You don't own that area.=Тази зона не е ваша собственост.
+You have @1 areas.=Имате @1 области.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Предоставен ви е контрол върху област #@1. Въведете /list_areas, за да покажете областите си.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Имате разширени лимити за защита на областите (привилегия "areas_high_limit").
+
+You have the necessary privilege ("@1").=Имате необходимата привилегия ("@1").
+You need to select an area first.=Първо трябва да изберете област.
+
+You cannot enable PvP, there are other players in the area: @1.=Не можете да активирате PvP, защото в района има други играчи: @1.
+PvP is @1 in area @2.=PvP е @1 в зона @2.
+enabled=активиран
+disabled=изключени
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Неправилна употреба, вижте /help @1.
+
+### hud.lua ###
+
+Areas:=Области:
+Open=Отворете
+PvP enabled=Разрешен PvP
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 е защитен от @2.
+Wow, wow, take it easy!=Уау, уау, успокой се!
+PvP is not allowed in this area!=PvP не е разрешен в тази зона!
+
+### internal.lua ###
+
+Area is too big.=Площта е твърде голяма.
+
+Self protection is disabled or you do not have the necessary privilege.=Самозащитата е деактивирана или нямате необходимата привилегия.
+
+The area intersects with @1 [@2] (@3).=Областта се пресича с @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Достигнали сте максималния брой области, които можете да защитите.
+
+### pos.lua ###
+
+<not set>=<не е зададено>
+Area @1 selected.=Избрана е област @1.
+Area position @1 set to @2=Позиция на зоната @1 е настроена на @2
+Position @1 set to @2=Позиция @1, настроена на @2
+Position @1:=Позиция @1:
+Select an area by ID.=Изберете област по ID.
+Select position @1 by punching a node.=Изберете позиция @1 чрез пробиване на възел.
+Select positions by punching two nodes.=Изберете позиции чрез пробиване на два възела.
+
+Set area protection region position @1 to your location or the one specified=Задайте позиция @1 на региона за защита на зоната към вашето местоположение или към посоченото.
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Задайте област за защита на зоната, позиция 1 или позиция 2 чрез пробиване на възли или покажете областта
+
+The area @1 does not exist.=Областта @1 не съществува.
+Unable to get position.=Не можете да получите позиция.
+Unknown subcommand: @1=Неизвестна подкоманда: @1
+
+### protector.lua ###
+
+Protector Block=Защитен блок
+You are not allowed to protect that area: @1=Нямате право да защитавате тази област: @1
+You have already protected this area.=Вече сте защитили тази област.
+The area from @1 to @2 has been protected as ID @3=Зоната от @1 до @2 е защитена като ID @3
+Protected area @1, Owned by @2=Защитена зона @1, собственост на @2

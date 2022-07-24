@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaName>
+<NewOwner>=<NewOwner>
+<ParentID>=<ParentID>
+<PlayerName>=<Pelaajan nimi>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=@1 on antanut sinulle määräysvallan alueella "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 ulottuu @2x@3x@4:ään asti.
+A regular expression is required.=Säännöllinen lauseke vaaditaan.
+Area @1 does not exist or is not owned by you.=Aluetta @1 ei ole olemassa tai se ei ole sinun omistuksessasi.
+Area closed for faction members.=Alue suljettu ryhmittymän jäseniltä.
+Area closed.=Alue suljettu.
+Area does not exist.=Aluetta ei ole olemassa.
+Area opened for faction members.=Alue avattu ryhmittymän jäsenille.
+Area opened.=Alue avattu.
+Area protected. ID: @1=Suojeltu alue. ID: @1
+Area renamed.=Alueen nimi muutettu.
+Area successfully moved.=Alue siirretty onnistuneesti.
+Change the owner of an area using its ID=Vaihda alueen omistaja sen ID:n avulla
+Find areas using a Lua regular expression=Alueiden etsiminen Lua-säännöllisen lausekkeen avulla
+Get information about area configuration and usage.=Hae tietoja alueen kokoonpanosta ja käytöstä.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Anna pelaajalle pääsy kahden jo suojatun paikan välissä olevalle osa-alueelle, Käytä set_owner-käyttäjää, jos et halua vanhemman olevan asetettu.
+
+Invalid regular expression.=Virheellinen säännöllinen lauseke.
+Limit: @1 areas=Raja: @1 alueet
+Limit: no area count limit=Rajaus: ei pinta-alarajoitusta
+List your areas=Luettelo alueista
+Move (or resize) an area to the current positions.=Siirrä (tai muuta kokoa) alue nykyisiin sijainteihin.
+No matches found.=Ei löytynyt osumia.
+No visible areas.=Ei näkyviä alueita.
+Too many areas to list all!=Liian monta aluetta luetella kaikki!
+Owner changed.=Omistaja vaihtui.
+Players with the "@1" privilege can protect up to @2 areas=Pelaajat, joilla on "@1"-oikeudet, voivat suojata enintään @2 aluetta.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Suojaa kahden sijainnin välinen alue ja anna pelaajan käyttää sitä asettamatta alueen vanhemmaksi mitään olemassa olevaa aluetta.
+
+Protect your own area=Suojaa oma alueesi
+Recursively remove areas using an ID=Poistaa alueita rekursiivisesti ID:n avulla
+Remove an area using an ID=Poista alue tunnuksen avulla
+Removed area @1=Poistettu alue @1
+Removed area @1 and it's sub areas.=Poistettiin alue @1 ja sen osa-alueet.
+Removes all ownerless areas=Poistaa kaikki omistajaton alue
+Rename an area that you own=Nimeä omistamasi alue uudelleen
+Self protection is disabled.=Itsesuojaus on poistettu käytöstä.
+Self protection is enabled.=Itsesuojaus on käytössä.
+That area doesn't exist.=Tätä aluetta ei ole olemassa.
+The player "@1" does not exist.=Pelaajaa "@1" ei ole olemassa.
+Toggle an area open (anyone can interact) or closed=Vaihda alue avoimeksi (kuka tahansa voi olla vuorovaikutuksessa) tai suljetuksi.
+Toggle an area open/closed for members in your faction.=Vaihda aluetta auki/kiinni ryhmittymäsi jäsenille.
+You are an area administrator ("areas" privilege).=Olet alueen ylläpitäjä ("alueet"-oikeudet).
+You can protect areas=Voit suojata alueita
+You can't protect that area.=Sitä aluetta ei voi suojella.
+You can't protect that area: @1=Sitä aluetta ei voi suojella: @1
+You don't have the necessary privilege ("@1").=Sinulla ei ole tarvittavia oikeuksia ("@1").
+You don't own that area.=Et omista sitä aluetta.
+You have @1 areas.=Sinulla on @1 aluetta.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Sinulle on myönnetty alueen #@1 hallintaoikeus. Näytät alueesi kirjoittamalla /list_areas.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Sinulla on laajennetut alueiden suojausrajat ("areas_high_limit"-oikeudet).
+
+You have the necessary privilege ("@1").=Sinulla on tarvittavat oikeudet ("@1").
+You need to select an area first.=Sinun on ensin valittava alue.
+
+You cannot enable PvP, there are other players in the area: @1.=Et voi ottaa PvP:tä käyttöön, koska alueella on muita pelaajia: @1.
+PvP is @1 in area @2.=PvP on @1 alueella @2.
+enabled=käytössä
+disabled=disabled
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Virheellinen käyttö, katso /help @1.
+
+### hud.lua ###
+
+Areas:=Alueet:
+Open=Avaa
+PvP enabled=PvP käytössä
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 on @2:n suojaama.
+Wow, wow, take it easy!=Vau, vau, ota rauhallisesti!
+PvP is not allowed in this area!=PvP ei ole sallittua tällä alueella!
+
+### internal.lua ###
+
+Area is too big.=Alue on liian suuri.
+
+Self protection is disabled or you do not have the necessary privilege.=Itsesuojaus on poistettu käytöstä tai sinulla ei ole tarvittavia oikeuksia.
+
+The area intersects with @1 [@2] (@3).=Alue leikkaa @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Olet saavuttanut enimmäismäärän alueita, joita voit suojella.
+
+### pos.lua ###
+
+<not set>=<ei asetettu>
+Area @1 selected.=Alue @1 valittu.
+Area position @1 set to @2=Alueen sijainti @1 asetettu @2:een
+Position @1 set to @2=Asento @1 asetettu @2:een
+Position @1:=Asema @1:
+Select an area by ID.=Valitse alue tunnuksen mukaan.
+Select position @1 by punching a node.=Valitse sijainti @1 lyömällä solmua.
+Select positions by punching two nodes.=Valitse sijainnit lyömällä kaksi solmua.
+
+Set area protection region position @1 to your location or the one specified=Aseta alueen suoja-alueen sijainti @1 omaan tai määritettyyn sijaintiin.
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Aseta alueen suoja-alue, sijainti 1 tai sijainti 2 lyömällä solmuja tai näytä alue.
+
+The area @1 does not exist.=Aluetta @1 ei ole olemassa.
+Unable to get position.=En pysty saamaan sijaintia.
+Unknown subcommand: @1=Tuntematon alakomento: @1
+
+### protector.lua ###
+
+Protector Block=Suojalohko
+You are not allowed to protect that area: @1=Et saa suojella tätä aluetta: @1
+You have already protected this area.=Olet jo suojellut tätä aluetta.
+The area from @1 to @2 has been protected as ID @3=Alue @1:n ja @2:n välillä on suojattu tunnuksella @3.
+Protected area @1, Owned by @2=Suojeltu alue @1, jonka omistaa @2.

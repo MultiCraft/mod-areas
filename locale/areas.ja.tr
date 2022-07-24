@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<エリア名>
+<NewOwner>=<ニューオーナーズ
+<ParentID>=<ParentID>
+<PlayerName>=<プレーヤー名>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=1は、エリア「@2」（ID @3）の制御をあなたに与えています。
+@1 spanning up to @2x@3x@4.=1は、@2x@3x@4までスパンしています。
+A regular expression is required.=正規表現が必要です。
+Area @1 does not exist or is not owned by you.=エリア@1は存在しないか、またはお客様が所有していない。
+Area closed for faction members.=派閥のメンバーにはエリアが閉鎖されています。
+Area closed.=エリアは終了しました。
+Area does not exist.=エリアが存在しない。
+Area opened for faction members.=ファクションメンバーのためのエリアがオープン。
+Area opened.=開設したエリア
+Area protected. ID: @1=保護されている地域ID@1
+Area renamed.=エリア名を変更しました。
+Area successfully moved.=エリア移動に成功しました。
+Change the owner of an area using its ID=IDを使用して領域のオーナーを変更する
+Find areas using a Lua regular expression=Luaの正規表現で領域を検索する
+Get information about area configuration and usage.=エリアの構成と使用状況に関する情報を取得します。
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=すでに保護されている2つの位置の間のサブ領域にアクセスできるようにします。親を設定したくない場合は set_owner を使用します。
+
+Invalid regular expression.=正規表現が無効です。
+Limit: @1 areas=制限する。1エリア
+Limit: no area count limit=制限：エリアカウントの制限なし
+List your areas=対象地域一覧
+Move (or resize) an area to the current positions.=領域を現在の位置に移動（またはサイズ変更）する。
+No matches found.=該当するものがありません。
+No visible areas.=見える部分はありません。
+Too many areas to list all!=たくさんありすぎて、全部は紹介しきれません
+Owner changed.=所有者が変更になりました。
+Players with the "@1" privilege can protect up to @2 areas=1 "権限を持つプレイヤーは、最大で"@2 "のエリアを保護することができます。
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=2つのポジションの間にあるエリアを保護し、そのエリアの親を既存のエリアに設定することなく、プレイヤーにアクセスさせることができます。
+
+Protect your own area=自分のエリアは自分で守る
+Recursively remove areas using an ID=IDを用いた再帰的な領域削除
+Remove an area using an ID=IDを用いた領域の削除
+Removed area @1=削除された領域 @1
+Removed area @1 and it's sub areas.=エリア@1およびそのサブエリアを削除しました。
+Removes all ownerless areas=オーナー不在のエリアをすべて削除
+Rename an area that you own=所有するエリアの名前を変更する
+Self protection is disabled.=自己保護機能は無効です。
+Self protection is enabled.=自己保護機能が有効です。
+That area doesn't exist.=その領域は存在しないのです。
+The player "@1" does not exist.=プレイヤー"@1 "は存在しない。
+Toggle an area open (anyone can interact) or closed=エリアをオープン（誰でも参加可能）またはクローズにトグルする
+Toggle an area open/closed for members in your faction.=所属する派閥のメンバーに対して、エリアのオープン/クローズを切り替えます。
+You are an area administrator ("areas" privilege).=あなたはエリア管理者です（「エリア」権限）。
+You can protect areas=エリアを保護することができます
+You can't protect that area.=そのあたりは守れない。
+You can't protect that area: @1=その辺は守れない。@1
+You don't have the necessary privilege ("@1").=必要な権限（"@1"）を持っていない。
+You don't own that area.=その地域はあなたの所有物ではありません。
+You have @1 areas.=エリアは@1つです。
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=エリア#@1の制御が許可されました。 /list_areasと入力すると、自分のエリアが表示されます。
+
+You have extended area protection limits ("areas_high_limit" privilege).=エリアプロテクションの制限を拡張している（"areas_high_limit "権限）。
+
+You have the necessary privilege ("@1").=必要な権限（"@1"）を持っている。
+You need to select an area first.=まずエリアを選択する必要があります。
+
+You cannot enable PvP, there are other players in the area: @1.=他のプレイヤーがいるため、PvPを有効にできません。@1.
+PvP is @1 in area @2.=PvPはエリア@2で@1。
+enabled=使用可能
+disabled=使用禁止
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=無効な使用方法です。/help @1 を参照してください。
+
+### hud.lua ###
+
+Areas:=エリア
+Open=オープン
+PvP enabled=PvP対応
+
+### interact.lua ###
+
+@1 is protected by @2.=1は@2によって保護されています。
+Wow, wow, take it easy!=わ、わ、わ、無理しないでね！？
+PvP is not allowed in this area!=このエリアではPvPは禁止されています
+
+### internal.lua ###
+
+Area is too big.=面積が広すぎる。
+
+Self protection is disabled or you do not have the necessary privilege.=セルフプロテクションが無効になっているか、必要な権限がない。
+
+The area intersects with @1 [@2] (@3).=この領域は、@1 [@2] (@3) と交差している。
+
+You have reached the maximum amount of areas that you are allowed to protect.=保護できるエリアが上限に達しています。
+
+### pos.lua ###
+
+<not set>=<未設定
+Area @1 selected.=エリア@1が選択されました。
+Area position @1 set to @2=エリア位置 @1 を @2 に設定
+Position @1 set to @2=ポジション @1 を @2 に設定
+Position @1:=ポジション@1。
+Select an area by ID.=IDでエリアを選択します。
+Select position @1 by punching a node.=ノードパンチでポジション@1を選択します。
+Select positions by punching two nodes.=2つのノードをパンチしてポジションを選択します。
+
+Set area protection region position @1 to your location or the one specified=領域保護領域位置 @1 を自分の位置または指定した位置に設定する
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=領域保護領域、位置1、位置2をノードパンチで設定、または領域表示
+
+The area @1 does not exist.=領域@1が存在しない。
+Unable to get position.=ポジションが取れない。
+Unknown subcommand: @1=不明なサブコマンドです。@1
+
+### protector.lua ###
+
+Protector Block=プロテクターブロック
+You are not allowed to protect that area: @1=その部分を保護することは禁止されています。@1
+You have already protected this area.=この辺はもう守りましたね。
+The area from @1 to @2 has been protected as ID @3=1から@2までをID@3として保護しました。
+Protected area @1, Owned by @2=保護地域@1、所有者@2

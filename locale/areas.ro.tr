@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaName>
+<NewOwner>=<NewOwner>
+<ParentID>=<ParentID>
+<PlayerName>=<Numejucător>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=@1 v-a acordat controlul asupra zonei "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 care se întinde până la @2x@3x@4.
+A regular expression is required.=Este necesară o expresie regulată.
+Area @1 does not exist or is not owned by you.=Zona @1 nu există sau nu vă aparține.
+Area closed for faction members.=Zonă închisă pentru membrii facțiunii.
+Area closed.=Zona închisă.
+Area does not exist.=Zona nu există.
+Area opened for faction members.=Zonă deschisă pentru membrii facțiunii.
+Area opened.=Zona deschisă.
+Area protected. ID: @1=Zona protejată. ID: @1
+Area renamed.=Zona a fost redenumită.
+Area successfully moved.=Zona a fost mutată cu succes.
+Change the owner of an area using its ID=Schimbarea proprietarului unei zone folosind ID-ul acesteia
+Find areas using a Lua regular expression=Găsiți zone folosind o expresie regulată Lua
+Get information about area configuration and usage.=Obțineți informații despre configurația și utilizarea zonei.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Oferă unui jucător acces la o subzonă între două poziții care au fost deja protejate. Folosiți set_owner dacă nu doriți ca părintele să fie setat.
+
+Invalid regular expression.=Expresie regulată invalidă.
+Limit: @1 areas=Limită: @1 zone
+Limit: no area count limit=Limită: nu există o limită a numărului de zone
+List your areas=Enumerați domeniile dvs.
+Move (or resize) an area to the current positions.=Deplasează (sau redimensionează) o zonă în pozițiile curente.
+No matches found.=Nu s-a găsit nicio potrivire.
+No visible areas.=Nu există zone vizibile.
+Too many areas to list all!=Prea multe domenii pentru a le enumera pe toate!
+Owner changed.=Proprietar schimbat.
+Players with the "@1" privilege can protect up to @2 areas=Jucătorii cu privilegiul "@1" pot proteja până la @2 zone.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Protejați o zonă între două poziții și permiteți accesul unui jucător la aceasta fără a seta părintele zonei pe o zonă existentă.
+
+Protect your own area=Protejați-vă propria zonă
+Recursively remove areas using an ID=Eliminarea recurentă a zonelor folosind un ID
+Remove an area using an ID=Îndepărtarea unei zone cu ajutorul unui ID
+Removed area @1=Zona eliminată @1
+Removed area @1 and it's sub areas.=Eliminat zona @1 și subzonele sale.
+Removes all ownerless areas=Elimină toate zonele fără proprietar
+Rename an area that you own=Redenumiți o zonă pe care o dețineți
+Self protection is disabled.=Autoprotecția este dezactivată.
+Self protection is enabled.=Autoprotecția este activată.
+That area doesn't exist.=Acea zonă nu există.
+The player "@1" does not exist.=Jucătorul "@1" nu există.
+Toggle an area open (anyone can interact) or closed=Comutați o zonă deschisă (oricine poate interacționa) sau închisă
+Toggle an area open/closed for members in your faction.=Comută o zonă deschisă/închisă pentru membrii facțiunii tale.
+You are an area administrator ("areas" privilege).=Sunteți un administrator de zonă (privilegiu "zone").
+You can protect areas=Puteți proteja zonele
+You can't protect that area.=Nu poți proteja acea zonă.
+You can't protect that area: @1=Nu poți proteja acea zonă: @1
+You don't have the necessary privilege ("@1").=Nu aveți privilegiul necesar ("@1").
+You don't own that area.=Nu ești proprietarul acelei zone.
+You have @1 areas.=Aveți @1 domenii.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Vi s-a acordat controlul asupra zonei #@1. Tastați /list_areas pentru a vă afișa zonele.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Aveți limite extinse de protecție a zonelor (privilegiu "areas_high_limit").
+
+You have the necessary privilege ("@1").=Aveți privilegiul necesar ("@1").
+You need to select an area first.=Mai întâi trebuie să selectați o zonă.
+
+You cannot enable PvP, there are other players in the area: @1.=Nu puteți activa PvP, există alți jucători în zonă: @1.
+PvP is @1 in area @2.=PvP este @1 în zona @2.
+enabled=activat
+disabled=dezactivat
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Utilizare invalidă, a se vedea /help @1.
+
+### hud.lua ###
+
+Areas:=Domenii:
+Open=Deschideți
+PvP enabled=PvP activat
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 este protejat de @2.
+Wow, wow, take it easy!=Uau, uau, ia-o ușor!
+PvP is not allowed in this area!=PvP nu este permis în această zonă!
+
+### internal.lua ###
+
+Area is too big.=Zona este prea mare.
+
+Self protection is disabled or you do not have the necessary privilege.=Autoprotecția este dezactivată sau nu dispuneți de privilegiul necesar.
+
+The area intersects with @1 [@2] (@3).=Zona se intersectează cu @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Ați atins numărul maxim de zone pe care aveți voie să le protejați.
+
+### pos.lua ###
+
+<not set>=<nu este setat>
+Area @1 selected.=Zona @1 selectată.
+Area position @1 set to @2=Poziția zonei @1 setată la @2
+Position @1 set to @2=Poziția @1 setată la @2
+Position @1:=Poziția @1:
+Select an area by ID.=Selectați o zonă după ID.
+Select position @1 by punching a node.=Selectați poziția @1 prin perforarea unui nod.
+Select positions by punching two nodes.=Selectați pozițiile prin perforarea a două noduri.
+
+Set area protection region position @1 to your location or the one specified=Setați poziția regiunii de protecție a zonei @1 la locația dvs. sau la cea specificată
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Setați regiunea de protecție a zonei, poziția 1 sau poziția 2 prin perforarea nodurilor sau afișați regiunea
+
+The area @1 does not exist.=Zona @1 nu există.
+Unable to get position.=Nu se poate obține poziția.
+Unknown subcommand: @1=Subcomandă necunoscută: @1
+
+### protector.lua ###
+
+Protector Block=Protector Bloc
+You are not allowed to protect that area: @1=Nu aveți voie să protejați acea zonă: @1
+You have already protected this area.=Ați protejat deja această zonă.
+The area from @1 to @2 has been protected as ID @3=Zona de la @1 la @2 a fost protejată ca ID @3
+Protected area @1, Owned by @2=Arie protejată @1, Deținută de @2

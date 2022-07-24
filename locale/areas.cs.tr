@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<Název oblasti>
+<NewOwner>=<NewOwner>
+<ParentID>=<ParentID>
+<PlayerName>=<Jméno hráče>
+<newName>=<nové jméno>
+@1 has given you control over the area "@2" (ID @3).=@1 vám předal kontrolu nad oblastí "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 s rozpětím až @2x@3x@4.
+A regular expression is required.=Je vyžadován regulární výraz.
+Area @1 does not exist or is not owned by you.=Oblast @1 neexistuje nebo není vaším vlastnictvím.
+Area closed for faction members.=Oblast je pro členy frakce uzavřena.
+Area closed.=Uzavřená oblast.
+Area does not exist.=Oblast neexistuje.
+Area opened for faction members.=Oblast otevřena pro členy frakce.
+Area opened.=Otevřená oblast.
+Area protected. ID: @1=Chráněná oblast. ID: @1
+Area renamed.=Přejmenování oblasti.
+Area successfully moved.=Úspěšně přesunutá oblast.
+Change the owner of an area using its ID=Změna vlastníka oblasti pomocí jejího ID
+Find areas using a Lua regular expression=Vyhledání oblastí pomocí regulárního výrazu jazyka Lua
+Get information about area configuration and usage.=Získejte informace o konfiguraci a použití oblasti.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Umožnit hráči přístup k podoblasti mezi dvěma pozicemi, které již byly chráněny, Použijte set_owner, pokud nechcete, aby byl nastaven rodič.
+
+Invalid regular expression.=Neplatný regulární výraz.
+Limit: @1 areas=Limit: @1 oblast
+Limit: no area count limit=Omezení: bez omezení počtu ploch
+List your areas=Uveďte své oblasti
+Move (or resize) an area to the current positions.=Přesunutí (nebo změna velikosti) oblasti na aktuální pozice.
+No matches found.=Nebyly nalezeny žádné shody.
+No visible areas.=Žádné viditelné oblasti.
+Too many areas to list all!=Příliš mnoho oblastí na to, abychom je všechny vyjmenovali!
+Owner changed.=Změnil se majitel.
+Players with the "@1" privilege can protect up to @2 areas=Hráči s oprávněním "@1" mohou chránit až @2 oblasti.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Chránit oblast mezi dvěma pozicemi a umožnit hráči přístup k ní, aniž by byl rodič oblasti nastaven na jakoukoli existující oblast.
+
+Protect your own area=Chraňte svůj vlastní prostor
+Recursively remove areas using an ID=Rekurzivní odstranění oblastí pomocí ID
+Remove an area using an ID=Odstranění oblasti pomocí ID
+Removed area @1=Odstraněná oblast @1
+Removed area @1 and it's sub areas.=Odstraněna oblast @1 a její podoblasti.
+Removes all ownerless areas=Odstraní všechny oblasti bez vlastníka
+Rename an area that you own=Přejmenování oblasti, kterou vlastníte
+Self protection is disabled.=Vlastní ochrana je vypnutá.
+Self protection is enabled.=Vlastní ochrana je povolena.
+That area doesn't exist.=Tato oblast neexistuje.
+The player "@1" does not exist.=Hráč "@1" neexistuje.
+Toggle an area open (anyone can interact) or closed=Přepnout oblast na otevřenou (kdokoli může komunikovat) nebo uzavřenou.
+Toggle an area open/closed for members in your faction.=Přepínání otevřené/uzavřené oblasti pro členy vaší frakce.
+You are an area administrator ("areas" privilege).=Jste správce oblasti (oprávnění "areas").
+You can protect areas=Oblasti můžete chránit
+You can't protect that area.=Tuto oblast nemůžete chránit.
+You can't protect that area: @1=Tuto oblast nemůžete chránit: @1
+You don't have the necessary privilege ("@1").=Nemáte potřebné oprávnění ("@1").
+You don't own that area.=Tato oblast vám nepatří.
+You have @1 areas.=Máte @1 oblast.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Byla vám udělena kontrola nad oblastí #@1. Zadáním příkazu /list_areas zobrazíte své oblasti.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Máte rozšířené limity ochrany oblasti (oprávnění "areas_high_limit").
+
+You have the necessary privilege ("@1").=Máte potřebné oprávnění ("@1").
+You need to select an area first.=Nejprve je třeba vybrat oblast.
+
+You cannot enable PvP, there are other players in the area: @1.=Nemůžete povolit PvP, v oblasti jsou další hráči: @1.
+PvP is @1 in area @2.=PvP je @1 v oblasti @2.
+enabled=povoleno
+disabled=zakázané
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Nesprávné použití, viz /help @1.
+
+### hud.lua ###
+
+Areas:=Oblasti:
+Open=Otevřít
+PvP enabled=PvP povoleno
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 je chráněn @2.
+Wow, wow, take it easy!=Páni, páni, uklidněte se!
+PvP is not allowed in this area!=PvP není v této oblasti povoleno!
+
+### internal.lua ###
+
+Area is too big.=Plocha je příliš velká.
+
+Self protection is disabled or you do not have the necessary privilege.=Vlastní ochrana je zakázána nebo nemáte potřebné oprávnění.
+
+The area intersects with @1 [@2] (@3).=Oblast se protíná s @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Dosáhli jste maximálního počtu oblastí, které můžete chránit.
+
+### pos.lua ###
+
+<not set>=<není nastaveno>
+Area @1 selected.=Vybraná oblast @1.
+Area position @1 set to @2=Poloha oblasti @1 nastavena na @2
+Position @1 set to @2=Pozice @1 nastavena na @2
+Position @1:=Pozice @1:
+Select an area by ID.=Vyberte oblast podle ID.
+Select position @1 by punching a node.=Vyberte pozici @1 vyražením uzlu.
+Select positions by punching two nodes.=Vyberte pozice vyražením dvou uzlů.
+
+Set area protection region position @1 to your location or the one specified=Nastavení pozice oblasti ochrany oblasti @1 na vaši polohu nebo na zadanou polohu
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Nastavte oblast ochrany oblasti, pozici 1 nebo pozici 2 pomocí uzlů nebo zobrazte oblast.
+
+The area @1 does not exist.=Oblast @1 neexistuje.
+Unable to get position.=Nelze získat pozici.
+Unknown subcommand: @1=Neznámý dílčí příkaz: @1
+
+### protector.lua ###
+
+Protector Block=Ochranný blok
+You are not allowed to protect that area: @1=Tuto oblast nesmíte chránit: @1
+You have already protected this area.=Tuto oblast jste již chránili.
+The area from @1 to @2 has been protected as ID @3=Oblast od @1 do @2 byla chráněna jako ID @3
+Protected area @1, Owned by @2=Chráněné území @1, Ve vlastnictví @2

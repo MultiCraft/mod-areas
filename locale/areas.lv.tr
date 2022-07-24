@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaName>
+<NewOwner>=<Jaunsīpašnieks>
+<ParentID>=<ParentID>
+<PlayerName>=<PlayerName>
+<newName>=<jauns nosaukums>
+@1 has given you control over the area "@2" (ID @3).=@1 ir piešķīris jums kontroli pār apgabalu "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1, kas aptver līdz @2x@3x@4.
+A regular expression is required.=Ir nepieciešama regulārā izteiksme.
+Area @1 does not exist or is not owned by you.=Laukums @1 neeksistē vai nepieder jums.
+Area closed for faction members.=Zona slēgta frakcijas locekļiem.
+Area closed.=Teritorija slēgta.
+Area does not exist.=Teritorija neeksistē.
+Area opened for faction members.=Frakciju dalībniekiem atvērta zona.
+Area opened.=Atvērtā teritorija.
+Area protected. ID: @1=Aizsargājamā teritorija. ID: @1
+Area renamed.=Teritorijas pārdēvēšana.
+Area successfully moved.=Veiksmīgi pārvietots apgabals.
+Change the owner of an area using its ID=Mainīt apgabala īpašnieku, izmantojot tā ID
+Find areas using a Lua regular expression=Rajonu atrašana, izmantojot Lua regulāro izteiksmi
+Get information about area configuration and usage.=Saņemiet informāciju par apgabala konfigurāciju un izmantošanu.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Piešķiriet spēlētājam piekļuvi apakšzonai starp divām pozīcijām, kas jau ir aizsargātas, Izmantojiet set_owner, ja nevēlaties, lai tiktu iestatīts vecāks.
+
+Invalid regular expression.=Nederīga regulārā izteiksme.
+Limit: @1 areas=Ierobežojums: @1 apgabals
+Limit: no area count limit=Ierobežojums: nav platību skaita ierobežojuma
+List your areas=Uzskaitiet savas jomas
+Move (or resize) an area to the current positions.=Pārvietot (vai mainīt izmēru) apgabalu uz pašreizējām pozīcijām.
+No matches found.=Nav atrasts neviens sakritenis.
+No visible areas.=Nav redzamu laukumu.
+Too many areas to list all!=Pārāk daudz jomu, lai uzskaitītu visas!
+Owner changed.=Mainīts īpašnieks.
+Players with the "@1" privilege can protect up to @2 areas=Spēlētāji ar "@1" privilēģiju var aizsargāt līdz pat @2 apgabaliem.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Aizsargājiet apgabalu starp divām pozīcijām un dodiet spēlētājam piekļuvi tam, nenosakot apgabala vecāku nevienam esošajam apgabalam.
+
+Protect your own area=Aizsargājiet savu teritoriju
+Recursively remove areas using an ID=Rekursīvi noņemt apgabalus, izmantojot ID
+Remove an area using an ID=Noņemt apgabalu, izmantojot ID
+Removed area @1=Noņemtais apgabals @1
+Removed area @1 and it's sub areas.=Noņemts apgabals @1 un tā apakšapgabali.
+Removes all ownerless areas=Noņem visus apgabalus bez īpašnieka
+Rename an area that you own=Pārdēvēt jums piederošu apgabalu
+Self protection is disabled.=Pašaizsardzība ir atspējota.
+Self protection is enabled.=Pašaizsardzība ir iespējota.
+That area doesn't exist.=Šī teritorija neeksistē.
+The player "@1" does not exist.=Spēlētājs "@1" neeksistē.
+Toggle an area open (anyone can interact) or closed=Pārslēgt apgabalu uz atvērtu (ikviens var mijiedarboties) vai slēgtu.
+Toggle an area open/closed for members in your faction.=Pārslēdziet apgabala atvēršanu/aizvēršanu savas frakcijas biedriem.
+You are an area administrator ("areas" privilege).=Jūs esat apgabala administrators ("apgabalu" privilēģija).
+You can protect areas=Varat aizsargāt apgabalus.
+You can't protect that area.=Jūs nevarat aizsargāt šo teritoriju.
+You can't protect that area: @1=Jūs nevarat aizsargāt šo teritoriju: @1
+You don't have the necessary privilege ("@1").=Jums nav nepieciešamās privilēģijas ("@1").
+You don't own that area.=Šī teritorija jums nepieder.
+You have @1 areas.=Jums ir @1 apgabals.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Jums ir piešķirta kontrole pār apgabalu #@1. Lai parādītu apgabalus, ievadiet /list_areas.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Jums ir paplašināti apgabala aizsardzības ierobežojumi (privilēģija "areas_high_limit").
+
+You have the necessary privilege ("@1").=Jums ir nepieciešamās privilēģijas ("@1").
+You need to select an area first.=Vispirms ir jāizvēlas apgabals.
+
+You cannot enable PvP, there are other players in the area: @1.=Jūs nevarat aktivizēt PvP, jo šajā zonā ir citi spēlētāji: @1.
+PvP is @1 in area @2.=PvP ir @1 zonā @2.
+enabled=iespējots
+disabled=invalīdiem
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Nepareiza lietošana, skatiet /help @1.
+
+### hud.lua ###
+
+Areas:=Jomas:
+Open=Atvērt
+PvP enabled=Ieslēgts PvP
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 ir aizsargāts ar @2.
+Wow, wow, take it easy!=Wow, wow, ņemiet to mierīgi!
+PvP is not allowed in this area!=PvP šajā zonā nav atļauts!
+
+### internal.lua ###
+
+Area is too big.=Platība ir pārāk liela.
+
+Self protection is disabled or you do not have the necessary privilege.=Pašaizsardzība ir atspējota vai arī jums nav nepieciešamo privilēģiju.
+
+The area intersects with @1 [@2] (@3).=Platība krustojas ar @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Ir sasniegts maksimālais aizsargājamo apgabalu skaits.
+
+### pos.lua ###
+
+<not set>=<nav iestatīts>
+Area @1 selected.=Izvēlēts apgabals @1.
+Area position @1 set to @2=Platības pozīcija @1 iestatīta uz @2
+Position @1 set to @2=Pozīcija @1 iestatīta uz @2
+Position @1:=Pozīcija @1:
+Select an area by ID.=Atlasiet apgabalu pēc ID.
+Select position @1 by punching a node.=Izvēlieties pozīciju @1, nospiežot mezglu.
+Select positions by punching two nodes.=Izvēlieties pozīcijas, izdarot perforāciju divos mezglos.
+
+Set area protection region position @1 to your location or the one specified=Iestatiet apgabala aizsardzības reģiona pozīciju @1 savā vai norādītajā atrašanās vietā
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Iestatiet apgabala aizsardzības apgabalu, pozīciju 1 vai pozīciju 2, caurvelkot mezglus, vai parādiet apgabalu.
+
+The area @1 does not exist.=Laukums @1 neeksistē.
+Unable to get position.=Nevar iegūt pozīciju.
+Unknown subcommand: @1=Nezināms apakškomands: @1
+
+### protector.lua ###
+
+Protector Block=Aizsargu bloks
+You are not allowed to protect that area: @1=Jums nav atļauts aizsargāt šo zonu: @1
+You have already protected this area.=Jūs jau esat aizsargājis šo teritoriju.
+The area from @1 to @2 has been protected as ID @3=Teritorija no @1 līdz @2 ir aizsargāta kā ID @3
+Protected area @1, Owned by @2=Aizsargājamā teritorija @1, Īpašnieks @2

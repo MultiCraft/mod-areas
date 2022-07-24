@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<ZoneName>
+<NewOwner>=<Chủ sở hữu mới>
+<ParentID>=<RelatedID>
+<PlayerName>=<PlayerName>
+<newName>=<Tên mới>
+@1 has given you control over the area "@2" (ID @3).=@1 đã cấp cho bạn quyền kiểm soát khu vực "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 bao gồm tối đa @2x @3x @4.
+A regular expression is required.=Biểu thức chính quy là bắt buộc.
+Area @1 does not exist or is not owned by you.=Khu vực @1 không tồn tại hoặc không thuộc về bạn.
+Area closed for faction members.=Khu vực này bị đóng cửa đối với các thành viên của phe phái.
+Area closed.=Khu vực này đã đóng cửa.
+Area does not exist.=Vùng không tồn tại.
+Area opened for faction members.=Khu vực này mở cửa cho các thành viên trong phe.
+Area opened.=Khu vực mở cửa.
+Area protected. ID: @1=Khu được bảo vệ. ID: @1
+Area renamed.=Khu vực đã được đổi tên.
+Area successfully moved.=Khu vực đã được di chuyển thành công.
+Change the owner of an area using its ID=Thay đổi chủ sở hữu của một khu vực bằng cách sử dụng ID của khu vực đó
+Find areas using a Lua regular expression=Tìm vùng với Biểu thức chính quy Lua
+Get information about area configuration and usage.=Nhận thông tin về cấu hình và sử dụng khu vực.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Cấp cho người chơi quyền truy cập vào vùng phụ giữa hai vị trí đã được bảo vệ Sử dụng set_owner nếu bạn không muốn thiết lập cấp độ chính.
+
+Invalid regular expression.=Biểu thức chính quy không hợp lệ.
+Limit: @1 areas=Giới hạn: @1 vùng
+Limit: no area count limit=Giới hạn: không giới hạn số lượng khu vực
+List your areas=Danh sách các khu vực của bạn
+Move (or resize) an area to the current positions.=Di chuyển (hoặc thay đổi kích thước) khu vực đến vị trí hiện tại của nó.
+No matches found.=Lọc kết quả tìm thấy.
+No visible areas.=Không có khu vực nào có thể nhìn thấy được.
+Too many areas to list all!=Quá nhiều khu vực để hiển thị mọi thứ.
+Owner changed.=Chủ sở hữu đã được thay đổi.
+Players with the "@1" privilege can protect up to @2 areas=Người chơi có đặc quyền "@1" có thể bảo vệ tối đa @2 khu vực
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Bảo vệ một khu vực giữa hai vị trí và cấp cho người chơi quyền truy cập vào nó, mà không đặt khu vực chính thành bất kỳ khu vực hiện có nào
+
+Protect your own area=Bảo vệ lãnh thổ của bạn
+Recursively remove areas using an ID=Xóa định kỳ các khu vực bằng cách sử dụng ID của họ
+Remove an area using an ID=Xóa một vùng bằng cách sử dụng ID của nó
+Removed area @1=Đã xóa vùng @1
+Removed area @1 and it's sub areas.=Đã xóa vùng @1 và các vùng con của nó.
+Removes all ownerless areas=Loại bỏ tất cả các khu mồ côi
+Rename an area that you own=Đổi tên khu vực bạn sở hữu
+Self protection is disabled.=Đã mở khóa bảo vệ.
+Self protection is enabled.=Bảo vệ trên.
+That area doesn't exist.=Vùng này không tồn tại.
+The player "@1" does not exist.=Trình phát "@1" không tồn tại.
+Toggle an area open (anyone can interact) or closed=Làm cho khu vực mở (bất kỳ ai cũng có thể tương tác) hoặc đóng
+Toggle an area open/closed for members in your faction.=Chuyển đổi trạng thái mở / đóng cho các thành viên trong phe của bạn.
+You are an area administrator ("areas" privilege).=Bạn là quản trị viên khu vực (đặc quyền "khu vực").
+You can protect areas=Bạn có thể bảo vệ khu vực
+You can't protect that area.=Bạn không thể bảo vệ khu vực.
+You can't protect that area: @1=Bạn có thể bảo vệ khu vực: @1
+You don't have the necessary privilege ("@1").=Bạn không có đặc quyền bắt buộc ("@1").
+You don't own that area.=Bạn không sở hữu khu vực này.
+You have @1 areas.=Bạn có @1 khu vực.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Bạn đã được cấp quyền kiểm soát vùng # @1. Nhập / list_areas để hiển thị các khu vực của bạn.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Bạn có giới hạn bảo vệ vùng mở rộng (đặc quyền "area_high_limit").
+
+You have the necessary privilege ("@1").=Bạn có đặc quyền bắt buộc ("@1").
+You need to select an area first.=Trước tiên, bạn cần chọn một khu vực.
+
+You cannot enable PvP, there are other players in the area: @1.=Bạn không thể kích hoạt PvP, có những người chơi khác trong khu vực: @1.
+PvP is @1 in area @2.=PvP @1 trong vùng @2.
+enabled=bao gồm
+disabled=tắt
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Sử dụng sai, xem / help @1.
+
+### hud.lua ###
+
+Areas:=Khu vực:
+Open=Mở
+PvP enabled=PvP trên
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 được bảo vệ bởi @2.
+Wow, wow, take it easy!=Chà, từ từ!
+PvP is not allowed in this area!=PvP bị tắt trong khu vực này!
+
+### internal.lua ###
+
+Area is too big.=Diện tích quá lớn.
+
+Self protection is disabled or you do not have the necessary privilege.=Bảo mật bị vô hiệu hóa hoặc bạn không có đặc quyền cần thiết.
+
+The area intersects with @1 [@2] (@3).=Vùng giao với @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Bạn đã đạt đến số khu vực tối đa mà bạn được phép bảo vệ.
+
+### pos.lua ###
+
+<not set>=<chưa được cài đặt>
+Area @1 selected.=Đã chọn vùng @1.
+Area position @1 set to @2=Vị trí vùng @1 được đặt thành @2
+Position @1 set to @2=Vị trí @1 được đặt thành @2
+Position @1:=Vị trí @1:
+Select an area by ID.=Chọn khu vực theo ID.
+Select position @1 by punching a node.=Chọn vị trí @1 bằng cách nhấn vào khối.
+Select positions by punching two nodes.=Chọn vị trí bằng cách đánh hai khối.
+
+Set area protection region position @1 to your location or the one specified=Đặt khu vực bảo vệ @1 đến vị trí của bạn hoặc được chỉ định.
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Đặt khu vực phòng thủ khu vực, vị trí 1 hoặc vị trí 2 bằng cách nhấn vào các nút hoặc khu vực hiển thị
+
+The area @1 does not exist.=Vùng @1 không tồn tại
+Unable to get position.=Không thể có được vị trí.
+Unknown subcommand: @1=Lệnh con không xác định: @1
+
+### protector.lua ###
+
+Protector Block=Khối bảo vệ
+You are not allowed to protect that area: @1=Bạn không được phép bảo vệ khu vực này: @1
+You have already protected this area.=Bạn đã bảo mật khu vực này.
+The area from @1 to @2 has been protected as ID @3=Vùng @1 đến @2 đã được bảo mật, ID @3
+Protected area @1, Owned by @2=Khu bảo tồn @1, Chủ sở hữu: @2

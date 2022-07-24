@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<RuimteNaam>
+<NewOwner>=<NewOwner>
+<ParentID>=<ParentID>
+<PlayerName>=<Spelersnaam>
+<newName>=<nieuwe naam>
+@1 has given you control over the area "@2" (ID @3).=@1 heeft u de controle gegeven over het gebied "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 overlopend tot @2x@3x@4.
+A regular expression is required.=Een reguliere expressie is vereist.
+Area @1 does not exist or is not owned by you.=Gebied @1 bestaat niet of is geen eigendom van u.
+Area closed for faction members.=Gebied gesloten voor factie leden.
+Area closed.=Gebied gesloten.
+Area does not exist.=Gebied bestaat niet.
+Area opened for faction members.=Gebied geopend voor factie leden.
+Area opened.=Gebied geopend.
+Area protected. ID: @1=Gebied beschermd. ID: @1
+Area renamed.=Gebied hernoemd.
+Area successfully moved.=Gebied succesvol verplaatst.
+Change the owner of an area using its ID=Verander de eigenaar van een gebied met behulp van zijn ID
+Find areas using a Lua regular expression=Zoek gebieden met een Lua reguliere expressie
+Get information about area configuration and usage.=Verkrijg informatie over gebiedsconfiguratie en -gebruik.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Geef een speler toegang tot een deelgebied tussen twee posities die al beschermd zijn, Gebruik set_owner als je niet wilt dat de ouder ingesteld wordt.
+
+Invalid regular expression.=Ongeldige reguliere uitdrukking.
+Limit: @1 areas=Limiet: @1 gebieden
+Limit: no area count limit=Limiet: geen limiet voor het aantal gebieden
+List your areas=Maak een lijst van uw gebieden
+Move (or resize) an area to the current positions.=Verplaats (of resize) een gebied naar de huidige posities.
+No matches found.=Geen overeenkomsten gevonden.
+No visible areas.=Geen zichtbare gebieden.
+Too many areas to list all!=Te veel gebieden om allemaal op te noemen!
+Owner changed.=Eigenaar veranderd.
+Players with the "@1" privilege can protect up to @2 areas=Spelers met de "@1" privilege kunnen tot @2 gebieden beschermen
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Bescherm een gebied tussen twee posities en geef een speler toegang tot het gebied zonder de ouder van het gebied op een bestaand gebied te zetten
+
+Protect your own area=Bescherm je eigen gebied
+Recursively remove areas using an ID=Recursief gebieden verwijderen met een ID
+Remove an area using an ID=Verwijder een gebied met behulp van een ID
+Removed area @1=Verwijderd gebied @1
+Removed area @1 and it's sub areas.=Gebied @1 en zijn subgebieden verwijderd.
+Removes all ownerless areas=Verwijdert alle eigenaarloze gebieden
+Rename an area that you own=Hernoem een gebied dat u bezit
+Self protection is disabled.=Zelfbescherming is uitgeschakeld.
+Self protection is enabled.=Zelfbescherming is ingeschakeld.
+That area doesn't exist.=Dat gebied bestaat niet.
+The player "@1" does not exist.=De speler "@1" bestaat niet.
+Toggle an area open (anyone can interact) or closed=Toggle een gebied open (iedereen kan reageren) of gesloten
+Toggle an area open/closed for members in your faction.=Schakelt een gebied open/gesloten voor leden van jouw factie.
+You are an area administrator ("areas" privilege).=U bent een gebiedsbeheerder ("gebieden" voorrecht).
+You can protect areas=U kunt gebieden beschermen
+You can't protect that area.=Je kunt dat gebied niet beschermen.
+You can't protect that area: @1=Je kunt dat gebied niet beschermen: @1
+You don't have the necessary privilege ("@1").=Je hebt niet het vereiste privilege ("@1").
+You don't own that area.=Je bezit dat gebied niet.
+You have @1 areas.=Je hebt @1 gebieden.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=U heeft controle gekregen over gebied #@1. Typ /list_areas om uw gebieden te tonen.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Je hebt uitgebreide gebiedsbeschermingslimieten ("areas_high_limit" privilege).
+
+You have the necessary privilege ("@1").=U hebt het vereiste privilege ("@1").
+You need to select an area first.=Je moet eerst een gebied kiezen.
+
+You cannot enable PvP, there are other players in the area: @1.=U kunt PvP niet inschakelen, er zijn andere spelers in het gebied: @1.
+PvP is @1 in area @2.=PvP is @1 in gebied @2.
+enabled=ingeschakeld
+disabled=uitgeschakeld
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Ongeldig gebruik, zie /help @1.
+
+### hud.lua ###
+
+Areas:=Gebieden:
+Open=Open
+PvP enabled=PvP ingeschakeld
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 wordt beschermd door @2.
+Wow, wow, take it easy!=Wow, wow, rustig aan!
+PvP is not allowed in this area!=PvP is niet toegestaan in dit gebied!
+
+### internal.lua ###
+
+Area is too big.=Het gebied is te groot.
+
+Self protection is disabled or you do not have the necessary privilege.=Zelfbescherming is uitgeschakeld of u hebt niet het vereiste privilege.
+
+The area intersects with @1 [@2] (@3).=Het gebied snijdt met @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=U hebt het maximum aantal gebieden bereikt dat u mag beschermen.
+
+### pos.lua ###
+
+<not set>=<niet ingesteld>
+Area @1 selected.=Gebied @1 geselecteerd.
+Area position @1 set to @2=Gebiedspositie @1 ingesteld op @2
+Position @1 set to @2=Positie @1 ingesteld op @2
+Position @1:=Positie @1:
+Select an area by ID.=Selecteer een gebied op ID.
+Select position @1 by punching a node.=Selecteer positie @1 door een knooppunt te ponsen.
+Select positions by punching two nodes.=Selecteer posities door twee knooppunten te ponsen.
+
+Set area protection region position @1 to your location or the one specified=Stel gebiedsbescherming positie @1 in op uw locatie of de opgegeven locatie
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Stel gebiedsbescherming in, positie 1, of positie 2 door knopen te ponsen, of toon het gebied
+
+The area @1 does not exist.=Het gebied @1 bestaat niet.
+Unable to get position.=Kan geen positie krijgen.
+Unknown subcommand: @1=Onbekende subcommando: @1
+
+### protector.lua ###
+
+Protector Block=Beschermer Blok
+You are not allowed to protect that area: @1=Je mag dat gebied niet beschermen: @1
+You have already protected this area.=Je hebt dit gebied al beschermd.
+The area from @1 to @2 has been protected as ID @3=Het gebied van @1 tot @2 is beschermd als ID @3
+Protected area @1, Owned by @2=Beschermd gebied @1, Eigendom van @2

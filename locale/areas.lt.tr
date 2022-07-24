@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaName>
+<NewOwner>=<Naujasis savininkas>
+<ParentID>=<ParentID>
+<PlayerName>=<PlayerName>
+<newName>=<naujas pavadinimas>
+@1 has given you control over the area "@2" (ID @3).="@1" suteikė jums valdyti sritį "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1, apimantis iki @2x@3x@4.
+A regular expression is required.=Būtina reguliarioji išraiška.
+Area @1 does not exist or is not owned by you.=Sritys @1 neegzistuoja arba nepriklauso jums.
+Area closed for faction members.=Frakcijos nariams teritorija uždaryta.
+Area closed.=Uždaryta teritorija.
+Area does not exist.=Plotas neegzistuoja.
+Area opened for faction members.=Frakcijos nariams atverta sritis.
+Area opened.=Atidaryta sritis.
+Area protected. ID: @1=Saugoma teritorija. ID: @1
+Area renamed.=Pakeistas vietovės pavadinimas.
+Area successfully moved.=Sritis sėkmingai perkelta.
+Change the owner of an area using its ID=Pakeiskite srities savininką naudodami jos ID
+Find areas using a Lua regular expression=sričių paieška naudojant "Lua" reguliariąją išraišką
+Get information about area configuration and usage.=Gaukite informacijos apie srities konfigūraciją ir naudojimą.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Suteikite žaidėjui prieigą prie papildomos srities, esančios tarp dviejų jau apsaugotų pozicijų, Naudokite set_owner, jei nenorite, kad būtų nustatytas tėvinis elementas.
+
+Invalid regular expression.=Netinkama reguliarioji išraiška.
+Limit: @1 areas=riba: @1 sritis
+Limit: no area count limit=Apribojimas: nėra ploto skaičiaus apribojimo
+List your areas=Išvardykite savo sritis
+Move (or resize) an area to the current positions.=Perkelkite (arba pakeiskite dydį) sritį į dabartines pozicijas.
+No matches found.=Rungtynių nerasta.
+No visible areas.=Nėra matomų sričių.
+Too many areas to list all!=Per daug sričių, kad jas visas išvardytume!
+Owner changed.=Pasikeitė savininkas.
+Players with the "@1" privilege can protect up to @2 areas=Žaidėjai, turintys "@1" privilegiją, gali apsaugoti iki @2 sričių.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Apsaugokite sritį tarp dviejų pozicijų ir suteikite žaidėjui prieigą prie jos, nenustatydami srities tėvinės reikšmės jokiai esamai sričiai.
+
+Protect your own area=Apsaugokite savo teritoriją
+Recursively remove areas using an ID=Rekursyviai pašalinkite sritis naudodami ID
+Remove an area using an ID=Pašalinti sritį naudojant ID
+Removed area @1=Pašalinta sritis @1
+Removed area @1 and it's sub areas.=Pašalinta @1 sritis ir jos dalinės sritys.
+Removes all ownerless areas=Pašalinamos visos bešeimininkės teritorijos
+Rename an area that you own=Pervardykite jums priklausančią sritį
+Self protection is disabled.=Savisauga išjungta.
+Self protection is enabled.=Įjungta savisauga.
+That area doesn't exist.=Šios srities nėra.
+The player "@1" does not exist.=Žaidėjas "@1" neegzistuoja.
+Toggle an area open (anyone can interact) or closed=Perjunkite sritį į atvirą (bet kas gali sąveikauti) arba uždarą.
+Toggle an area open/closed for members in your faction.=Perjunkite atvirą / uždarą sritį savo frakcijos nariams.
+You are an area administrator ("areas" privilege).=Esate srities administratorius (privilegija "sritis").
+You can protect areas=Galite apsaugoti sritis
+You can't protect that area.=Negalite apsaugoti tos srities.
+You can't protect that area: @1=Negalite apsaugoti tos srities: @1
+You don't have the necessary privilege ("@1").=Neturite reikiamos privilegijos ("@1").
+You don't own that area.=Ši teritorija jums nepriklauso.
+You have @1 areas.=Turite @1 sritį.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Jums buvo suteiktas srities #@1 valdymas. Įveskite /list_areas, kad parodytumėte savo sritis.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Išplėstos srities apsaugos ribos (privilegija "areas_high_limit").
+
+You have the necessary privilege ("@1").=Turite reikiamą privilegiją ("@1").
+You need to select an area first.=Pirmiausia reikia pasirinkti sritį.
+
+You cannot enable PvP, there are other players in the area: @1.=Negalite įjungti PvP, nes teritorijoje yra kitų žaidėjų: @1.
+PvP is @1 in area @2.=PvP yra @1 zonoje @2.
+enabled=įjungtas
+disabled=neįgalieji
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Netinkamas naudojimas, žr. /help @1.
+
+### hud.lua ###
+
+Areas:=Sritys:
+Open=Atviras
+PvP enabled=Įjungtas PvP
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 yra apsaugotas @2.
+Wow, wow, take it easy!=Oho, oho, nusiraminkite!
+PvP is not allowed in this area!=Šioje zonoje neleidžiama žaisti PvP!
+
+### internal.lua ###
+
+Area is too big.=Plotas per didelis.
+
+Self protection is disabled or you do not have the necessary privilege.=Savisauga yra išjungta arba neturite reikiamos privilegijos.
+
+The area intersects with @1 [@2] (@3).=Plotas susikerta su @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Pasiekėte didžiausią leistiną saugomų sričių skaičių.
+
+### pos.lua ###
+
+<not set>=<nenurodyta>
+Area @1 selected.=Pasirinkta @1 sritis.
+Area position @1 set to @2=Ploto padėtis @1 nustatyta į @2
+Position @1 set to @2=Pozicija @1 nustatyta į @2
+Position @1:=Pozicija @1:
+Select an area by ID.=Pasirinkite sritį pagal ID.
+Select position @1 by punching a node.=Pasirinkite poziciją @1, perbraukdami mazgą.
+Select positions by punching two nodes.=Pasirinkite pozicijas perbraukdami du mazgus.
+
+Set area protection region position @1 to your location or the one specified=Nustatykite srities apsaugos regiono poziciją @1 į savo arba nurodytą vietą
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Nustatykite srities apsaugos regioną, 1 arba 2 poziciją perbraukiant mazgus arba rodykite regioną
+
+The area @1 does not exist.=Plotas @1 neegzistuoja.
+Unable to get position.=Nepavyksta gauti pozicijos.
+Unknown subcommand: @1=Nežinoma subkomanda: @1
+
+### protector.lua ###
+
+Protector Block=Apsauginis blokas
+You are not allowed to protect that area: @1=Jums neleidžiama saugoti tos srities: @1
+You have already protected this area.=Jūs jau apsaugojote šią sritį.
+The area from @1 to @2 has been protected as ID @3=Teritorija nuo @1 iki @2 buvo apsaugota kaip ID @3
+Protected area @1, Owned by @2=Saugoma teritorija @1, priklauso @2

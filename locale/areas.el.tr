@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<Όνομα περιοχής>
+<NewOwner>=<NewOwner>
+<ParentID>=<ParentID>
+<PlayerName>=<Όνομα παίκτη>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=Το @1 σας έδωσε τον έλεγχο της περιοχής "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 που εκτείνεται μέχρι @2x@3x@4.
+A regular expression is required.=Απαιτείται μια κανονική έκφραση.
+Area @1 does not exist or is not owned by you.=Η περιοχή @1 δεν υπάρχει ή δεν σας ανήκει.
+Area closed for faction members.=Περιοχή κλειστή για τα μέλη της παράταξης.
+Area closed.=Περιοχή κλειστή.
+Area does not exist.=Η περιοχή δεν υπάρχει.
+Area opened for faction members.=Περιοχή που άνοιξε για τα μέλη της παράταξης.
+Area opened.=Περιοχή που άνοιξε.
+Area protected. ID: @1=Προστατευόμενη περιοχή. ID: @1
+Area renamed.=Μετονομασία περιοχής.
+Area successfully moved.=Περιοχή που μετακινήθηκε επιτυχώς.
+Change the owner of an area using its ID=Αλλαγή του ιδιοκτήτη μιας περιοχής χρησιμοποιώντας το αναγνωριστικό της
+Find areas using a Lua regular expression=Εύρεση περιοχών χρησιμοποιώντας μια κανονική έκφραση Lua
+Get information about area configuration and usage.=Λήψη πληροφοριών σχετικά με τη διαμόρφωση και τη χρήση της περιοχής.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Δώστε σε έναν παίκτη πρόσβαση σε μια υποπεριοχή μεταξύ δύο θέσεων που έχουν ήδη προστατευτεί, Χρησιμοποιήστε το set_owner αν δεν θέλετε να οριστεί ο γονέας.
+
+Invalid regular expression.=Μη έγκυρη κανονική έκφραση.
+Limit: @1 areas=Όριο: @1 περιοχές
+Limit: no area count limit=Όριο: δεν υπάρχει όριο αριθμού περιοχών
+List your areas=Καταγράψτε τους τομείς σας
+Move (or resize) an area to the current positions.=Μετακίνηση (ή αλλαγή μεγέθους) μιας περιοχής στις τρέχουσες θέσεις.
+No matches found.=Δεν βρέθηκαν αντιστοιχίες.
+No visible areas.=Δεν υπάρχουν ορατές περιοχές.
+Too many areas to list all!=Πάρα πολλοί τομείς για να τους απαριθμήσω όλους!
+Owner changed.=Ο ιδιοκτήτης άλλαξε.
+Players with the "@1" privilege can protect up to @2 areas=Οι παίκτες με το προνόμιο "@1" μπορούν να προστατεύσουν έως και @2 περιοχές.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Προστατεύστε μια περιοχή μεταξύ δύο θέσεων και δώστε σε έναν παίκτη πρόσβαση σε αυτήν χωρίς να ορίσετε τον γονέα της περιοχής σε κάποια υπάρχουσα περιοχή.
+
+Protect your own area=Προστατέψτε τη δική σας περιοχή
+Recursively remove areas using an ID=Αναδρομική αφαίρεση περιοχών χρησιμοποιώντας ένα ID
+Remove an area using an ID=Αφαίρεση μιας περιοχής χρησιμοποιώντας ένα αναγνωριστικό
+Removed area @1=Αφαιρεθείσα περιοχή @1
+Removed area @1 and it's sub areas.=Αφαίρεση της περιοχής @1 και των υποπεριοχών της.
+Removes all ownerless areas=Αφαιρεί όλες τις περιοχές χωρίς ιδιοκτήτη
+Rename an area that you own=Μετονομασία μιας περιοχής που σας ανήκει
+Self protection is disabled.=Η αυτοπροστασία είναι απενεργοποιημένη.
+Self protection is enabled.=Η αυτοπροστασία είναι ενεργοποιημένη.
+That area doesn't exist.=Αυτή η περιοχή δεν υπάρχει.
+The player "@1" does not exist.=Ο παίκτης "@1" δεν υπάρχει.
+Toggle an area open (anyone can interact) or closed=Εναλλαγή μιας περιοχής ανοιχτής (οποιοσδήποτε μπορεί να αλληλεπιδράσει) ή κλειστής
+Toggle an area open/closed for members in your faction.=Αλλάξτε μια περιοχή ανοιχτή/κλειστή για τα μέλη της παράταξής σας.
+You are an area administrator ("areas" privilege).=Είστε διαχειριστής περιοχής (προνόμιο "περιοχές").
+You can protect areas=Μπορείτε να προστατεύσετε περιοχές
+You can't protect that area.=Δεν μπορείτε να προστατεύσετε αυτή την περιοχή.
+You can't protect that area: @1=Δεν μπορείτε να προστατεύσετε αυτή την περιοχή: @1
+You don't have the necessary privilege ("@1").=Δεν έχετε το απαραίτητο προνόμιο ("@1").
+You don't own that area.=Δεν σας ανήκει αυτή η περιοχή.
+You have @1 areas.=Έχετε @1 περιοχές.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Σας έχει παραχωρηθεί ο έλεγχος της περιοχής #@1. Πληκτρολογήστε /list_areas για να εμφανίσετε τις περιοχές σας.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Έχετε διευρυμένα όρια προστασίας περιοχής ("areas_high_limit" προνόμιο).
+
+You have the necessary privilege ("@1").=Έχετε το απαραίτητο προνόμιο ("@1").
+You need to select an area first.=Πρέπει πρώτα να επιλέξετε μια περιοχή.
+
+You cannot enable PvP, there are other players in the area: @1.=Δεν μπορείτε να ενεργοποιήσετε το PvP, υπάρχουν άλλοι παίκτες στην περιοχή: @1.
+PvP is @1 in area @2.=Το PvP είναι @1 στην περιοχή @2.
+enabled=ενεργοποιημένη
+disabled=disabled
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Μη έγκυρη χρήση, δείτε /help @1.
+
+### hud.lua ###
+
+Areas:=Περιοχές:
+Open=Ανοίξτε το
+PvP enabled=Ενεργό PvP
+
+### interact.lua ###
+
+@1 is protected by @2.=Το @1 προστατεύεται από το @2.
+Wow, wow, take it easy!=Ουάου, ουάου, ηρέμησε!
+PvP is not allowed in this area!=Το PvP δεν επιτρέπεται σε αυτή την περιοχή!
+
+### internal.lua ###
+
+Area is too big.=Η περιοχή είναι πολύ μεγάλη.
+
+Self protection is disabled or you do not have the necessary privilege.=Η αυτοπροστασία είναι απενεργοποιημένη ή δεν έχετε τα απαραίτητα δικαιώματα.
+
+The area intersects with @1 [@2] (@3).=Η περιοχή τέμνεται με την @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Έχετε φτάσει στο μέγιστο αριθμό περιοχών που επιτρέπεται να προστατεύσετε.
+
+### pos.lua ###
+
+<not set>=<δεν έχει οριστεί>
+Area @1 selected.=Επιλεγμένη περιοχή @1.
+Area position @1 set to @2=Θέση περιοχής @1 που ορίζεται σε @2
+Position @1 set to @2=Θέση @1 που ορίζεται σε @2
+Position @1:=Θέση @1:
+Select an area by ID.=Επιλέξτε μια περιοχή με ID.
+Select position @1 by punching a node.=Επιλέξτε τη θέση @1 χτυπώντας έναν κόμβο.
+Select positions by punching two nodes.=Επιλέξτε θέσεις με διάτρηση δύο κόμβων.
+
+Set area protection region position @1 to your location or the one specified=Ορίστε τη θέση @1 της περιοχής προστασίας περιοχής στη θέση σας ή σε αυτή που έχει καθοριστεί.
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Ορίστε την περιοχή προστασίας περιοχής, τη θέση 1 ή τη θέση 2 με διάτρηση των κόμβων ή εμφανίστε την περιοχή
+
+The area @1 does not exist.=Η περιοχή @1 δεν υπάρχει.
+Unable to get position.=Αδυναμία λήψης θέσης.
+Unknown subcommand: @1=Άγνωστη υποεντολή: @1
+
+### protector.lua ###
+
+Protector Block=Μπλοκ προστασίας
+You are not allowed to protect that area: @1=Δεν επιτρέπεται να προστατεύσετε αυτή την περιοχή: @1
+You have already protected this area.=Έχετε ήδη προστατεύσει αυτή την περιοχή.
+The area from @1 to @2 has been protected as ID @3=Η περιοχή από @1 έως @2 προστατεύεται ως ID @3
+Protected area @1, Owned by @2=Προστατευόμενη περιοχή @1, ιδιοκτησία @2

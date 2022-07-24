@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaName>.
+<NewOwner>=<NewOwner>.
+<ParentID>=<ParentID>.
+<PlayerName>=<PlayerName>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=@1 przekazał Ci kontrolę nad obszarem "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 rozpiętość do @2x@3x@4.
+A regular expression is required.=Wymagane jest podanie wyrażenia regularnego.
+Area @1 does not exist or is not owned by you.=Obszar @1 nie istnieje lub nie jest własnością użytkownika.
+Area closed for faction members.=Obszar zamknięty dla członków frakcji.
+Area closed.=Obszar zamknięty.
+Area does not exist.=Obszar nie istnieje.
+Area opened for faction members.=Obszar otwarty dla członków frakcji.
+Area opened.=Obszar otwarty.
+Area protected. ID: @1=Obszar chroniony. ID: @1
+Area renamed.=Zmiana nazwy obszaru.
+Area successfully moved.=Obszar przeniesiony z powodzeniem.
+Change the owner of an area using its ID=Zmień właściciela obszaru używając jego ID
+Find areas using a Lua regular expression=Znajdź obszary używając wyrażenia regularnego Lua
+Get information about area configuration and usage.=Uzyskaj informacje o konfiguracji i wykorzystaniu obszaru.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Daj graczowi dostęp do podobszaru pomiędzy dwoma pozycjami, które zostały już zabezpieczone, Użyj set_owner, jeśli nie chcesz, aby rodzic został ustawiony.
+
+Invalid regular expression.=Nieprawidłowe wyrażenie regularne.
+Limit: @1 areas=Limit: @1 obszarów
+Limit: no area count limit=Limit: brak limitu liczby obszarów
+List your areas=Wymień swoje obszary
+Move (or resize) an area to the current positions.=Przesuń (lub zmień rozmiar) obszar do aktualnych pozycji.
+No matches found.=Nie znaleziono dopasowań.
+No visible areas.=Brak widocznych miejsc.
+Too many areas to list all!=Zbyt wiele obszarów, by wymienić wszystkie!
+Owner changed.=Właściciel zmieniony.
+Players with the "@1" privilege can protect up to @2 areas=Gracze z uprawnieniami "@1" mogą chronić do @2 obszarów
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Zabezpiecz obszar pomiędzy dwoma pozycjami i daj graczowi dostęp do niego bez ustawiania rodzica obszaru na istniejący obszar
+
+Protect your own area=Chroń swój własny obszar
+Recursively remove areas using an ID=Rekursywne usuwanie obszarów przy użyciu identyfikatora
+Remove an area using an ID=Usuń obszar przy użyciu identyfikatora
+Removed area @1=Usunięty obszar @1
+Removed area @1 and it's sub areas.=Usunięto obszar @1 i jego podobszary.
+Removes all ownerless areas=Usuwa wszystkie obszary bez właściciela
+Rename an area that you own=Zmień nazwę obszaru, którego jesteś właścicielem
+Self protection is disabled.=Samoochrona jest wyłączona.
+Self protection is enabled.=Samoochrona jest włączona.
+That area doesn't exist.=Ten obszar nie istnieje.
+The player "@1" does not exist.=Gracz "@1" nie istnieje.
+Toggle an area open (anyone can interact) or closed=Przełączanie obszaru otwartego (każdy może wejść w interakcję) lub zamkniętego
+Toggle an area open/closed for members in your faction.=Przełącza obszar otwarty/zamknięty dla członków twojej frakcji.
+You are an area administrator ("areas" privilege).=Jesteś administratorem obszaru (uprawnienie "obszary").
+You can protect areas=Można chronić obszary
+You can't protect that area.=Nie można chronić tego obszaru.
+You can't protect that area: @1=Nie można chronić tego obszaru: @1
+You don't have the necessary privilege ("@1").=Nie masz odpowiedniego uprawnienia ("@1").
+You don't own that area.=Nie jesteś właścicielem tego terenu.
+You have @1 areas.=Masz @1 obszarów.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Otrzymałeś kontrolę nad obszarem #@1. Wpisz /list_areas, aby pokazać swoje obszary.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Masz rozszerzone limity ochrony obszarów (uprawnienie "areas_high_limit").
+
+You have the necessary privilege ("@1").=Masz niezbędne uprawnienia ("@1").
+You need to select an area first.=Najpierw trzeba wybrać obszar.
+
+You cannot enable PvP, there are other players in the area: @1.=Nie można włączyć PvP, w okolicy są inni gracze: @1.
+PvP is @1 in area @2.=PvP jest @1 w obszarze @2.
+enabled=włączony
+disabled=wyłączony
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>.
+Invalid usage, see /help @1.=Nieprawidłowe użycie, zobacz /help @1.
+
+### hud.lua ###
+
+Areas:=Obszary:
+Open=Otwórz
+PvP enabled=Włączony PvP
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 jest chroniony przez @2.
+Wow, wow, take it easy!=Wow, wow, spokojnie!
+PvP is not allowed in this area!=PvP nie jest dozwolone na tym obszarze!
+
+### internal.lua ###
+
+Area is too big.=Obszar jest zbyt duży.
+
+Self protection is disabled or you do not have the necessary privilege.=Samoochrona jest wyłączona lub nie masz niezbędnych uprawnień.
+
+The area intersects with @1 [@2] (@3).=Obszar ten przecina się z @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Osiągnąłeś maksymalną ilość obszarów, które możesz chronić.
+
+### pos.lua ###
+
+<not set>=<nie ustawiono>.
+Area @1 selected.=Obszar @1 wybrany.
+Area position @1 set to @2=Pozycja obszaru @1 ustawiona na @2
+Position @1 set to @2=Pozycja @1 ustawiona na @2
+Position @1:=Pozycja @1:
+Select an area by ID.=Wybierz obszar według ID.
+Select position @1 by punching a node.=Wybierz pozycję @1 poprzez wykrawanie węzła.
+Select positions by punching two nodes.=Wybierz pozycje poprzez wykrawanie dwóch węzłów.
+
+Set area protection region position @1 to your location or the one specified=Ustaw pozycję regionu ochrony obszaru @1 na swoją lub określoną lokalizację
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Ustawić region ochrony obszaru, pozycję 1 lub pozycję 2 poprzez wykrawanie węzłów, lub wyświetlić region
+
+The area @1 does not exist.=Obszar @1 nie istnieje.
+Unable to get position.=Nie można uzyskać pozycji.
+Unknown subcommand: @1=Nieznane podkomendne: @1
+
+### protector.lua ###
+
+Protector Block=Blok ochronny
+You are not allowed to protect that area: @1=Nie wolno chronić tego obszaru: @1
+You have already protected this area.=Już zabezpieczyłeś ten obszar.
+The area from @1 to @2 has been protected as ID @3=Obszar od @1 do @2 został zabezpieczony jako ID @3
+Protected area @1, Owned by @2=Obszar chroniony @1, własność @2

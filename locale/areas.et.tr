@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaNimi>
+<NewOwner>=<NewOwner>
+<ParentID>=<ParentID>
+<PlayerName>=<MängijaNimi>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=@1 on andnud teile kontrolli ala "@2" (ID @3) üle.
+@1 spanning up to @2x@3x@4.=@1, mis ulatub kuni @2x@3x@4.
+A regular expression is required.=Vajalik on regulaaravaldis.
+Area @1 does not exist or is not owned by you.=Ala @1 ei ole olemas või ei kuulu teile.
+Area closed for faction members.=Fraktsiooni liikmetele suletud ala.
+Area closed.=Piirkond suletud.
+Area does not exist.=Ala ei ole olemas.
+Area opened for faction members.=Fraktsiooni liikmetele avatud ala.
+Area opened.=Ala avatud.
+Area protected. ID: @1=Kaitstud ala. ID: @1
+Area renamed.=Ala ümbernimetatud.
+Area successfully moved.=Edukalt liigutatud ala.
+Change the owner of an area using its ID=Ala omaniku muutmine selle ID abil
+Find areas using a Lua regular expression=Alade leidmine Lua regulaaravaldise abil
+Get information about area configuration and usage.=Saate teavet piirkonna konfiguratsiooni ja kasutamise kohta.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Anda mängijale ligipääs kahe juba kaitstud positsiooni vahelisele alale, Kasuta set_owner, kui sa ei taha, et vanem oleks määratud.
+
+Invalid regular expression.=Lubamatu regulaaravaldis.
+Limit: @1 areas=Piirang: @1 ala
+Limit: no area count limit=Piirang: pindalalimiit puudub
+List your areas=Loetlege oma valdkonnad
+Move (or resize) an area to the current positions.=Liigutage (või muutke suuruse järgi) ala praegustele positsioonidele.
+No matches found.=Vasteid ei leitud.
+No visible areas.=Ei ole nähtavad alad.
+Too many areas to list all!=Liiga palju valdkondi, et neid kõiki loetleda!
+Owner changed.=Omanik muutunud.
+Players with the "@1" privilege can protect up to @2 areas="@1" privileegiga mängijad võivad kaitsta kuni @2 ala.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Kaitse ala kahe positsiooni vahel ja anna mängijale juurdepääs sellele, ilma et selle ala vanema määraks mis tahes olemasolevale alale.
+
+Protect your own area=Kaitske oma ala
+Recursively remove areas using an ID=Piirkondade rekursiivne eemaldamine ID abil
+Remove an area using an ID=Piirkonna eemaldamine ID abil
+Removed area @1=Eemaldatud ala @1
+Removed area @1 and it's sub areas.=Eemaldatud ala @1 ja selle alampiirkonnad.
+Removes all ownerless areas=Eemaldab kõik omanikuta alad
+Rename an area that you own=Oma ala ümbernimetamine
+Self protection is disabled.=Enesekaitse on välja lülitatud.
+Self protection is enabled.=Enesekaitse on lubatud.
+That area doesn't exist.=Seda ala ei ole olemas.
+The player "@1" does not exist.=Mängijat "@1" ei ole olemas.
+Toggle an area open (anyone can interact) or closed=Lülita ala avatuks (igaüks saab suhelda) või suletuks.
+Toggle an area open/closed for members in your faction.=Lülita ala oma fraktsiooni liikmete jaoks avatuks/suletuks.
+You are an area administrator ("areas" privilege).=Te olete piirkonna administraator ("piirkondade" privileeg).
+You can protect areas=Saate kaitsta alasid
+You can't protect that area.=Te ei saa seda ala kaitsta.
+You can't protect that area: @1=Te ei saa seda ala kaitsta: @1
+You don't have the necessary privilege ("@1").=Teil ei ole vajalikke õigusi ("@1").
+You don't own that area.=See ala ei kuulu teile.
+You have @1 areas.=Teil on @1 valdkond.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Teile on antud kontroll piirkonna #@1 üle. Kirjutage /list_areas, et näidata oma piirkondi.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Teil on laiendatud ala kaitsepiirangud ("areas_high_limit" privileeg).
+
+You have the necessary privilege ("@1").=Teil on vajalikud õigused ("@1").
+You need to select an area first.=Kõigepealt tuleb valida piirkond.
+
+You cannot enable PvP, there are other players in the area: @1.=Sa ei saa lubada PvP-d, piirkonnas on teisi mängijaid: @1.
+PvP is @1 in area @2.=PvP on @1 piirkonnas @2.
+enabled=lubatud
+disabled=puudega
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Vale kasutusviis, vt /help @1.
+
+### hud.lua ###
+
+Areas:=Valdkonnad:
+Open=Avatud
+PvP enabled=PvP lubatud
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 on kaitstud @2 poolt.
+Wow, wow, take it easy!=Wow, wow, võta rahulikult!
+PvP is not allowed in this area!=PvP ei ole selles piirkonnas lubatud!
+
+### internal.lua ###
+
+Area is too big.=Piirkond on liiga suur.
+
+Self protection is disabled or you do not have the necessary privilege.=Enesekaitse on välja lülitatud või teil ei ole vajalikke õigusi.
+
+The area intersects with @1 [@2] (@3).=Piirkond lõikub punktiga @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Te olete jõudnud maksimaalse arvu alasid, mida teil on lubatud kaitsta.
+
+### pos.lua ###
+
+<not set>=<ei ole määratud>
+Area @1 selected.=Valitud ala @1.
+Area position @1 set to @2=Ala positsioon @1, mis on määratud @2-ks
+Position @1 set to @2=Positsioon @1 seatud @2-le
+Position @1:=Positsioon @1:
+Select an area by ID.=Valige ala ID järgi.
+Select position @1 by punching a node.=Valige positsioon @1, vajutades sõlme.
+Select positions by punching two nodes.=Valige positsioonid kahe sõlme löömisega.
+
+Set area protection region position @1 to your location or the one specified=Määrake piirkonna kaitsepiirkonna positsioon @1 oma või määratud asukohale.
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Määrake piirkonna kaitsepiirkond, positsioon 1 või positsioon 2 sõlmede löömise abil või kuvage piirkonda
+
+The area @1 does not exist.=Ala @1 ei ole olemas.
+Unable to get position.=Ei ole võimalik positsiooni saada.
+Unknown subcommand: @1=Tundmatu alamkäsk: @1
+
+### protector.lua ###
+
+Protector Block=Protector Block
+You are not allowed to protect that area: @1=Teil ei ole lubatud seda ala kaitsta: @1
+You have already protected this area.=Te olete seda ala juba kaitsnud.
+The area from @1 to @2 has been protected as ID @3=Piirkond @1 kuni @2 on kaitstud ID @3 all.
+Protected area @1, Owned by @2=Kaitstud ala @1, omanik @2

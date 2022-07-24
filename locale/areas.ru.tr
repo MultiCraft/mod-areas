@@ -1,6 +1,5 @@
 # textdomain: areas
 
-
 ### chatcommands.lua ###
 
 <AreaName>=<НазваниеЗоны>
@@ -106,7 +105,7 @@ You have reached the maximum amount of areas that you are allowed to protect.=В
 Area @1 selected.=Зона @1 выбрана.
 Area position @1 set to @2=Позиция зоны @1 установлена в @2
 Position @1 set to @2=Позиция @1 установлена в @2
-Position @1: =Позиция @1: 
+Position @1:=Позиция @1:
 Select an area by ID.=Выберите зону по ID.
 Select position @1 by punching a node.=Выберите позицию @1 ударом по блоку.
 Select positions by punching two nodes.=Выберите позиции ударами по двум блокам.

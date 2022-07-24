@@ -1,0 +1,127 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<TerületNév>
+<NewOwner>=<NewOwner>
+<ParentID>=<ParentID>
+<PlayerName>=<JátékosNév>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=@1 átadta neked az irányítást a "@2" terület felett (ID @3).
+@1 spanning up to @2x@3x@4.=@1, amely @2x@3x@4-ig terjed.
+A regular expression is required.=Szükség van egy reguláris kifejezésre.
+Area @1 does not exist or is not owned by you.=A @1 terület nem létezik, vagy nem az Ön tulajdonában van.
+Area closed for faction members.=A terület a frakció tagjai számára le van zárva.
+Area closed.=A terület le van zárva.
+Area does not exist.=A terület nem létezik.
+Area opened for faction members.=A frakció tagjai számára megnyitott terület.
+Area opened.=Megnyitott terület.
+Area protected. ID: @1=Védett terület. ID: @1
+Area renamed.=A területet átnevezték.
+Area successfully moved.=Sikeresen áthelyezett terület.
+Change the owner of an area using its ID=Egy terület tulajdonosának megváltoztatása az azonosító segítségével
+Find areas using a Lua regular expression=Területek keresése Lua reguláris kifejezéssel
+Get information about area configuration and usage.=Információk lekérése a terület konfigurációjáról és használatáról.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Adj hozzáférést egy játékosnak egy alterülethez két már védett pozíció között, Használd a set_owner-t, ha nem akarod, hogy a szülő be legyen állítva.
+
+Invalid regular expression.=Érvénytelen reguláris kifejezés.
+Limit: @1 areas=Határérték: @1 terület
+Limit: no area count limit=Korlátozás: nincs területszám-korlátozás
+List your areas=Sorolja fel a területeit
+Move (or resize) an area to the current positions.=Egy terület áthelyezése (vagy méretének módosítása) az aktuális pozíciókhoz.
+No matches found.=Nincs találat.
+No visible areas.=Nincsenek látható területek.
+Too many areas to list all!=Túl sok területet nem lehet felsorolni!
+Owner changed.=Tulajdonos változott.
+Players with the "@1" privilege can protect up to @2 areas=Az "@1" kiváltsággal rendelkező játékosok legfeljebb @2 területet védhetnek.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Egy terület védelme két pozíció között, és egy játékos hozzáférése a területhez anélkül, hogy a terület szülőjét egy meglévő területre állítaná be.
+
+Protect your own area=Védje a saját területét
+Recursively remove areas using an ID=Területek rekurzív eltávolítása egy azonosító segítségével
+Remove an area using an ID=Egy terület eltávolítása egy azonosító használatával
+Removed area @1=Eltávolított terület @1
+Removed area @1 and it's sub areas.=Eltávolítottuk az @1 területet és annak alterületeit.
+Removes all ownerless areas=Eltávolítja az összes tulajdonos nélküli területet
+Rename an area that you own=A tulajdonában lévő terület átnevezése
+Self protection is disabled.=Az önvédelem ki van kapcsolva.
+Self protection is enabled.=Az önvédelem engedélyezve van.
+That area doesn't exist.=Ez a terület nem létezik.
+The player "@1" does not exist.=A "@1" játékos nem létezik.
+Toggle an area open (anyone can interact) or closed=Egy terület nyitva (bárki interakcióba léphet) vagy zárva kapcsolása.
+Toggle an area open/closed for members in your faction.=Egy terület nyitva/zárva tartása a frakció tagjai számára.
+You are an area administrator ("areas" privilege).=Ön területadminisztrátor ("területek" jogosultság).
+You can protect areas=Megvédheti a területeket
+You can't protect that area.=Ezt a területet nem lehet megvédeni.
+You can't protect that area: @1=Ezt a területet nem lehet megvédeni: @1
+You don't have the necessary privilege ("@1").=Nincs meg a szükséges jogosultsága ("@1").
+You don't own that area.=Az a terület nem a tiéd.
+You have @1 areas.=Önnek @1 területe van.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Ön a #@1 terület felett rendelkezik. Írja be a /list_areas parancsot a területek megjelenítéséhez.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Kiterjesztett területvédelmi korlátokkal rendelkezik ("areas_high_limit" jogosultság).
+
+You have the necessary privilege ("@1").=Ön rendelkezik a szükséges jogosultsággal ("@1").
+You need to select an area first.=Először ki kell választania egy területet.
+
+You cannot enable PvP, there are other players in the area: @1.=Nem engedélyezheted a PvP-t, más játékosok is vannak a területen: @1.
+PvP is @1 in area @2.=PvP @1 a @2 területen.
+enabled=engedélyezve
+disabled=disabled
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID>
+Invalid usage, see /help @1.=Érvénytelen használat, lásd /help @1.
+
+### hud.lua ###
+
+Areas:=Területek:
+Open=Nyissa meg a  címet.
+PvP enabled=PvP engedélyezve
+
+### interact.lua ###
+
+@1 is protected by @2.=Az @1-et az @2 védi.
+Wow, wow, take it easy!=Hűha, hűha, nyugalom!
+PvP is not allowed in this area!=A PvP nem megengedett ezen a területen!
+
+### internal.lua ###
+
+Area is too big.=A terület túl nagy.
+
+Self protection is disabled or you do not have the necessary privilege.=Az önvédelem ki van kapcsolva, vagy nem rendelkezik a szükséges jogosultsággal.
+
+The area intersects with @1 [@2] (@3).=A terület metszi a @1 [@2] (@3) területet.
+
+You have reached the maximum amount of areas that you are allowed to protect.=Elérte a maximálisan védhető területek számát.
+
+### pos.lua ###
+
+<not set>=<Nincs beállítva>
+Area @1 selected.=A @1 terület kiválasztva.
+Area position @1 set to @2=A terület @1 pozíciója @2-re van állítva
+Position @1 set to @2=@1 pozíció @2-re állítva
+Position @1:=Pozíció @1:
+Select an area by ID.=Válasszon ki egy területet azonosító alapján.
+Select position @1 by punching a node.=Válassza ki a @1 pozíciót egy csomópont beütésével.
+Select positions by punching two nodes.=Válassza ki a pozíciókat két csomópont lyukasztásával.
+
+Set area protection region position @1 to your location or the one specified=A területvédelmi régió @1 pozíciójának beállítása a saját vagy a megadott helyére
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Területvédelmi régió, 1. vagy 2. pozíció beállítása a csomópontok lyukasztásával, vagy a régió megjelenítése
+
+The area @1 does not exist.=A @1 terület nem létezik.
+Unable to get position.=Képtelen pozícióba kerülni.
+Unknown subcommand: @1=Ismeretlen alparancs: @1
+
+### protector.lua ###
+
+Protector Block=Védőblokk
+You are not allowed to protect that area: @1=Ezt a területet nem szabad védeni: @1
+You have already protected this area.=Ezt a területet már megvédte.
+The area from @1 to @2 has been protected as ID @3=A @1 és @2 közötti területet @3 azonosítóként védik.
+Protected area @1, Owned by @2=Védett terület @1, Tulajdonos @2
