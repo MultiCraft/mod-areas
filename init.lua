@@ -4,7 +4,7 @@
 
 areas = {}
 
-local S = minetest.get_translator_auto({"ru"})
+local S = minetest.get_translator("areas")
 
 areas.S = S
 
