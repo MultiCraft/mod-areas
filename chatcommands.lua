@@ -1,4 +1,6 @@
 local S = areas.S
+local posLimit = assert(areas.posLimit)
+areas.posLimit = nil
 
 minetest.register_chatcommand("protect", {
 	params = S("<AreaName>"),
@@ -491,5 +493,63 @@ minetest.register_chatcommand("area_pvp", {
 		areas:save()
 		return true, S("PvP is @1 in area @2.",
 			not canPvP and S("enabled") or S("disabled"), id)
+	end
+})
+
+local function move_or_resize_area(name, param, resize)
+	local id, dir, amount = param:match("^(%d+)%s([XYZxyz])%s([%-%d]+)$")
+	amount = tonumber(amount)
+	if not amount then
+		return false, S("Invalid usage, see /help @1.", resize and "resize_area" or "move_area")
+	end
+
+	id = tonumber(id)
+	if not id then
+		return false, S("That area doesn't exist.")
+	end
+
+	local area = areas.areas[id]
+	if not area or not areas:isAreaOwner(id, name) then
+		return false, S("Area @1 does not exist or is not owned by you.", id)
+	end
+
+	local delta = {x = 0, y = 0, z = 0}
+	delta[dir:lower()] = amount
+	local pos1, pos2 = vector.sort(area.pos1, area.pos2)
+	if not resize then
+		pos1 = posLimit(vector.add(pos1, delta))
+	end
+
+	pos2 = posLimit(vector.add(pos2, delta))
+	local ok, err = areas:canPlayerAddArea(pos1, pos2, name)
+	if not ok then
+		return false, S("You can't move that area there: @1", err)
+	end
+
+	if pos2.x < pos1.x or pos2.y < pos1.y or pos2.z < pos1.z then
+		return false, S("You can't make that area that small.")
+	end
+
+	areas:move(id, area, pos1, pos2)
+
+	-- TODO: Consider only calling areas:save() here once every few seconds
+	areas:save()
+
+	return true, resize and S("Area resized.") or S("Area moved.")
+end
+
+minetest.register_chatcommand("move_area", {
+	params = S("<ID>").." "..S("<X|Y|Z>").." "..S("<Amount>"),
+	description = S("Moves an area"),
+	func = function(name, param)
+		return move_or_resize_area(name, param, false)
+	end
+})
+
+minetest.register_chatcommand("resize_area", {
+	params = S("<ID>").." "..S("<X|Y|Z>").." "..S("<Amount>"),
+	description = S("Resizes an area"),
+	func = function(name, param)
+		return move_or_resize_area(name, param, true)
 	end
 })
