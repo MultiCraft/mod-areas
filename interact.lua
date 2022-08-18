@@ -78,8 +78,9 @@ end)
 
 local old_calculate_knockback = minetest.calculate_knockback
 function minetest.calculate_knockback(player, hitter, time_from_last_punch, ...)
-	if hitter and hitter:is_player() and (time_from_last_punch < 0.25 or
-			not can_pvp_at(player:get_pos()) or not can_pvp_at(hitter:get_pos())) then
+	if player:is_player() and hitter and hitter:is_player() and
+			(time_from_last_punch < 0.25 or not can_pvp_at(player:get_pos()) or
+			not can_pvp_at(hitter:get_pos())) then
 		return 0
 	end
 	return old_calculate_knockback(player, hitter, time_from_last_punch, ...)
