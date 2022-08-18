@@ -40,8 +40,10 @@ minetest.register_on_protection_violation(function(pos, name)
 end)
 
 local function can_pvp_at(pos)
-	for _, area in pairs(areas:getAreasAtPos(pos)) do
-		if area.canPvP then
+	for id in pairs(areas:getAreasAtPos(pos)) do
+		-- This uses areas:canPvP instead of area.canPvP in case areas:canPvP
+		-- is overridden
+		if areas:canPvP(id) then
 			return true
 		end
 	end
