@@ -39,6 +39,15 @@ minetest.register_on_protection_violation(function(pos, name)
 	end
 end)
 
+local function can_pvp_at(pos)
+	for _, area in pairs(areas:getAreasAtPos(pos)) do
+		if area.canPvP then
+			return true
+		end
+	end
+	return false
+end
+
 minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 	if not enable_damage then
 		return true
@@ -57,37 +66,21 @@ minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 		return true
 	end
 
-	local hitterInPvP
-	-- Check if the hitter is in an area with allowed PvP
-	local hitterAreas = areas:getAreasAtPos(hitter:get_pos())
-	-- If the table is empty, PvP is not allowed
-	if not next(hitterAreas) then
-		return true
-	end
-	-- Do any of the areas have allowed PvP?
-	for _, area in pairs(hitterAreas) do
-		if area.canPvP then
-			hitterInPvP = true
-			break
-		end
-	end
-
-	if hitterInPvP then
-		-- Check if the victim is in an area with allowed PvP
-		local victimAreas = areas:getAreasAtPos(player:get_pos())
-		-- If the table is empty, PvP is not allowed
-		if not next(victimAreas) then
-			return true
-		end
-		-- Do any of the areas have allowed PvP?
-		for _, area in pairs(victimAreas) do
-			if area.canPvP then
-				return false
-			end
-		end
+	-- Allow PvP if both players are in a PvP area
+	if can_pvp_at(hitter:get_pos()) and can_pvp_at(player:get_pos()) then
+		return false
 	end
 
 	-- Otherwise, it doesn't do damage
 	minetest.chat_send_player(player_name, S("PvP is not allowed in this area!"))
 	return true
 end)
+
+local old_calculate_knockback = minetest.calculate_knockback
+function minetest.calculate_knockback(player, hitter, time_from_last_punch, ...)
+	if hitter and hitter:is_player() and (time_from_last_punch < 0.25 or
+			not can_pvp_at(player:get_pos()) or not can_pvp_at(hitter:get_pos())) then
+		return 0
+	end
+	return old_calculate_knockback(player, hitter, time_from_last_punch, ...)
+end
