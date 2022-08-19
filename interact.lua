@@ -29,11 +29,8 @@ minetest.register_on_protection_violation(function(pos, name)
 			end
 			local player_pos = player:get_pos()
 			if pos.y < player_pos.y then
-				player:set_pos({
-					x = player_pos.x,
-					y = player_pos.y + 1,
-					z = player_pos.z
-				})
+				player_pos.y = player_pos.y + 1
+				player:set_pos({player_pos})
 			end
 		end
 	end
