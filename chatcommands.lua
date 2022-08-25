@@ -500,7 +500,7 @@ local function move_or_resize_area(name, param, resize)
 	local id, dir, amount = param:match("^(%d+)%s([XYZxyz])%s([%-%d]+)$")
 	amount = tonumber(amount)
 	if not amount then
-		return false, S("Invalid usage, see /help @1.", resize and "resize_area" or "move_area")
+		return false, S("Invalid usage, see /help @1.", resize and "resize_area" or "move_area_by")
 	end
 
 	id = tonumber(id)
@@ -538,7 +538,7 @@ local function move_or_resize_area(name, param, resize)
 	return true, resize and S("Area resized.") or S("Area moved.")
 end
 
-minetest.register_chatcommand("move_area", {
+minetest.register_chatcommand("move_area_by", {
 	params = S("<ID>").." "..S("<X|Y|Z>").." "..S("<Amount>"),
 	description = S("Moves an area"),
 	func = function(name, param)

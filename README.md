@@ -101,7 +101,7 @@ Commands
 
   * `/area_open <ID>` -- Toggle open/closed the specified area for everyone.
 
-  * `/move_area <ID> <X|Y|Z> <Amount>` -- Moves an area in the specified
+  * `/move_area_rel <ID> <X|Y|Z> <Amount>` -- Moves an area in the specified
     direction.
     For example, to move area 1 west by 10 nodes:
 
