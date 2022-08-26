@@ -7,16 +7,6 @@ areas.hud = {}
 local vround = vector.round
 local tconcat = table.concat
 
-hud.register("areas", {
-	hud_elem_type = "text",
-	position      = {x = 0,   y =  1},
-	alignment     = {x = 1,   y = -1},
-	offset        = {x = 8,   y = -8},
-	scale         = {x = 200, y = 60},
-	text          = "",
-	number        = 0xFFFFFF
-})
-
 local function update_hud(player, name, pos)
 	local areaStrings = {
 		S("Areas:")
@@ -40,10 +30,24 @@ local function update_hud(player, name, pos)
 	-- "Areas:" text has index 1
 	local areaString = #areaStrings > 1 and tconcat(areaStrings, "\n") or ""
 
-	local phud = areas.hud[name] or {}
-	if not phud.oldAreas or phud.oldAreas ~= areaString then
-		hud.change_item(player, "areas", {text = areaString})
-		phud.oldAreas = areaString
+	local hud = areas.hud[name]
+	if not hud then
+		hud = {}
+		areas.hud[name] = hud
+		hud.areasId = player:hud_add({
+			hud_elem_type = "text",
+			name		= "Areas",
+			number		= 0xFFFFFF,
+			position	= {x = 0,   y =  1},
+			offset		= {x = 8,   y = -8},
+			scale		= {x = 200, y = 60},
+			alignment	= {x = 1,   y = -1},
+			text		= areaString
+		})
+		hud.oldAreas = areaString
+	elseif hud.oldAreas ~= areaString then
+		player:hud_change(hud.areasId, "text", areaString)
+		hud.oldAreas = areaString
 	end
 end
 
