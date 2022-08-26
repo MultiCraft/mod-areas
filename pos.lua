@@ -22,6 +22,9 @@ local function posLimit(pos)
 	}
 end
 
+-- For chatcommands.lua
+areas.posLimit = posLimit
+
 minetest.register_chatcommand("select_area", {
 	params = S("<ID>"),
 	description = S("Select an area by ID."),
