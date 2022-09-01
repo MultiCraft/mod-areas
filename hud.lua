@@ -5,14 +5,13 @@ local S = areas.S
 areas.hud = {}
 
 local vround = vector.round
-local tconcat = table.concat
+local tconcat, tinsert = table.concat, table.insert
 
 local function update_hud(player, name, pos)
-	local areaStrings = {
-		S("Areas:")
-	}
+	local areaStrings = {}
+	local getAreasAtPos = areas:getAreasAtPos(pos)
 
-	for id, area in pairs(areas:getAreasAtPos(pos)) do
+	for id, area in pairs(getAreasAtPos) do
 		areaStrings[#areaStrings + 1] = ("%s [%u] (%s)%s%s")
 			:format(area.name, id, area.owner,
 				area.open and (" [" .. S("Open") .. "]") or "",
@@ -27,9 +26,15 @@ local function update_hud(player, name, pos)
 		areaStrings[#areaStrings + 1] = str
 	end
 
-	-- "Areas:" text has index 1
-	local areaString = #areaStrings > 1 and tconcat(areaStrings, "\n") or ""
+	if areas.invite_code then
+		areaStrings[#areaStrings + 1] = areas.invite_code
+	end
 
+	if next(getAreasAtPos) then
+		tinsert(areaStrings, 1, S("Areas:"))
+	end
+
+	local areaString = tconcat(areaStrings, "\n")
 	local hud = areas.hud[name]
 	if not hud then
 		hud = {}
