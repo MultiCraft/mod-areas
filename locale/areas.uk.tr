@@ -8,7 +8,7 @@
 <PlayerName>=<Ім'яГравця>
 <newName>=<Нове Ім'я>
 @1 has given you control over the area "@2" (ID @3).=@1 дав вам контроль над областю "@2" (ID @3).
-@1 spanning up to @2x@3x@4.=@1 охоплює до @2x@3x@4.
+@1 spanning up to @2x@3x@4.=@1 охопл. до @2x@3x@4.
 A regular expression is required.=Потрібен регулярний вираз.
 Area @1 does not exist or is not owned by you.=Область @1 не існує або не належить вам.
 Area closed for faction members.=Зона закрита для членів фракції.
@@ -54,7 +54,7 @@ Toggle an area open/closed for members in your faction.=Переключити �
 You are an area administrator ("areas" privilege).=Ви є адміністратором зон (привілей "areas").
 You can protect areas=Ви можете захистити зону
 You can't protect that area.=Ви не можете захистити зону.
-You can't protect that area: @1=Ви можете захистити зону: @1
+You can't protect that area: @1=Ви не можете захистити зону: @1
 You don't have the necessary privilege ("@1").=Ви не маєте потрібного привілею ("@1").
 You don't own that area.=Ви не володієте цією зоною.
 You have @1 areas.=Ви маєте @1 зон.

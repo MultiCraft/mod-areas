@@ -107,6 +107,7 @@ minetest.register_chatcommand("add_owner", {
 		end
 
 		local id = areas:add(ownerName, areaName, pos1, pos2, pid)
+		areas.areas[id].name = areaName .. " " .. S("(by @1)", name)
 		areas:save()
 
 		minetest.chat_send_player(ownerName,

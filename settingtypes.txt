@@ -13,9 +13,6 @@ areas.self_protection_privilege (Self protection: Required privs) string interac
 # Refresh delay for the name displays in the HUD in seconds
 areas.tick (HUD update delay) float 0.5 0 100
 
-# Enable the legacy owner_defs metatable mode. Untested and possibly unstable
-areas.legacy_table (Legacy owner_defs metatable) bool false
-
 [Self protection (normal)]
 
 # Self protection (normal): Maximal size of the protectable area
