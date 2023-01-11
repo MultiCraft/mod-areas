@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Savisaug
 The area intersects with @1 [@2] (@3).=Plotas susikerta su @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Pasiekėte didžiausią leistiną saugomų sričių skaičių.
+Player have reached the maximum amount of areas that he are allowed to protect.=Žaidėjas pasiekė didžiausią leistiną saugomų sričių skaičių.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Plotas @1 neegzistuoja.
 Unable to get position.=Nepavyksta gauti pozicijos.
 Unknown subcommand: @1=Nežinoma subkomanda: @1
-
-### protector.lua ###
-
-Protector Block=Apsauginis blokas
-You are not allowed to protect that area: @1=Jums neleidžiama saugoti tos srities: @1
-You have already protected this area.=Jūs jau apsaugojote šią sritį.
-The area from @1 to @2 has been protected as ID @3=Teritorija nuo @1 iki @2 buvo apsaugota kaip ID @3
-Protected area @1, Owned by @2=Saugoma teritorija @1, priklauso @2

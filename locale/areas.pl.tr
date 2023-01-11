@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Samoochr
 The area intersects with @1 [@2] (@3).=Obszar ten przecina się z @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Osiągnąłeś maksymalną ilość obszarów, które możesz chronić.
+Player have reached the maximum amount of areas that he are allowed to protect.=Gracz osiągnął maksymalną ilość obszarów, które może chronić.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Obszar @1 nie istnieje.
 Unable to get position.=Nie można uzyskać pozycji.
 Unknown subcommand: @1=Nieznane podkomendne: @1
-
-### protector.lua ###
-
-Protector Block=Blok ochronny
-You are not allowed to protect that area: @1=Nie wolno chronić tego obszaru: @1
-You have already protected this area.=Już zabezpieczyłeś ten obszar.
-The area from @1 to @2 has been protected as ID @3=Obszar od @1 do @2 został zabezpieczony jako ID @3
-Protected area @1, Owned by @2=Obszar chroniony @1, własność @2

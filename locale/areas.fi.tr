@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Itsesuoj
 The area intersects with @1 [@2] (@3).=Alue leikkaa @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Olet saavuttanut enimmäismäärän alueita, joita voit suojella.
+Player have reached the maximum amount of areas that he are allowed to protect.=Pelaaja on saavuttanut enimmäismäärän alueita, joita hän saa suojella.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Aluetta @1 ei ole olemassa.
 Unable to get position.=En pysty saamaan sijaintia.
 Unknown subcommand: @1=Tuntematon alakomento: @1
-
-### protector.lua ###
-
-Protector Block=Suojalohko
-You are not allowed to protect that area: @1=Et saa suojella tätä aluetta: @1
-You have already protected this area.=Olet jo suojellut tätä aluetta.
-The area from @1 to @2 has been protected as ID @3=Alue @1:n ja @2:n välillä on suojattu tunnuksella @3.
-Protected area @1, Owned by @2=Suojeltu alue @1, jonka omistaa @2.

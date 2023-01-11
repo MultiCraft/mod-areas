@@ -5,7 +5,7 @@
 <AreaName>=<ZoneName>
 <NewOwner>=<Chủ sở hữu mới>
 <ParentID>=<RelatedID>
-<PlayerName>=<PlayerName>
+<PlayerName>=<Tên người chơi>
 <newName>=<Tên mới>
 @1 has given you control over the area "@2" (ID @3).=@1 đã cấp cho bạn quyền kiểm soát khu vực "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 bao gồm tối đa @2x @3x @4.
@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Bảo m�
 The area intersects with @1 [@2] (@3).=Vùng giao với @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Bạn đã đạt đến số khu vực tối đa mà bạn được phép bảo vệ.
+Player have reached the maximum amount of areas that he are allowed to protect.=Người chơi đã đạt đến số lượng khu vực tối đa mà anh ta được phép bảo vệ.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Vùng @1 không tồn tại
 Unable to get position.=Không thể có được vị trí.
 Unknown subcommand: @1=Lệnh con không xác định: @1
-
-### protector.lua ###
-
-Protector Block=Khối bảo vệ
-You are not allowed to protect that area: @1=Bạn không được phép bảo vệ khu vực này: @1
-You have already protected this area.=Bạn đã bảo mật khu vực này.
-The area from @1 to @2 has been protected as ID @3=Vùng @1 đến @2 đã được bảo mật, ID @3
-Protected area @1, Owned by @2=Khu bảo tồn @1, Chủ sở hữu: @2

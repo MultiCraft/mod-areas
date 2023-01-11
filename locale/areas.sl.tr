@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Samozaš
 The area intersects with @1 [@2] (@3).=Območje seka @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Dosegli ste največje število območij, ki jih lahko zaščitite.
+Player have reached the maximum amount of areas that he are allowed to protect.=Igralec je dosegel največje število območij, ki jih lahko zaščiti.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Območje @1 ne obstaja.
 Unable to get position.=Ni mogoče dobiti položaja.
 Unknown subcommand: @1=Neznani podnapovedi: @1
-
-### protector.lua ###
-
-Protector Block=Zaščitni blok
-You are not allowed to protect that area: @1=Tega območja ne smete zaščititi: @1
-You have already protected this area.=To območje ste že zaščitili.
-The area from @1 to @2 has been protected as ID @3=Območje od @1 do @2 je zaščiteno kot ID @3
-Protected area @1, Owned by @2=Zavarovano območje @1, v lasti @2

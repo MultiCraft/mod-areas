@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Enesekai
 The area intersects with @1 [@2] (@3).=Piirkond lõikub punktiga @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Te olete jõudnud maksimaalse arvu alasid, mida teil on lubatud kaitsta.
+Player have reached the maximum amount of areas that he are allowed to protect.=Mängija on saavutanud maksimaalse hulga alasid, mida tal on lubatud kaitsta.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Ala @1 ei ole olemas.
 Unable to get position.=Ei ole võimalik positsiooni saada.
 Unknown subcommand: @1=Tundmatu alamkäsk: @1
-
-### protector.lua ###
-
-Protector Block=Protector Block
-You are not allowed to protect that area: @1=Teil ei ole lubatud seda ala kaitsta: @1
-You have already protected this area.=Te olete seda ala juba kaitsnud.
-The area from @1 to @2 has been protected as ID @3=Piirkond @1 kuni @2 on kaitstud ID @3 all.
-Protected area @1, Owned by @2=Kaitstud ala @1, omanik @2

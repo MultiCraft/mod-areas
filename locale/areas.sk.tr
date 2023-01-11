@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Vlastná
 The area intersects with @1 [@2] (@3).=Oblasť sa pretína s @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Dosiahli ste maximálny počet oblastí, ktoré môžete chrániť.
+Player have reached the maximum amount of areas that he are allowed to protect.=Hráč dosiahol maximálny počet oblastí, ktoré môže chrániť.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Oblasť @1 neexistuje.
 Unable to get position.=Nie je možné získať pozíciu.
 Unknown subcommand: @1=Neznámy podpríkaz: @1
-
-### protector.lua ###
-
-Protector Block=Ochranný blok
-You are not allowed to protect that area: @1=Túto oblasť nesmiete chrániť: @1
-You have already protected this area.=Túto oblasť ste už chránili.
-The area from @1 to @2 has been protected as ID @3=Oblasť od @1 po @2 bola chránená ako ID @3
-Protected area @1, Owned by @2=Chránená oblasť @1, Vlastní @2

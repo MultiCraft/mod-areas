@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Az önv�
 The area intersects with @1 [@2] (@3).=A terület metszi a @1 [@2] (@3) területet.
 
 You have reached the maximum amount of areas that you are allowed to protect.=Elérte a maximálisan védhető területek számát.
+Player have reached the maximum amount of areas that he are allowed to protect.=A játékos elérte a maximálisan védhető területek számát.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=A @1 terület nem létezik.
 Unable to get position.=Képtelen pozícióba kerülni.
 Unknown subcommand: @1=Ismeretlen alparancs: @1
-
-### protector.lua ###
-
-Protector Block=Védőblokk
-You are not allowed to protect that area: @1=Ezt a területet nem szabad védeni: @1
-You have already protected this area.=Ezt a területet már megvédte.
-The area from @1 to @2 has been protected as ID @3=A @1 és @2 közötti területet @3 azonosítóként védik.
-Protected area @1, Owned by @2=Védett terület @1, Tulajdonos @2

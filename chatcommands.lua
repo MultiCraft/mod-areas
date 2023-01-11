@@ -5,7 +5,7 @@ minetest.register_chatcommand("protect", {
 	description = S("Protect your own area"),
 	privs = {[areas.config.self_protection_privilege]=true},
 	func = function(name, param)
-		minetest.log("warning", "/protect invoked, owner = " .. name ..
+		minetest.log("action", "/protect invoked, owner = " .. name ..
 			" AreaName = " .. param)
 
 		if param == "" then
@@ -238,7 +238,7 @@ minetest.register_chatcommand("remove_area", {
 	func = function(name, param)
 		local id = tonumber(param)
 
-		minetest.log("warning", "/remove_area invoked, owner = " .. name..
+		minetest.log("action", "/remove_area invoked, owner = " .. name..
 			" AreaName = " .. param)
 
 		if not id then

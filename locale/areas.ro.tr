@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Autoprot
 The area intersects with @1 [@2] (@3).=Zona se intersectează cu @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Ați atins numărul maxim de zone pe care aveți voie să le protejați.
+Player have reached the maximum amount of areas that he are allowed to protect.=Jucătorul a atins numărul maxim de zone pe care are voie să le protejeze.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Zona @1 nu există.
 Unable to get position.=Nu se poate obține poziția.
 Unknown subcommand: @1=Subcomandă necunoscută: @1
-
-### protector.lua ###
-
-Protector Block=Protector Bloc
-You are not allowed to protect that area: @1=Nu aveți voie să protejați acea zonă: @1
-You have already protected this area.=Ați protejat deja această zonă.
-The area from @1 to @2 has been protected as ID @3=Zona de la @1 la @2 a fost protejată ca ID @3
-Protected area @1, Owned by @2=Arie protejată @1, Deținută de @2

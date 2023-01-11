@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Zelfbesc
 The area intersects with @1 [@2] (@3).=Het gebied snijdt met @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=U hebt het maximum aantal gebieden bereikt dat u mag beschermen.
+Player have reached the maximum amount of areas that he are allowed to protect.=De speler heeft het maximum aantal gebieden bereikt dat hij mag beschermen.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Het gebied @1 bestaat niet.
 Unable to get position.=Kan geen positie krijgen.
 Unknown subcommand: @1=Onbekende subcommando: @1
-
-### protector.lua ###
-
-Protector Block=Beschermer Blok
-You are not allowed to protect that area: @1=Je mag dat gebied niet beschermen: @1
-You have already protected this area.=Je hebt dit gebied al beschermd.
-The area from @1 to @2 has been protected as ID @3=Het gebied van @1 tot @2 is beschermd als ID @3
-Protected area @1, Owned by @2=Beschermd gebied @1, Eigendom van @2

@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=L'autopr
 The area intersects with @1 [@2] (@3).=L'area interseca @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=È stato raggiunto il numero massimo di aree che è possibile proteggere.
+Player have reached the maximum amount of areas that he are allowed to protect.=Il giocatore ha raggiunto il numero massimo di aree che può proteggere.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=L'area @1 non esiste.
 Unable to get position.=Impossibile ottenere la posizione.
 Unknown subcommand: @1=Sottocomando sconosciuto: @1
-
-### protector.lua ###
-
-Protector Block=Blocco di protezione
-You are not allowed to protect that area: @1=Non è consentito proteggere quell'area: @1
-You have already protected this area.=Avete già protetto quest'area.
-The area from @1 to @2 has been protected as ID @3=L'area da @1 a @2 è stata protetta come ID @3.
-Protected area @1, Owned by @2=Area protetta @1, di proprietà di @2

@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Självsk
 The area intersects with @1 [@2] (@3).=Området skär @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Du har nått det maximala antalet områden som du får skydda.
+Player have reached the maximum amount of areas that he are allowed to protect.=Spelaren har nått det maximala antalet områden som han får skydda.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Området @1 finns inte.
 Unable to get position.=Det går inte att få en position.
 Unknown subcommand: @1=Okänt underkommando: @1
-
-### protector.lua ###
-
-Protector Block=Skyddande block
-You are not allowed to protect that area: @1=Du får inte skydda det området: @1
-You have already protected this area.=Du har redan skyddat detta område.
-The area from @1 to @2 has been protected as ID @3=Området från @1 till @2 har skyddats som ID @3.
-Protected area @1, Owned by @2=Skyddat område @1, Ägs av @2

@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Kendini 
 The area intersects with @1 [@2] (@3).=Alan @1 [@2] (@3) ile kesişir.
 
 You have reached the maximum amount of areas that you are allowed to protect.=Korumanıza izin verilen maksimum alan miktarına ulaştınız.
+Player have reached the maximum amount of areas that he are allowed to protect.=Oyuncu, korumasına izin verilen maksimum alan miktarına ulaştı.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=1 alanı mevcut değildir.
 Unable to get position.=Pozisyon alınamıyor.
 Unknown subcommand: @1=Bilinmeyen alt komut: @1
-
-### protector.lua ###
-
-Protector Block=Koruyucu Blok
-You are not allowed to protect that area: @1=Bu alanı korumanıza izin verilmiyor: @1
-You have already protected this area.=Bu bölgeyi zaten korumaya aldınız.
-The area from @1 to @2 has been protected as ID @3=1'den @2'ye kadar olan alan ID @3 olarak korunmuştur
-Protected area @1, Owned by @2=Korunan alan @1, Sahibi @2

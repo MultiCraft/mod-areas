@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Perlindu
 The area intersects with @1 [@2] (@3).=Area tersebut berpotongan dengan @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Anda telah mencapai jumlah maksimum area yang diizinkan untuk Anda lindungi.
+Player have reached the maximum amount of areas that he are allowed to protect.=Pemain telah mencapai jumlah maksimum area yang diizinkan untuk dilindungi.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Area @1 tidak ada.
 Unable to get position.=Tidak bisa mendapatkan posisi.
 Unknown subcommand: @1=Sub-perintah yang tidak diketahui: @1
-
-### protector.lua ###
-
-Protector Block=Blok Pelindung
-You are not allowed to protect that area: @1=Anda tidak diizinkan untuk melindungi area itu: @1
-You have already protected this area.=Anda sudah melindungi area ini.
-The area from @1 to @2 has been protected as ID @3=Area dari @1 ke @2 telah dilindungi sebagai ID @3
-Protected area @1, Owned by @2=Kawasan lindung @1, Dimiliki oleh @2

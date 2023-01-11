@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Захи
 The area intersects with @1 [@2] (@3).=Область перетинається з @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Ви досягли максимальної кількості областей, які дозволено вам захищати.
+Player have reached the maximum amount of areas that he are allowed to protect.=Гравець досяг максимальної кількості областей, які йому дозволено захищати.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Зона @1 не існує
 Unable to get position.=Неможливо одержати позицію.
 Unknown subcommand: @1=Невідома підкоманда: @1
-
-### protector.lua ###
-
-Protector Block=Захисний блок
-You are not allowed to protect that area: @1=Вам не дозволено захищати цю область: @1
-You have already protected this area.=Ви вже захистили цю область.
-The area from @1 to @2 has been protected as ID @3=Зона від @1 до @2 була захищена, ID @3
-Protected area @1, Owned by @2=Захищена зона @1, Власник: @2

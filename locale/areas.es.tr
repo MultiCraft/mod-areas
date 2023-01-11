@@ -4,7 +4,7 @@
 
 <AreaName>=<Nombre del área>
 <NewOwner>=<NuevoPropietario>
-<ParentID>=<ParentID>
+<ParentID>=<IDPadre>
 <PlayerName>=<Nombre del jugador>
 <newName>=<nuevoNombre>
 @1 has given you control over the area "@2" (ID @3).=@1 le ha dado el control sobre el área "@2" (ID @3).
@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=La autop
 The area intersects with @1 [@2] (@3).=El área se cruza con @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Ha alcanzado la cantidad máxima de zonas que puede proteger.
+Player have reached the maximum amount of areas that he are allowed to protect.=El jugador ha alcanzado el número máximo de zonas que puede proteger.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=El área @1 no existe.
 Unable to get position.=No se puede conseguir la posición.
 Unknown subcommand: @1=Subcomando desconocido: @1
-
-### protector.lua ###
-
-Protector Block=Bloque protector
-You are not allowed to protect that area: @1=No está permitido proteger esa zona: @1
-You have already protected this area.=Ya has protegido esta zona.
-The area from @1 to @2 has been protected as ID @3=La zona de @1 a @2 ha sido protegida como ID @3
-Protected area @1, Owned by @2=Zona protegida @1, Propiedad de @2

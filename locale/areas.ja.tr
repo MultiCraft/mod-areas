@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=セル�
 The area intersects with @1 [@2] (@3).=この領域は、@1 [@2] (@3) と交差している。
 
 You have reached the maximum amount of areas that you are allowed to protect.=保護できるエリアが上限に達しています。
+Player have reached the maximum amount of areas that he are allowed to protect.=プレイヤーが保護できるエリアが上限に達している。
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=領域@1が存在しない。
 Unable to get position.=ポジションが取れない。
 Unknown subcommand: @1=不明なサブコマンドです。@1
-
-### protector.lua ###
-
-Protector Block=プロテクターブロック
-You are not allowed to protect that area: @1=その部分を保護することは禁止されています。@1
-You have already protected this area.=この辺はもう守りましたね。
-The area from @1 to @2 has been protected as ID @3=1から@2までをID@3として保護しました。
-Protected area @1, Owned by @2=保護地域@1、所有者@2

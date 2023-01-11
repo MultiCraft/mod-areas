@@ -98,6 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Pašaizs
 The area intersects with @1 [@2] (@3).=Platība krustojas ar @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Ir sasniegts maksimālais aizsargājamo apgabalu skaits.
+Player have reached the maximum amount of areas that he are allowed to protect.=Spēlētājs ir sasniedzis maksimālo apgabalu skaitu, ko viņam ir atļauts aizsargāt.
 
 ### pos.lua ###
 
@@ -117,11 +118,3 @@ Set area protection region, position 1, or position 2 by punching nodes, or disp
 The area @1 does not exist.=Laukums @1 neeksistē.
 Unable to get position.=Nevar iegūt pozīciju.
 Unknown subcommand: @1=Nezināms apakškomands: @1
-
-### protector.lua ###
-
-Protector Block=Aizsargu bloks
-You are not allowed to protect that area: @1=Jums nav atļauts aizsargāt šo zonu: @1
-You have already protected this area.=Jūs jau esat aizsargājis šo teritoriju.
-The area from @1 to @2 has been protected as ID @3=Teritorija no @1 līdz @2 ir aizsargāta kā ID @3
-Protected area @1, Owned by @2=Aizsargājamā teritorija @1, Īpašnieks @2
