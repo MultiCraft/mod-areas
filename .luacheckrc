@@ -2,14 +2,13 @@ max_line_length = 100
 
 read_globals = {
 	"DIR_DELIM",
-	"core",
+	"chat_anticurse",
 	"dump",
 	"vector", "nodeupdate",
 	"VoxelManip", "VoxelArea",
 	"PseudoRandom", "ItemStack",
 	"AreaStore",
 	"default",
-	"hud",
 	"mesecon",
 	table = { fields = { "copy", "getn", "indexof" } }
 }

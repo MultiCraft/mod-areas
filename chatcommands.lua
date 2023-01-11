@@ -1,5 +1,7 @@
 local S = areas.S
 
+local anticurse_exists = minetest.global_exists("chat_anticurse")
+
 minetest.register_chatcommand("protect", {
 	params = S("<AreaName>"),
 	description = S("Protect your own area"),
@@ -14,6 +16,13 @@ minetest.register_chatcommand("protect", {
 		local pos1, pos2 = areas:getPos(name)
 		if not (pos1 and pos2) then
 			return false, S("You need to select an area first.")
+		end
+
+		if anticurse_exists then
+			param = chat_anticurse.check_curse_and_ban(param, name)
+			if not param then
+				return
+			end
 		end
 
 		minetest.log("action", "/protect invoked, owner="..name..
@@ -104,6 +113,13 @@ minetest.register_chatcommand("add_owner", {
 			return false, S("You can't protect that area: @1", errMsg)
 		end
 
+		if anticurse_exists then
+			areaName = chat_anticurse.check_curse_and_ban(param, name)
+			if not areaName then
+				return
+			end
+		end
+
 		minetest.log("action", name.." runs /add_owner. Owner = "..ownerName..
 				" AreaName = "..areaName.." ParentID = "..pid..
 				" StartPos = "..pos1.x..","..pos1.y..","..pos1.z..
@@ -144,6 +160,13 @@ minetest.register_chatcommand("rename_area", {
 
 		if not areas:isAreaOwner(id, name) then
 			return true, S("You don't own that area.")
+		end
+
+		if anticurse_exists then
+			newName = chat_anticurse.check_curse_and_ban(param, name)
+			if not newName then
+				return
+			end
 		end
 
 		areas.areas[id].name = newName
