@@ -56,6 +56,11 @@ minetest.register_chatcommand("set_owner", {
 			return false, S("The player \"@1\" does not exist.", ownerName)
 		end
 
+		local canAdd, errMsg = areas:canPlayerAddOwner(pos1, pos2, ownerName)
+		if not canAdd then
+			return false, S("You can't protect that area: @1", errMsg)
+		end
+
 		minetest.log("action", name.." runs /set_owner. Owner = "..ownerName..
 				" AreaName = "..areaName..
 				" StartPos = "..minetest.pos_to_string(pos1)..
@@ -92,6 +97,11 @@ minetest.register_chatcommand("add_owner", {
 
 		if not areas:player_exists(ownerName) then
 			return false, S("The player \"@1\" does not exist.", ownerName)
+		end
+
+		local canAdd, errMsg = areas:canPlayerAddOwner(pos1, pos2, ownerName)
+		if not canAdd then
+			return false, S("You can't protect that area: @1", errMsg)
 		end
 
 		minetest.log("action", name.." runs /add_owner. Owner = "..ownerName..

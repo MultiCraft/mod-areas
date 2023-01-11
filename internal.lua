@@ -263,6 +263,40 @@ function areas:canPlayerAddArea(pos1, pos2, name)
 	return true
 end
 
+function areas:canPlayerAddOwner(pos1, pos2, name)
+	local privs = minetest.get_player_privs(name)
+	if privs.areas then
+		return true
+	end
+
+	local max_size = privs.areas_high_limit and
+			self.config.self_protection_max_size_high or
+			self.config.self_protection_max_size
+	if
+			(pos2.x - pos1.x) > max_size.x * 1.5 or
+			(pos2.y - pos1.y) > max_size.y * 1.5 or
+			(pos2.z - pos1.z) > max_size.z * 1.5 then
+		return false, S("Area is too big.")
+	end
+
+	-- Check number of areas the user has and make sure it not above the max
+	local count = 0
+	for _, area in pairs(self.areas) do
+		if area.owner == name then
+			count = count + 1
+		end
+	end
+	local max_areas = privs.areas_high_limit and
+			self.config.self_protection_max_areas_high or
+			self.config.self_protection_max_areas
+	if count >= max_areas then
+		return false, S("Player have reached the maximum amount of"
+				.. " areas that he are allowed to protect.")
+	end
+
+	return true
+end
+
 -- Given a id returns a string in the format:
 -- "name [id]: owner (x1, y1, z1) (x2, y2, z2) -> children"
 function areas:toString(id)
