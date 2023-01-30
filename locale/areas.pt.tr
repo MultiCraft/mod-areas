@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=A autopr
 The area intersects with @1 [@2] (@3).=A área cruza-se com @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Atingiu a quantidade máxima de áreas que está autorizado a proteger.
-Player have reached the maximum amount of areas that he are allowed to protect.=O jogador atingiu a quantidade máxima de áreas que está autorizado a proteger.
+Target player has reached the maximum amount of areas they are allowed to protect.=O jogador alvo atingiu a quantidade máxima de áreas que estão autorizados a proteger.
 
 ### pos.lua ###
 

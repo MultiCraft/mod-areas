@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Självsk
 The area intersects with @1 [@2] (@3).=Området skär @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Du har nått det maximala antalet områden som du får skydda.
-Player have reached the maximum amount of areas that he are allowed to protect.=Spelaren har nått det maximala antalet områden som han får skydda.
+Target player has reached the maximum amount of areas they are allowed to protect.=Målspelaren har nått det maximala antalet områden som han eller hon får skydda.
 
 ### pos.lua ###
 

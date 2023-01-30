@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Savisaug
 The area intersects with @1 [@2] (@3).=Plotas susikerta su @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Pasiekėte didžiausią leistiną saugomų sričių skaičių.
-Player have reached the maximum amount of areas that he are allowed to protect.=Žaidėjas pasiekė didžiausią leistiną saugomų sričių skaičių.
+Target player has reached the maximum amount of areas they are allowed to protect.=Tikslinis žaidėjas pasiekė didžiausią leistiną saugomų sričių skaičių.
 
 ### pos.lua ###
 

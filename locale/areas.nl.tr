@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Zelfbesc
 The area intersects with @1 [@2] (@3).=Het gebied snijdt met @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=U hebt het maximum aantal gebieden bereikt dat u mag beschermen.
-Player have reached the maximum amount of areas that he are allowed to protect.=De speler heeft het maximum aantal gebieden bereikt dat hij mag beschermen.
+Target player has reached the maximum amount of areas they are allowed to protect.=De doelspeler heeft het maximum aantal gebieden bereikt dat hij mag beschermen.
 
 ### pos.lua ###
 

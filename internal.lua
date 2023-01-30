@@ -290,8 +290,8 @@ function areas:canPlayerAddOwner(pos1, pos2, name)
 			self.config.self_protection_max_areas_high or
 			self.config.self_protection_max_areas
 	if count >= max_areas then
-		return false, S("Player have reached the maximum amount of"
-				.. " areas that he are allowed to protect.")
+		return false, S("Target player has reached the maximum amount of"
+				.. " areas they are allowed to protect.")
 	end
 
 	return true

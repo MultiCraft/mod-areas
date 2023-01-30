@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Itsesuoj
 The area intersects with @1 [@2] (@3).=Alue leikkaa @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Olet saavuttanut enimmäismäärän alueita, joita voit suojella.
-Player have reached the maximum amount of areas that he are allowed to protect.=Pelaaja on saavuttanut enimmäismäärän alueita, joita hän saa suojella.
+Target player has reached the maximum amount of areas they are allowed to protect.=Kohdepelaaja on saavuttanut enimmäismäärän alueita, joita hän saa suojella.
 
 ### pos.lua ###
 

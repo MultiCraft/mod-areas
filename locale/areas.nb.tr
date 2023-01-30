@@ -1,0 +1,120 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaName> <Områdenavn
+<NewOwner>=<NewOwner> (ny eier)
+<ParentID>=<ParentID> <ParentID
+<PlayerName>=<PlayerName> (spillernavn)
+<newName>=<newName> (nytt navn)
+@1 has given you control over the area "@2" (ID @3).=@1 har gitt deg kontroll over området "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 som spenner opp til @2x@3x@4.
+A regular expression is required.=Det kreves et regulært uttrykk.
+Area @1 does not exist or is not owned by you.=Område @1 finnes ikke eller eies ikke av deg.
+Area closed for faction members.=Området er stengt for fraksjonsmedlemmer.
+Area closed.=Området er stengt.
+Area does not exist.=Området finnes ikke.
+Area opened for faction members.=Område åpnet for fraksjonsmedlemmer.
+Area opened.=Område åpnet.
+Area protected. ID: @1=Beskyttet område. ID: @1
+Area renamed.=Område omdøpt.
+Area successfully moved.=Område vellykket flyttet.
+Change the owner of an area using its ID=Endre eier av et område ved hjelp av ID-en
+Find areas using a Lua regular expression=Finn områder ved hjelp av et regulært Lua-uttrykk
+Get information about area configuration and usage.=Få informasjon om områdets konfigurasjon og bruk.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Gi en spiller tilgang til et underområde mellom to posisjoner som allerede er beskyttet, Bruk set_owner hvis du ikke vil at den overordnede skal settes.
+
+Invalid regular expression.=Ugyldig regulært uttrykk.
+Limit: @1 areas=Begrensning: @1 områder
+Limit: no area count limit=Begrensning: ingen grense for arealtelling
+List your areas=Oppgi dine områder
+Move (or resize) an area to the current positions.=Flytt (eller endre størrelse på) et område til gjeldende posisjoner.
+No matches found.=Ingen treff funnet.
+No visible areas.=Ingen synlige områder.
+Too many areas to list all!=For mange områder til å liste opp alle!
+Owner changed.=Endret eier.
+Players with the "@1" privilege can protect up to @2 areas=Spillere med "@1"-rettighet kan beskytte opptil @2-områder.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Beskytt et område mellom to posisjoner og gi en spiller tilgang til det uten å sette områdets overordnede til et eksisterende område.
+
+Protect your own area=Beskytt ditt eget område
+Recursively remove areas using an ID=Rekursivt fjerne områder ved hjelp av en ID
+Remove an area using an ID=Fjern et område ved hjelp av en ID
+Removed area @1=Fjernet område @1
+Removed area @1 and it's sub areas.=Fjernet område @1 og dets underområder.
+Removes all ownerless areas=Fjerner alle eierløse områder
+Rename an area that you own=Gi nytt navn til et område du eier
+Self protection is disabled.=Selvbeskyttelse er deaktivert.
+Self protection is enabled.=Selvbeskyttelse er aktivert.
+That area doesn't exist.=Det området finnes ikke.
+The player "@1" does not exist.=Spilleren "@1" finnes ikke.
+Toggle an area open (anyone can interact) or closed=Slå et område åpent (hvem som helst kan samhandle) eller lukket
+Toggle an area open/closed for members in your faction.=Slå et område åpent/lukket for medlemmer i fraksjonen din.
+You are an area administrator ("areas" privilege).=Du er områdeadministrator ("områder"-rettighet).
+You can protect areas=Du kan beskytte områder
+You can't protect that area.=Du kan ikke beskytte det området.
+You can't protect that area: @1=Du kan ikke beskytte det området: @1
+You don't have the necessary privilege ("@1").=Du har ikke de nødvendige rettighetene ("@1").
+You don't own that area.=Du eier ikke det området.
+You have @1 areas.=Du har @1-områder.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Du har fått kontroll over område #@1. Skriv /list_areas for å vise områdene dine.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Du har utvidede grenser for områdebeskyttelse ("areas_high_limit"-rettighet).
+
+You have the necessary privilege ("@1").=Du har de nødvendige rettighetene ("@1").
+You need to select an area first.=Du må først velge et område.
+
+You cannot enable PvP, there are other players in the area: @1.=Du kan ikke aktivere PvP, det er andre spillere i området: @1.
+PvP is @1 in area @2.=PvP er @1 i område @2.
+enabled=aktivert
+disabled=deaktivert
+
+### chatcommands.lua ###
+### pos.lua ###
+
+<ID>=<ID> <ID
+Invalid usage, see /help @1.=Ugyldig bruk, se /help @1.
+
+### hud.lua ###
+
+Areas:=Områder:
+Open=Åpent
+PvP enabled=PvP aktivert
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 er beskyttet av @2.
+Wow, wow, take it easy!=Jøss, jøss, ta det med ro!
+PvP is not allowed in this area!=PvP er ikke tillatt i dette området!
+
+### internal.lua ###
+
+Area is too big.=Området er for stort.
+
+Self protection is disabled or you do not have the necessary privilege.=Selvbeskyttelse er deaktivert, eller du har ikke de nødvendige rettighetene.
+
+The area intersects with @1 [@2] (@3).=Området krysser @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Du har nådd det maksimale antallet områder du har lov til å beskytte.
+Target player has reached the maximum amount of areas they are allowed to protect.=Målaktøren har nådd det maksimale antallet områder de har lov til å beskytte.
+
+### pos.lua ###
+
+<not set>=<not set> (ikke angitt)
+Area @1 selected.=Område @1 valgt.
+Area position @1 set to @2=Områdeposisjon @1 satt til @2
+Position @1 set to @2=Posisjon @1 satt til @2
+Position @1:=Posisjon @1:
+Select an area by ID.=Velg et område etter ID.
+Select position @1 by punching a node.=Velg posisjon @1 ved å trykke på en node.
+Select positions by punching two nodes.=Velg posisjoner ved å slå to noder.
+
+Set area protection region position @1 to your location or the one specified=Sett områdebeskyttelsesregionens posisjon @1 til din plassering eller den som er angitt.
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Angi områdebeskyttelsesregion, posisjon 1 eller posisjon 2 ved å slå inn noder, eller vis regionen.
+
+The area @1 does not exist.=Området @1 finnes ikke.
+Unable to get position.=Ikke i stand til å få posisjon.
+Unknown subcommand: @1=Ukjent underkommando: @1

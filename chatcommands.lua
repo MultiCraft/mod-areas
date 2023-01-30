@@ -65,11 +65,6 @@ minetest.register_chatcommand("set_owner", {
 			return false, S("The player \"@1\" does not exist.", ownerName)
 		end
 
-		local canAdd, errMsg = areas:canPlayerAddOwner(pos1, pos2, ownerName)
-		if not canAdd then
-			return false, S("You can't protect that area: @1", errMsg)
-		end
-
 		minetest.log("action", name.." runs /set_owner. Owner = "..ownerName..
 				" AreaName = "..areaName..
 				" StartPos = "..minetest.pos_to_string(pos1)..
@@ -108,13 +103,15 @@ minetest.register_chatcommand("add_owner", {
 			return false, S("The player \"@1\" does not exist.", ownerName)
 		end
 
-		local canAdd, errMsg = areas:canPlayerAddOwner(pos1, pos2, ownerName)
-		if not canAdd then
-			return false, S("You can't protect that area: @1", errMsg)
+		if not minetest.check_player_privs(name, "areas_high_limit") then
+			local canAdd, errMsg = areas:canPlayerAddOwner(pos1, pos2, ownerName)
+			if not canAdd then
+				return false, S("You can't protect that area: @1", errMsg)
+			end
 		end
 
 		if anticurse_exists then
-			areaName = chat_anticurse.check_curse_and_ban(param, name)
+			areaName = chat_anticurse.check_curse_and_ban(areaName, name)
 			if not areaName then
 				return
 			end
@@ -163,7 +160,7 @@ minetest.register_chatcommand("rename_area", {
 		end
 
 		if anticurse_exists then
-			newName = chat_anticurse.check_curse_and_ban(param, name)
+			newName = chat_anticurse.check_curse_and_ban(newName, name)
 			if not newName then
 				return
 			end

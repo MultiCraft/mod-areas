@@ -6,7 +6,7 @@
 <NewOwner>=<Pemilik Baru>
 <ParentID>=<ParentID>
 <PlayerName>=<Nama Pemain>
-<newName>=<newName>
+<newName>=<nama baru>
 @1 has given you control over the area "@2" (ID @3).=@1 telah memberi Anda kendali atas area "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 mencakup hingga @2x@3x@4.
 A regular expression is required.=Diperlukan ekspresi reguler.
@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Perlindu
 The area intersects with @1 [@2] (@3).=Area tersebut berpotongan dengan @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Anda telah mencapai jumlah maksimum area yang diizinkan untuk Anda lindungi.
-Player have reached the maximum amount of areas that he are allowed to protect.=Pemain telah mencapai jumlah maksimum area yang diizinkan untuk dilindungi.
+Target player has reached the maximum amount of areas they are allowed to protect.=Pemain target telah mencapai jumlah maksimum area yang diizinkan untuk dilindungi.
 
 ### pos.lua ###
 

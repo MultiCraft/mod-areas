@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Vlastní
 The area intersects with @1 [@2] (@3).=Oblast se protíná s @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Dosáhli jste maximálního počtu oblastí, které můžete chránit.
-Player have reached the maximum amount of areas that he are allowed to protect.=Hráč dosáhl maximálního počtu oblastí, které smí chránit.
+Target player has reached the maximum amount of areas they are allowed to protect.=Cílový hráč dosáhl maximálního počtu oblastí, které může chránit.
 
 ### pos.lua ###
 

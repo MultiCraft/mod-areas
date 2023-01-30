@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Az önv�
 The area intersects with @1 [@2] (@3).=A terület metszi a @1 [@2] (@3) területet.
 
 You have reached the maximum amount of areas that you are allowed to protect.=Elérte a maximálisan védhető területek számát.
-Player have reached the maximum amount of areas that he are allowed to protect.=A játékos elérte a maximálisan védhető területek számát.
+Target player has reached the maximum amount of areas they are allowed to protect.=A céljátékos elérte a maximálisan védhető területek számát.
 
 ### pos.lua ###
 

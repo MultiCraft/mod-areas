@@ -98,7 +98,7 @@ Self protection is disabled or you do not have the necessary privilege.=Захи
 The area intersects with @1 [@2] (@3).=Область перетинається з @1 [@2] (@3).
 
 You have reached the maximum amount of areas that you are allowed to protect.=Ви досягли максимальної кількості областей, які дозволено вам захищати.
-Player have reached the maximum amount of areas that he are allowed to protect.=Гравець досяг максимальної кількості областей, які йому дозволено захищати.
+Target player has reached the maximum amount of areas they are allowed to protect.=Цільовий гравець досяг максимальної кількості областей, які йому дозволено захищати.
 
 ### pos.lua ###
 
