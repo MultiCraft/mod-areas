@@ -2,9 +2,9 @@
 
 ### chatcommands.lua ###
 
-<AreaName>=<AreaName>
+<AreaName>=<Områdenavn>
 <NewOwner>=<NewOwner>
-<ParentID>=<ParentID>
+<ParentID>=<ForældreID>
 <PlayerName>=<SpillerNavn>
 <newName>=<nytNavn>
 @1 has given you control over the area "@2" (ID @3).=@1 har givet dig kontrol over området "@2" (ID @3).
@@ -24,6 +24,8 @@ Find areas using a Lua regular expression=Find områder ved hjælp af et regulæ
 Get information about area configuration and usage.=Få oplysninger om områdets konfiguration og brug.
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Giv en spiller adgang til et underområde mellem to positioner, der allerede er blevet beskyttet, Brug set_owner, hvis du ikke ønsker, at overforældrene skal indstilles.
+
+(by @1)=(af @1)
 
 Invalid regular expression.=Ugyldigt regulært udtryk.
 Limit: @1 areas=Grænse: @1 områder
@@ -73,9 +75,6 @@ disabled=deaktiveret
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Ugyldig brug, se /help @1.
 
 ### hud.lua ###
 

@@ -23,12 +23,12 @@ local function posLimit(pos)
 end
 
 minetest.register_chatcommand("select_area", {
-	params = S("<ID>"),
+	params = "<ID>",
 	description = S("Select an area by ID."),
 	func = function(name, param)
 		local id = tonumber(param)
 		if not id then
-			return false, S("Invalid usage, see /help @1.", "select_area")
+			return false
 		end
 		if not areas.areas[id] then
 			return false, S("The area @1 does not exist.", id)
@@ -59,7 +59,7 @@ minetest.register_chatcommand("area_pos1", {
 				return false, S("Unable to get position.")
 			end
 		else
-			return false, S("Invalid usage, see /help @1.", "area_pos1")
+			return false
 		end
 		pos = posLimit(vector.round(pos))
 		areas:setPos1(name, pos)
@@ -86,7 +86,7 @@ minetest.register_chatcommand("area_pos2", {
 				return false, S("Unable to get position.")
 			end
 		else
-			return false, S("Invalid usage, see /help @1.", "area_pos2")
+			return false
 		end
 		pos = posLimit(vector.round(pos))
 		areas:setPos2(name, pos)

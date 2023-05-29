@@ -7,11 +7,8 @@ minetest.register_chatcommand("protect", {
 	description = S("Protect your own area"),
 	privs = {[areas.config.self_protection_privilege]=true},
 	func = function(name, param)
-		minetest.log("action", "/protect invoked, owner = " .. name ..
-			" AreaName = " .. param)
-
 		if param == "" then
-			return false, S("Invalid usage, see /help @1.", "protect")
+			return false
 		end
 		local pos1, pos2 = areas:getPos(name)
 		if not (pos1 and pos2) then
@@ -53,7 +50,7 @@ minetest.register_chatcommand("set_owner", {
 		local ownerName, areaName = param:match('^(%S+)%s(.+)$')
 
 		if not ownerName then
-			return false, S("Invalid usage, see /help @1.", "set_owner")
+			return false
 		end
 
 		local pos1, pos2 = areas:getPos(name)
@@ -88,10 +85,8 @@ minetest.register_chatcommand("add_owner", {
 		.." Use set_owner if you don't want the parent to be set."),
 	func = function(name, param)
 		local pid, ownerName, areaName = param:match('^(%d+) ([^ ]+) (.+)$')
-
 		if not pid then
-			minetest.chat_send_player(name, S("Invalid usage, see /help @1.", "add_owner"))
-			return
+			return false
 		end
 
 		local pos1, pos2 = areas:getPos(name)
@@ -142,12 +137,12 @@ minetest.register_chatcommand("add_owner", {
 
 
 minetest.register_chatcommand("rename_area", {
-	params = S("<ID>").." "..S("<newName>"),
+	params = "<ID>".." "..S("<newName>"),
 	description = S("Rename an area that you own"),
 	func = function(name, param)
 		local id, newName = param:match("^(%d+)%s(.+)$")
 		if not id then
-			return false, S("Invalid usage, see /help @1.", "rename_area")
+			return false
 		end
 
 		id = tonumber(id)
@@ -241,7 +236,7 @@ minetest.register_chatcommand("list_areas", {
 
 
 minetest.register_chatcommand("recursive_remove_areas", {
-	params = S("<ID>"),
+	params = "<ID>",
 	description = S("Recursively remove areas using an ID"),
 	func = function(name, param)
 		local id = tonumber(param)
@@ -263,7 +258,7 @@ minetest.register_chatcommand("recursive_remove_areas", {
 
 
 minetest.register_chatcommand("remove_area", {
-	params = S("<ID>"),
+	params = "<ID>",
 	description = S("Remove an area using an ID"),
 	func = function(name, param)
 		local id = tonumber(param)
@@ -272,7 +267,7 @@ minetest.register_chatcommand("remove_area", {
 			" AreaName = " .. param)
 
 		if not id then
-			return false, S("Invalid usage, see /help @1.", "remove_area")
+			return false
 		end
 
 		if not areas:isAreaOwner(id, name) then
@@ -288,7 +283,7 @@ minetest.register_chatcommand("remove_area", {
 
 
 minetest.register_chatcommand("change_owner", {
-	params = S("<ID>").." "..S("<NewOwner>"),
+	params = "<ID>".." "..S("<NewOwner>"),
 	description = S("Change the owner of an area using its ID"),
 	func = function(name, param)
 		local id, newOwner = param:match("^(%d+)%s(%S+)$")
@@ -318,12 +313,12 @@ minetest.register_chatcommand("change_owner", {
 
 
 minetest.register_chatcommand("area_open", {
-	params = S("<ID>"),
+	params = "<ID>",
 	description = S("Toggle an area open (anyone can interact) or closed"),
 	func = function(name, param)
 		local id = tonumber(param)
 		if not id then
-			return false, S("Invalid usage, see /help @1.", "area_open")
+			return false
 		end
 
 		if not areas:isAreaOwner(id, name) then
@@ -340,13 +335,13 @@ minetest.register_chatcommand("area_open", {
 
 
 minetest.register_chatcommand("move_area", {
-	params = S("<ID>"),
+	params = "<ID>",
 	description = S("Move (or resize) an area to the current positions."),
 	privs = areas.adminPrivs,
 	func = function(name, param)
 		local id = tonumber(param)
 		if not id then
-			return false, S("Invalid usage, see /help @1.", "move_area")
+			return false
 		end
 
 		local area = areas.areas[id]
@@ -490,7 +485,7 @@ minetest.register_chatcommand("area_pvp", {
 	func = function(name, param)
 		local id = tonumber(param)
 		if not id then
-			return false, S("Invalid usage, see /help @1.", "area_pvp")
+			return false
 		end
 
 		if not areas:isAreaOwner(id, name) then

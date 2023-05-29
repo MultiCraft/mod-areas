@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Obter informação sobre a c
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Dar a um jogador acesso a uma subárea entre duas posições que já tenham sido protegidas, Utilizar set_owner se não quiser que o pai seja definido.
 
+(by @1)=(por @1)
+
 Invalid regular expression.=Expressão inválida regular.
 Limit: @1 areas=Limite: @1 áreas
 Limit: no area count limit=Limite: sem limite de área de contagem
@@ -73,9 +75,6 @@ disabled=deficientes
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Utilização inválida, ver /help @1.
 
 ### hud.lua ###
 

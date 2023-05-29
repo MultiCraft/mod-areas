@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Dapatkan informasi mengenai 
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Berikan pemain akses ke sub-area di antara dua posisi yang telah diproteksi, Gunakan set_owner jika Anda tidak ingin induknya disetel.
 
+(by @1)=(oleh @1)
+
 Invalid regular expression.=Ekspresi reguler tidak valid.
 Limit: @1 areas=Batas: @1 area
 Limit: no area count limit=Batas: tidak ada batas jumlah area
@@ -73,9 +75,6 @@ disabled=dinonaktifkan
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Penggunaan tidak valid, lihat /help @1.
 
 ### hud.lua ###
 

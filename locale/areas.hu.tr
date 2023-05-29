@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Információk lekérése a t
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Adj hozzáférést egy játékosnak egy alterülethez két már védett pozíció között, Használd a set_owner-t, ha nem akarod, hogy a szülő be legyen állítva.
 
+(by @1)=(@1)
+
 Invalid regular expression.=Érvénytelen reguláris kifejezés.
 Limit: @1 areas=Határérték: @1 terület
 Limit: no area count limit=Korlátozás: nincs területszám-korlátozás
@@ -73,9 +75,6 @@ disabled=disabled
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Érvénytelen használat, lásd /help @1.
 
 ### hud.lua ###
 

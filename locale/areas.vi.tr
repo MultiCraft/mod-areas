@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Nhận thông tin về cấu
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Cấp cho người chơi quyền truy cập vào vùng phụ giữa hai vị trí đã được bảo vệ Sử dụng set_owner nếu bạn không muốn thiết lập cấp độ chính.
 
+(by @1)=(bởi @1)
+
 Invalid regular expression.=Biểu thức chính quy không hợp lệ.
 Limit: @1 areas=Giới hạn: @1 vùng
 Limit: no area count limit=Giới hạn: không giới hạn số lượng khu vực
@@ -73,9 +75,6 @@ disabled=tắt
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Sử dụng sai, xem / help @1.
 
 ### hud.lua ###
 

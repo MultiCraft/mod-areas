@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Gaukite informacijos apie sr
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Suteikite žaidėjui prieigą prie papildomos srities, esančios tarp dviejų jau apsaugotų pozicijų, Naudokite set_owner, jei nenorite, kad būtų nustatytas tėvinis elementas.
 
+(by @1)=(pagal @1)
+
 Invalid regular expression.=Netinkama reguliarioji išraiška.
 Limit: @1 areas=riba: @1 sritis
 Limit: no area count limit=Apribojimas: nėra ploto skaičiaus apribojimo
@@ -73,9 +75,6 @@ disabled=neįgalieji
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Netinkamas naudojimas, žr. /help @1.
 
 ### hud.lua ###
 

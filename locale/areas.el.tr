@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Λήψη πληροφορι�
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Δώστε σε έναν παίκτη πρόσβαση σε μια υποπεριοχή μεταξύ δύο θέσεων που έχουν ήδη προστατευτεί, Χρησιμοποιήστε το set_owner αν δεν θέλετε να οριστεί ο γονέας.
 
+(by @1)=(από @1)
+
 Invalid regular expression.=Μη έγκυρη κανονική έκφραση.
 Limit: @1 areas=Όριο: @1 περιοχές
 Limit: no area count limit=Όριο: δεν υπάρχει όριο αριθμού περιοχών
@@ -73,9 +75,6 @@ disabled=disabled
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Μη έγκυρη χρήση, δείτε /help @1.
 
 ### hud.lua ###
 

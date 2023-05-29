@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Отримайте інфо�
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Надайте гравцеві доступ до підобласті між двома позиціями, які вже були захищені. Використовуйте set_owner, якщо ви не бажаєте, щоб батько був встановлений.
 
+(by @1)=(від @1)
+
 Invalid regular expression.=Неправильне регулярне вираження.
 Limit: @1 areas=Ліміт: @1 зон
 Limit: no area count limit=Ліміт: немає обмеження щодо кількості зон
@@ -73,9 +75,6 @@ disabled=вимкнено
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Неправильне використання дивіться /help @1.
 
 ### hud.lua ###
 

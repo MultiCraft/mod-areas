@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Získajte informácie o konf
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Umožniť hráčovi prístup do podoblasti medzi dvoma pozíciami, ktoré už boli chránené, Použite set_owner, ak nechcete, aby bol nastavený rodič.
 
+(by @1)=(podľa @1)
+
 Invalid regular expression.=Neplatný regulárny výraz.
 Limit: @1 areas=Limit: @1 oblasti
 Limit: no area count limit=Limit: bez obmedzenia počtu plôch
@@ -73,9 +75,6 @@ disabled=vypnuté
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Nesprávne použitie, pozri /help @1.
 
 ### hud.lua ###
 

@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Verkrijg informatie over geb
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Geef een speler toegang tot een deelgebied tussen twee posities die al beschermd zijn, Gebruik set_owner als je niet wilt dat de ouder ingesteld wordt.
 
+(by @1)=(door @1)
+
 Invalid regular expression.=Ongeldige reguliere uitdrukking.
 Limit: @1 areas=Limiet: @1 gebieden
 Limit: no area count limit=Limiet: geen limiet voor het aantal gebieden
@@ -73,9 +75,6 @@ disabled=uitgeschakeld
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Ongeldig gebruik, zie /help @1.
 
 ### hud.lua ###
 

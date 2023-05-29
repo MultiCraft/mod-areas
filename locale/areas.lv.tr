@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Saņemiet informāciju par a
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Piešķiriet spēlētājam piekļuvi apakšzonai starp divām pozīcijām, kas jau ir aizsargātas, Izmantojiet set_owner, ja nevēlaties, lai tiktu iestatīts vecāks.
 
+(by @1)=(līdz @1)
+
 Invalid regular expression.=Nederīga regulārā izteiksme.
 Limit: @1 areas=Ierobežojums: @1 apgabals
 Limit: no area count limit=Ierobežojums: nav platību skaita ierobežojuma
@@ -73,9 +75,6 @@ disabled=invalīdiem
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID>
-Invalid usage, see /help @1.=Nepareiza lietošana, skatiet /help @1.
 
 ### hud.lua ###
 

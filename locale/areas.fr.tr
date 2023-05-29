@@ -3,7 +3,7 @@
 ### chatcommands.lua ###
 
 <AreaName>=<Nom de la zone>
-<NewOwner>=<NewOwner>
+<NewOwner>=<Nouveau propriétaire>
 <ParentID>=<ParentID>
 <PlayerName>=<Nom du joueur>
 <newName>=<nouveauNom>
@@ -24,6 +24,8 @@ Find areas using a Lua regular expression=Trouver des zones en utilisant une exp
 Get information about area configuration and usage.=Obtenez des informations sur la configuration et l'utilisation des zones.
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Donne à un joueur l'accès à une sous-zone entre deux positions qui ont déjà été protégées. Utilisez set_owner si vous ne voulez pas que le parent soit défini.
+
+(by @1)=(par @1)
 
 Invalid regular expression.=Expression régulière invalide.
 Limit: @1 areas=Limite : @1 zones
@@ -74,9 +76,6 @@ disabled=désactivé
 ### chatcommands.lua ###
 ### pos.lua ###
 
-<ID>=<ID>
-Invalid usage, see /help @1.=Utilisation non valide, voir /help @1.
-
 ### hud.lua ###
 
 Areas:=Zones :
@@ -102,7 +101,7 @@ Target player has reached the maximum amount of areas they are allowed to protec
 
 ### pos.lua ###
 
-<not set>=<not set>
+<not set>=<non défini>
 Area @1 selected.=Zone @1 sélectionnée.
 Area position @1 set to @2=Position de la zone @1 définie sur @2
 Position @1 set to @2=Position @1 fixée à @2

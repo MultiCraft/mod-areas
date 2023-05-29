@@ -25,6 +25,8 @@ Get information about area configuration and usage.=Få informasjon om områdets
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Gi en spiller tilgang til et underområde mellom to posisjoner som allerede er beskyttet, Bruk set_owner hvis du ikke vil at den overordnede skal settes.
 
+(by @1)=(av @1)
+
 Invalid regular expression.=Ugyldig regulært uttrykk.
 Limit: @1 areas=Begrensning: @1 områder
 Limit: no area count limit=Begrensning: ingen grense for arealtelling
@@ -73,9 +75,6 @@ disabled=deaktivert
 
 ### chatcommands.lua ###
 ### pos.lua ###
-
-<ID>=<ID> <ID
-Invalid usage, see /help @1.=Ugyldig bruk, se /help @1.
 
 ### hud.lua ###
 
