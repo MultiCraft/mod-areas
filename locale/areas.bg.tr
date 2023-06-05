@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvP е @1 в зона @2.
 enabled=активиран
 disabled=изключени
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Области:

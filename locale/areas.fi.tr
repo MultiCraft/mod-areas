@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvP on @1 alueella @2.
 enabled=käytössä
 disabled=disabled
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Alueet:

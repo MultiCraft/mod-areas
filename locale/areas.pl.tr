@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvP jest @1 w obszarze @2.
 enabled=włączony
 disabled=wyłączony
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Obszary:

@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvP ir @1 zonā @2.
 enabled=iespējots
 disabled=invalīdiem
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Jomas:

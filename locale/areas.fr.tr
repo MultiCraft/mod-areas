@@ -73,9 +73,6 @@ PvP is @1 in area @2.=Le JcJ est @1 dans la zone @2.
 enabled=activé
 disabled=désactivé
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Zones :

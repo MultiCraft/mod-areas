@@ -4,7 +4,7 @@
 
 <AreaName>=<RuimteNaam>
 <NewOwner>=<NewOwner>
-<ParentID>=<ParentID>
+<ParentID>=<ouderID>
 <PlayerName>=<Spelersnaam>
 <newName>=<nieuwe naam>
 @1 has given you control over the area "@2" (ID @3).=@1 heeft u de controle gegeven over het gebied "@2" (ID @3).
@@ -72,9 +72,6 @@ You cannot enable PvP, there are other players in the area: @1.=U kunt PvP niet 
 PvP is @1 in area @2.=PvP is @1 in gebied @2.
 enabled=ingeschakeld
 disabled=uitgeschakeld
-
-### chatcommands.lua ###
-### pos.lua ###
 
 ### hud.lua ###
 

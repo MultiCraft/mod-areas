@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvPはエリア@2で@1。
 enabled=使用可能
 disabled=使用禁止
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=エリア

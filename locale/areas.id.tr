@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvP adalah @1 di area @2.
 enabled=diaktifkan
 disabled=dinonaktifkan
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Area:

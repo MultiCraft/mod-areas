@@ -73,9 +73,6 @@ PvP is @1 in area @2.=@2 alanında PvP @1'dir.
 enabled=etkinleştirilmiş
 disabled=engelli
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Alanlar:

@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvP je @1 na območju @2.
 enabled=omogočeno
 disabled=onemogočeno
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Področja:

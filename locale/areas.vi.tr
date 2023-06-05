@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvP @1 trong vùng @2.
 enabled=bao gồm
 disabled=tắt
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Khu vực:

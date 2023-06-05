@@ -73,9 +73,6 @@ PvP is @1 in area @2.=Το PvP είναι @1 στην περιοχή @2.
 enabled=ενεργοποιημένη
 disabled=disabled
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Περιοχές:

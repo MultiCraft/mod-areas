@@ -1,0 +1,116 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaName>
+<NewOwner>=<المالك الجديد>
+<ParentID>=<معرف الوالدين>
+<PlayerName>=<PlayerName>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=لقد منحك @1 التحكم في المنطقة "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 تمتد حتى @2x @3x @4.
+A regular expression is required.=مطلوب تعبير عادي.
+Area @1 does not exist or is not owned by you.=المنطقة @1 غير موجودة أو ليست مملوكة لك.
+Area closed for faction members.=منطقة مغلقة أمام أعضاء الفصائل.
+Area closed.=المنطقة مغلقة.
+Area does not exist.=المنطقة غير موجودة.
+Area opened for faction members.=منطقة مفتوحة لأعضاء الفصائل.
+Area opened.=تم فتح المنطقة.
+Area protected. ID: @1=منطقة محمية. المعرف: @1
+Area renamed.=تمت إعادة تسمية المنطقة.
+Area successfully moved.=تم نقل المنطقة بنجاح.
+Change the owner of an area using its ID=تغيير مالك المنطقة باستخدام المعرف الخاص بها
+Find areas using a Lua regular expression=ابحث عن مناطق باستخدام تعبير Lua العادي
+Get information about area configuration and usage.=احصل على معلومات حول تكوين المنطقة واستخدامها.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=امنح لاعبًا حق الوصول إلى منطقة فرعية بين موقعين محميين بالفعل ، استخدم set_owner إذا كنت لا تريد تعيين الوالد.
+
+(by @1)=(بواسطة @1)
+
+Invalid regular expression.=تعبير عادي غير صالح.
+Limit: @1 areas=الحد: @1 منطقة
+Limit: no area count limit=الحد: لا يوجد حد لعدد المنطقة
+List your areas=قائمة المناطق الخاصة بك
+Move (or resize) an area to the current positions.=نقل (أو تغيير حجم) منطقة إلى المواضع الحالية.
+No matches found.=لم يتم العثور على تطابق.
+No visible areas.=لا توجد مناطق مرئية.
+Too many areas to list all!=مناطق كثيرة جدًا لسرد الكل!
+Owner changed.=تغير المالك.
+Players with the "@1" privilege can protect up to @2 areas=يمكن للاعبين الذين يتمتعون بامتياز "@1" حماية ما يصل إلى @2 منطقة
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=قم بحماية منطقة بين موقعين وامنح اللاعب حق الوصول إليها دون تعيين أصل المنطقة على أي منطقة موجودة
+
+Protect your own area=احمِ منطقتك
+Recursively remove areas using an ID=تكرر إزالة المناطق باستخدام معرف
+Remove an area using an ID=قم بإزالة منطقة باستخدام معرف
+Removed area @1=المنطقة التي تمت إزالتها @1
+Removed area @1 and it's sub areas.=تمت إزالة المنطقة @1 ومناطقها الفرعية.
+Removes all ownerless areas=يزيل جميع المناطق غير المالكة
+Rename an area that you own=أعد تسمية المنطقة التي تمتلكها
+Self protection is disabled.=تم تعطيل الحماية الذاتية.
+Self protection is enabled.=تم تمكين الحماية الذاتية.
+That area doesn't exist.=هذه المنطقة غير موجودة.
+The player "@1" does not exist.=المشغل "@1" غير موجود.
+Toggle an area open (anyone can interact) or closed=تبديل منطقة مفتوحة (يمكن لأي شخص التفاعل) أو مغلقة
+Toggle an area open/closed for members in your faction.=تبديل منطقة مفتوحة / مغلقة للأعضاء في فصيلك.
+You are an area administrator ("areas" privilege).=أنت مسؤول منطقة (امتياز "مناطق").
+You can protect areas=يمكنك حماية المناطق
+You can't protect that area.=لا يمكنك حماية تلك المنطقة.
+You can't protect that area: @1=لا يمكنك حماية تلك المنطقة: @1
+You don't have the necessary privilege ("@1").=ليس لديك الامتياز اللازم ("@1").
+You don't own that area.=أنت لا تملك هذه المنطقة.
+You have @1 areas.=لديك @1 مناطق.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=لقد تم منحك السيطرة على المنطقة # @1. اكتب /list_areas لإظهار المناطق الخاصة بك.
+
+You have extended area protection limits ("areas_high_limit" privilege).=لقد قمت بتوسيع حدود حماية المنطقة (امتياز "area_high_limit").
+
+You have the necessary privilege ("@1").=لديك الامتياز اللازم ("@1").
+You need to select an area first.=تحتاج إلى تحديد منطقة أولاً.
+
+You cannot enable PvP, there are other players in the area: @1.=لا يمكنك تمكين حماية الأصناف النباتية ، فهناك لاعبون آخرون في المنطقة: @1.
+PvP is @1 in area @2.=PvP هي @1 في المنطقة @2.
+enabled=ممكن
+disabled=عاجز
+
+### hud.lua ###
+
+Areas:=المناطق:
+Open=يفتح
+PvP enabled=تمكين حماية الأصناف النباتية
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 محمي بواسطة @2.
+Wow, wow, take it easy!=واو ، واو ، خذها بسهولة!
+PvP is not allowed in this area!=PvP غير مسموح به في هذه المنطقة!
+
+### internal.lua ###
+
+Area is too big.=المساحة كبيرة جدًا.
+
+Self protection is disabled or you do not have the necessary privilege.=تم تعطيل الحماية الذاتية أو ليس لديك الامتياز اللازم.
+
+The area intersects with @1 [@2] (@3).=تتقاطع المنطقة مع @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=لقد وصلت إلى الحد الأقصى من المناطق المسموح لك بحمايتها.
+Target player has reached the maximum amount of areas they are allowed to protect.=وصل اللاعب المستهدف إلى الحد الأقصى من المناطق المسموح له بحمايتها.
+
+### pos.lua ###
+
+<not set>=<لم يتم تعيينه>
+Area @1 selected.=تم تحديد المنطقة @1.
+Area position @1 set to @2=تم تعيين موضع المنطقة @1 على @2
+Position @1 set to @2=تم تعيين الموضع @1 على @2
+Position @1:=المركز @1:
+Select an area by ID.=حدد منطقة عن طريق المعرف.
+Select position @1 by punching a node.=حدد الموضع @1 بلكم عقدة.
+Select positions by punching two nodes.=حدد المواضع عن طريق ثقب عقدتين.
+
+Set area protection region position @1 to your location or the one specified=قم بتعيين موضع حماية المنطقة @1 على موقعك أو الموقع المحدد
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=اضبط منطقة حماية المنطقة أو الموضع 1 أو الموضع 2 عن طريق تثقيب العقد أو اعرض المنطقة
+
+The area @1 does not exist.=المنطقة @1 غير موجودة.
+Unable to get position.=غير قادر على الحصول على الموقف.
+Unknown subcommand: @1=أمر فرعي غير معروف: @1

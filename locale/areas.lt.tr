@@ -73,9 +73,6 @@ PvP is @1 in area @2.=PvP yra @1 zonoje @2.
 enabled=įjungtas
 disabled=neįgalieji
 
-### chatcommands.lua ###
-### pos.lua ###
-
 ### hud.lua ###
 
 Areas:=Sritys:
