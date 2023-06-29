@@ -7,8 +7,8 @@
 <ParentID>=<親ID>
 <PlayerName>=<プレイヤー名>
 <newName>=<新名称>
-@1 has given you control over the area "@2" (ID @3).=1は、エリア「@2」（ID @3）の制御をあなたに与えています。
-@1 spanning up to @2x@3x@4.=1は、@2x@3x@4までスパンしています。
+@1 has given you control over the area "@2" (ID @3).=@1は、エリア「@2」（ID @3）の制御をあなたに与えています。
+@1 spanning up to @2x@3x@4.=@1は、@2x@3x@4までスパンしています。
 A regular expression is required.=正規表現が必要です。
 Area @1 does not exist or is not owned by you.=エリア@1は存在しないか、またはお客様が所有していない。
 Area closed for faction members.=派閥のメンバーにはエリアが閉鎖されています。
@@ -25,10 +25,10 @@ Get information about area configuration and usage.=エリアの構成と使用�
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=すでに保護されている2つの位置の間のサブ領域にアクセスできるようにします。親を設定したくない場合は set_owner を使用します。
 
-(by @1)=(＠1による)
+(by @1)=(@1による)
 
 Invalid regular expression.=正規表現が無効です。
-Limit: @1 areas=制限する。1エリア
+Limit: @1 areas=制限する。@1エリア
 Limit: no area count limit=制限：エリアカウントの制限なし
 List your areas=対象地域一覧
 Move (or resize) an area to the current positions.=領域を現在の位置に移動（またはサイズ変更）する。
@@ -36,7 +36,7 @@ No matches found.=該当するものがありません。
 No visible areas.=見える部分はありません。
 Too many areas to list all!=たくさんありすぎて、全部は紹介しきれません
 Owner changed.=所有者が変更になりました。
-Players with the "@1" privilege can protect up to @2 areas=1 "権限を持つプレイヤーは、最大で"@2 "のエリアを保護することができます。
+Players with the "@1" privilege can protect up to @2 areas=@1 "権限を持つプレイヤーは、最大で"@2 "のエリアを保護することができます。
 
 Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=2つのポジションの間にあるエリアを保護し、そのエリアの親を既存のエリアに設定することなく、プレイヤーにアクセスさせることができます。
 
@@ -81,7 +81,7 @@ PvP enabled=PvP対応
 
 ### interact.lua ###
 
-@1 is protected by @2.=1は@2によって保護されています。
+@1 is protected by @2.=@1は@2によって保護されています。
 Wow, wow, take it easy!=わ、わ、わ、無理しないでね！？
 PvP is not allowed in this area!=このエリアではPvPは禁止されています
 
