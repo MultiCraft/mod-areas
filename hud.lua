@@ -6,6 +6,7 @@ areas.hud = {}
 
 local vround = vector.round
 local tconcat, tinsert = table.concat, table.insert
+local creative_mode = minetest.settings:get_bool("creative_mode")
 
 local function update_hud(player, name, pos)
 	local areaStrings = {}
@@ -15,7 +16,7 @@ local function update_hud(player, name, pos)
 		areaStrings[#areaStrings + 1] = ("%s [%u] (%s)%s%s")
 			:format(area.name, id, area.owner,
 				area.open and (" [" .. S("Open") .. "]") or "",
-				area.canPvP and (" [" .. S("PvP enabled") .. "]") or "")
+				(area.canPvP and not creative_mode) and (" [" .. S("PvP enabled") .. "]") or "")
 	end
 
 	local str = ""
