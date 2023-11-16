@@ -13,10 +13,10 @@ local function update_hud(player, name, pos)
 	local getAreasAtPos = areas:getAreasAtPos(pos)
 
 	for id, area in pairs(getAreasAtPos) do
-		areaStrings[#areaStrings + 1] = ("%s [%u] (%s)%s%s")
-			:format(area.name, id, area.owner,
-				area.open and (" [" .. S("Open") .. "]") or "",
-				(area.canPvP and not creative_mode) and (" [" .. S("PvP enabled") .. "]") or "")
+		local string = ("%s [%u] (%s)%s%s"):format(area.name, id, area.owner,
+			area.open and (" [" .. S("Open") .. "]") or "",
+			(area.canPvP and not creative_mode) and (" [" .. S("PvP enabled") .. "]") or "")
+		areaStrings[#areaStrings + 1] = string:trim()
 	end
 
 	local str = ""
