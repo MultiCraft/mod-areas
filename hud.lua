@@ -8,49 +8,58 @@ local vround = vector.round
 local tconcat, tinsert = table.concat, table.insert
 local creative_mode = minetest.settings:get_bool("creative_mode")
 
-local function update_hud(player, name, pos)
-	local areaStrings = {}
-	local getAreasAtPos = areas:getAreasAtPos(pos)
-
-	for id, area in pairs(getAreasAtPos) do
-		local string = ("%s [%u] (%s)%s%s"):format(area.name, id, area.owner,
-			area.open and (" [" .. S("Open") .. "]") or "",
-			(area.canPvP and not creative_mode) and (" [" .. S("PvP enabled") .. "]") or "")
-		areaStrings[#areaStrings + 1] = string:trim()
+local function createAreaString(area, id)
+	local parts = {"🛡️ ", area.name, " [", id, "] (", area.owner, ")"}
+	if area.open then
+		tinsert(parts, " [" .. S("Open") .. "]")
 	end
 
-	local str = ""
+	if area.canPvP and not creative_mode then
+		tinsert(parts, " [" .. S("PvP enabled") .. "]")
+	end
+
+	return tconcat(parts):trim()
+end
+
+local function updateHud(player, name, pos)
+	local areaStrings, getAreasAtPos = {}, areas:getAreasAtPos(pos)
+
+	if next(getAreasAtPos) then
+	--	tinsert(areaStrings, S("Areas:"))
+		for id, area in pairs(getAreasAtPos) do
+			tinsert(areaStrings, createAreaString(area, id))
+		end
+	end
+
 	for _, area in pairs(areas:getExternalHudEntries(pos)) do
+		local str = ""
 		if area.name then str = area.name .. " " end
 		if area.id then str = str .. "[" .. area.id .. "] " end
 		if area.owner then str = str .. "(" .. area.owner .. ")" end
-		areaStrings[#areaStrings + 1] = str
+		tinsert(areaStrings, str)
 	end
 
 	if areas.invite_code then
-		areaStrings[#areaStrings + 1] = areas.invite_code
-	end
-
-	if next(getAreasAtPos) then
-		tinsert(areaStrings, 1, S("Areas:"))
+		tinsert(areaStrings, areas.invite_code)
 	end
 
 	local areaString = tconcat(areaStrings, "\n")
 	local hud = areas.hud[name]
 	if not hud then
-		hud = {}
+		hud = {
+			areasId = player:hud_add({
+				hud_elem_type = "text",
+				name		= "Areas",
+				number		= 0xFFFFFF,
+				position	= {x = 0,   y =  1},
+				offset		= {x = 8,   y = -8},
+				scale		= {x = 200, y = 60},
+				alignment	= {x = 1,   y = -1},
+				text		= areaString
+			}),
+			oldAreas = areaString
+		}
 		areas.hud[name] = hud
-		hud.areasId = player:hud_add({
-			hud_elem_type = "text",
-			name		= "Areas",
-			number		= 0xFFFFFF,
-			position	= {x = 0,   y =  1},
-			offset		= {x = 8,   y = -8},
-			scale		= {x = 200, y = 60},
-			alignment	= {x = 1,   y = -1},
-			text		= areaString
-		})
-		hud.oldAreas = areaString
 	elseif hud.oldAreas ~= areaString then
 		player:hud_change(hud.areasId, "text", areaString)
 		hud.oldAreas = areaString
@@ -63,7 +72,7 @@ minetest.register_playerstep(function(_, playernames)
 		if player and player:is_player() then
 			local pos = vround(player:get_pos())
 			if minetest.is_valid_pos(pos) then
-				update_hud(player, name, pos)
+				updateHud(player, name, pos)
 			end
 		end
 	end
