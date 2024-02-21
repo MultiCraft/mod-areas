@@ -38,14 +38,16 @@ minetest.register_on_protection_violation(function(pos, name)
 end)
 
 local function can_pvp_at(pos)
+	local default = areas.config.pvp_by_default
 	for id in pairs(areas:getAreasAtPos(pos)) do
 		-- This uses areas:canPvP instead of area.canPvP in case areas:canPvP
 		-- is overridden
-		if areas:canPvP(id) then
-			return true
+		local value = areas:canPvP(id)
+		if value ~= default then
+			return value
 		end
 	end
-	return false
+	return default
 end
 
 minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)

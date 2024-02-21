@@ -14,7 +14,12 @@ local function createAreaString(area, id)
 		tinsert(parts, " [" .. S("Open") .. "]")
 	end
 
-	if area.canPvP and not creative_mode then
+	if areas.config.pvp_by_default then
+		-- Compare with false as nil = default
+		if area.canPvP == false and not creative_mode then
+			tinsert(parts, " [" .. S("PvP disabled") .. "]")
+		end
+	elseif area.canPvP and not creative_mode then
 		tinsert(parts, " [" .. S("PvP enabled") .. "]")
 	end
 

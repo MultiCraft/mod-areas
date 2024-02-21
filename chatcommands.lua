@@ -493,7 +493,7 @@ minetest.register_chatcommand("area_pvp", {
 				S("Area @1 does not exist or is not owned by you.", id)
 		end
 
-		local canPvP = areas.areas[id].canPvP
+		local canPvP = areas:canPvP(id)
 
 		if not canPvP then
 			local players = {}
@@ -513,8 +513,12 @@ minetest.register_chatcommand("area_pvp", {
 			end
 		end
 
-		-- Save false as nil to avoid inflating the DB.
-		areas.areas[id].canPvP = not canPvP or nil
+		if areas.config.pvp_by_default == not canPvP then
+			-- Save the default value as nil to avoid inflating the DB.
+			areas.areas[id].canPvP = nil
+		else
+			areas.areas[id].canPvP = not canPvP
+		end
 		areas:save()
 		return true, S("PvP is @1 in area @2.",
 			not canPvP and S("enabled") or S("disabled"), id)
