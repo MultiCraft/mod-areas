@@ -3,7 +3,7 @@
 # Static paths do not work well with settings
 #areas.filename (Configuration file path) string (world_path)/areas.dat
 
-# When enabled, makes PvP opt-out rather than opt-in.
+# Turn on PvP everywhere
 areas.pvp_by_default (PvP by default) bool false
 
 # Allow players with a privilege create their own areas using /protect
