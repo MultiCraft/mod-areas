@@ -167,8 +167,10 @@ end
 -- @returns true or false (enabled or disabled)
 function areas:canPvP(id)
 	local area = self.areas[id]
-	if not area or area.canPvP == nil then
+	if not area then
 		return areas.config.pvp_by_default
+	elseif area.canPvP == nil then
+		return false
 	end
 	return area.canPvP
 end
