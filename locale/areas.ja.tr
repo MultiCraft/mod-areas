@@ -78,6 +78,7 @@ disabled=使用禁止
 Areas:=エリア
 Open=オープン
 PvP enabled=PvP対応
+PvP disabled=PvP無効
 
 ### interact.lua ###
 

@@ -78,6 +78,7 @@ disabled=deficientes
 Areas:=Áreas:
 Open=Aberto
 PvP enabled=PvP activado
+PvP disabled=PvP desativado
 
 ### interact.lua ###
 

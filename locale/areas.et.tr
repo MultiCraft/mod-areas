@@ -78,6 +78,7 @@ disabled=puudega
 Areas:=Valdkonnad:
 Open=Avatud
 PvP enabled=PvP lubatud
+PvP disabled=PvP keelatud
 
 ### interact.lua ###
 

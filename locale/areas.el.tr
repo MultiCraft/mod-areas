@@ -78,6 +78,7 @@ disabled=disabled
 Areas:=Περιοχές:
 Open=Ανοίξτε το
 PvP enabled=Ενεργό PvP
+PvP disabled=PvP απενεργοποιημένο
 
 ### interact.lua ###
 

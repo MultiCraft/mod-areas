@@ -78,6 +78,7 @@ disabled=tắt
 Areas:=Khu vực:
 Open=Mở
 PvP enabled=PvP trên
+PvP disabled=PvP bị vô hiệu hóa
 
 ### interact.lua ###
 

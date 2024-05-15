@@ -78,6 +78,7 @@ disabled=neįgalieji
 Areas:=Sritys:
 Open=Atviras
 PvP enabled=Įjungtas PvP
+PvP disabled=PvP išjungtas
 
 ### interact.lua ###
 

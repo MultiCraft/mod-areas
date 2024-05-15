@@ -78,6 +78,7 @@ disabled=disabled
 Areas:=Területek:
 Open=Nyissa meg a  címet.
 PvP enabled=PvP engedélyezve
+PvP disabled=PvP letiltva
 
 ### interact.lua ###
 

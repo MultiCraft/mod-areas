@@ -78,6 +78,7 @@ disabled=zakázané
 Areas:=Oblasti:
 Open=Otevřít
 PvP enabled=PvP povoleno
+PvP disabled=PvP zakázán
 
 ### interact.lua ###
 

@@ -78,6 +78,7 @@ disabled=disabled
 Areas:=Alueet:
 Open=Avaa
 PvP enabled=PvP käytössä
+PvP disabled=PvP poistettu käytöstä
 
 ### interact.lua ###
 

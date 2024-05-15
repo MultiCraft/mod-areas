@@ -78,6 +78,7 @@ disabled=disabilitato
 Areas:=Aree:
 Open=Aperto
 PvP enabled=PvP abilitato
+PvP disabled=PvP disattivato
 
 ### interact.lua ###
 

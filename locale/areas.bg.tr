@@ -78,6 +78,7 @@ disabled=изключени
 Areas:=Области:
 Open=Отворете
 PvP enabled=Разрешен PvP
+PvP disabled=PvP е изключен
 
 ### interact.lua ###
 
