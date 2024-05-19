@@ -28,6 +28,7 @@ local function updateHud(player, name, pos)
 	--	tinsert(areaStrings, S("Areas:"))
 		for id, area in pairs(getAreasAtPos) do
 			tinsert(areaStrings, createAreaString(area, id))
+			if #areaStrings == 10 then break end
 		end
 	end
 
