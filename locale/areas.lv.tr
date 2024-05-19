@@ -78,6 +78,7 @@ disabled=invalīdiem
 Areas:=Jomas:
 Open=Atvērt
 PvP enabled=Ieslēgts PvP
+PvP disabled=PvP atspējots
 
 ### interact.lua ###
 

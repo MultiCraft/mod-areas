@@ -168,10 +168,11 @@ end
 function areas:canPvP(id)
 	local area = self.areas[id]
 	if not area then
-		return true
+		return areas.config.pvp_by_default
+	elseif area.canPvP == nil then
+		return false
 	end
-	-- canPvP is nil when false
-	return area.canPvP or false
+	return area.canPvP
 end
 
 -- Checks if a area between two points is entirely contained by another area.

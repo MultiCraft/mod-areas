@@ -78,6 +78,7 @@ disabled=dezactivat
 Areas:=Domenii:
 Open=Deschideți
 PvP enabled=PvP activat
+PvP disabled=PvP dezactivat
 
 ### interact.lua ###
 

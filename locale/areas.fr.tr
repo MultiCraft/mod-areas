@@ -78,6 +78,7 @@ disabled=désactivé
 Areas:=Zones :
 Open=Ouvrir
 PvP enabled=JcJ activé
+PvP disabled=PvP désactivé
 
 ### interact.lua ###
 

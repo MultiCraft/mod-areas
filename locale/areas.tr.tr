@@ -78,6 +78,7 @@ disabled=engelli
 Areas:=Alanlar:
 Open=Açık
 PvP enabled=PvP etkin
+PvP disabled=PvP devre dışı
 
 ### interact.lua ###
 

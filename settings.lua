@@ -28,6 +28,7 @@ end
 --------------
 
 setting("string", "filename", world_path.."/areas.dat")
+setting("boolean", "pvp_by_default", false)
 
 -- Allow players with a privilege create their own areas
 -- within the maximum size and number.

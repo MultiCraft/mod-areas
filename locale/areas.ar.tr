@@ -78,6 +78,7 @@ disabled=عاجز
 Areas:=المناطق:
 Open=يفتح
 PvP enabled=تمكين حماية الأصناف النباتية
+PvP disabled=تم تعطيل حماية الأصناف النباتية
 
 ### interact.lua ###
 

@@ -78,6 +78,7 @@ disabled=vypnuté
 Areas:=Oblasti:
 Open=Otvorte stránku
 PvP enabled=PvP povolený
+PvP disabled=PvP vypnuté
 
 ### interact.lua ###
 

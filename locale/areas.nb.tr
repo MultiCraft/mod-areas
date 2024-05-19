@@ -78,6 +78,7 @@ disabled=deaktivert
 Areas:=Områder:
 Open=Åpent
 PvP enabled=PvP aktivert
+PvP disabled=PvP deaktivert
 
 ### interact.lua ###
 
