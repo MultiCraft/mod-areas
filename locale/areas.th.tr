@@ -1,0 +1,117 @@
+# textdomain: areas
+
+### chatcommands.lua ###
+
+<AreaName>=<ชื่อพื้นที่>
+<NewOwner>=<เจ้าของใหม่>
+<ParentID>=<รหัสผู้ปกครอง>
+<PlayerName>=<ชื่อผู้เล่น>
+<newName>=<ชื่อใหม่>
+@1 has given you control over the area "@2" (ID @3).=@1 ให้คุณควบคุมพื้นที่ "@2" (ID @3)
+@1 spanning up to @2x@3x@4.=@1 ขยายไปจนถึง @2x@3x@4
+A regular expression is required.=จำเป็นต้องมีนิพจน์ทั่วไป
+Area @1 does not exist or is not owned by you.=ไม่มีพื้นที่ @1 หรือคุณไม่ได้เป็นเจ้าของ
+Area closed for faction members.=พื้นที่ปิดสำหรับสมาชิกฝ่าย
+Area closed.=ปิดพื้นที่.
+Area does not exist.=ไม่มีพื้นที่นี้
+Area opened for faction members.=พื้นที่เปิดให้สมาชิกฝ่าย
+Area opened.=เปิดพื้นที่แล้ว.
+Area protected. ID: @1=พื้นที่คุ้มครอง. รหัส: @1
+Area renamed.=เปลี่ยนชื่อพื้นที่แล้ว
+Area successfully moved.=ย้ายพื้นที่เรียบร้อยแล้ว
+Change the owner of an area using its ID=เปลี่ยนเจ้าของพื้นที่โดยใช้รหัส
+Find areas using a Lua regular expression=ค้นหาพื้นที่โดยใช้นิพจน์ทั่วไป Lua
+Get information about area configuration and usage.=รับข้อมูลเกี่ยวกับการกำหนดค่าพื้นที่และการใช้งาน
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=ให้สิทธิ์ผู้เล่นในการเข้าถึงพื้นที่ย่อยระหว่างสองตำแหน่งที่ได้รับการปกป้องแล้ว ให้ใช้ set_owner หากคุณไม่ต้องการให้ตั้งค่าพาเรนต์
+
+(by @1)=(โดย @1)
+
+Invalid regular expression.=นิพจน์ทั่วไปไม่ถูกต้อง
+Limit: @1 areas=จำกัด: @1 พื้นที่
+Limit: no area count limit=ขีดจำกัด: ไม่มีการจำกัดการนับพื้นที่
+List your areas=ระบุพื้นที่ของคุณ
+Move (or resize) an area to the current positions.=ย้าย (หรือปรับขนาด) พื้นที่ไปยังตำแหน่งปัจจุบัน
+No matches found.=ไม่พบรายการที่ตรงกัน
+No visible areas.=ไม่มีพื้นที่ที่มองเห็นได้
+Too many areas to list all!=มีพื้นที่มากเกินไปที่จะแสดงรายการทั้งหมด!
+Owner changed.=เปลี่ยนเจ้าของแล้ว
+Players with the "@1" privilege can protect up to @2 areas=ผู้เล่นที่มีสิทธิ์ "@1" สามารถปกป้องได้ถึง @2 พื้นที่
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=ปกป้องพื้นที่ระหว่างสองตำแหน่งและให้ผู้เล่นเข้าถึงได้โดยไม่ต้องตั้งค่าพาเรนต์ของพื้นที่เป็นพื้นที่ที่มีอยู่
+
+Protect your own area=ปกป้องพื้นที่ของคุณเอง
+Recursively remove areas using an ID=ลบพื้นที่ซ้ำๆ โดยใช้ ID
+Remove an area using an ID=ลบพื้นที่โดยใช้ ID
+Removed area @1=ลบพื้นที่ @1
+Removed area @1 and it's sub areas.=ลบพื้นที่ @1 และพื้นที่ย่อยแล้ว
+Removes all ownerless areas=ลบพื้นที่ที่ไม่มีเจ้าของทั้งหมด
+Rename an area that you own=เปลี่ยนชื่อพื้นที่ที่คุณเป็นเจ้าของ
+Self protection is disabled.=การป้องกันตนเองถูกปิดใช้งาน
+Self protection is enabled.=เปิดใช้งานการป้องกันตนเองแล้ว
+That area doesn't exist.=พื้นที่นั้นไม่มีอยู่จริง
+The player "@1" does not exist.=ไม่มีผู้เล่น "@1"
+Toggle an area open (anyone can interact) or closed=สลับพื้นที่เป็นเปิด (ใครๆ ก็สามารถโต้ตอบได้) หรือปิด
+Toggle an area open/closed for members in your faction.=สลับพื้นที่เปิด/ปิดสำหรับสมาชิกในกลุ่มของคุณ
+You are an area administrator ("areas" privilege).=คุณเป็นผู้ดูแลพื้นที่ (สิทธิ์ "พื้นที่")
+You can protect areas=คุณสามารถปกป้องพื้นที่ได้
+You can't protect that area.=คุณไม่สามารถปกป้องพื้นที่นั้นได้
+You can't protect that area: @1=คุณไม่สามารถปกป้องพื้นที่นั้นได้: @1
+You don't have the necessary privilege ("@1").=คุณไม่มีสิทธิ์ที่จำเป็น ("@1")
+You don't own that area.=คุณไม่ได้เป็นเจ้าของพื้นที่นั้น
+You have @1 areas.=คุณมี @1 พื้นที่
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=คุณได้รับสิทธิ์ควบคุมพื้นที่ #@1 พิมพ์ /list_areas เพื่อแสดงพื้นที่ของคุณ
+
+You have extended area protection limits ("areas_high_limit" privilege).=คุณได้ขยายขีดจำกัดการป้องกันพื้นที่ (สิทธิ์ "areas_high_limit")
+
+You have the necessary privilege ("@1").=คุณมีสิทธิ์ที่จำเป็น ("@1")
+You need to select an area first.=คุณต้องเลือกพื้นที่ก่อน
+
+You cannot enable PvP, there are other players in the area: @1.=คุณไม่สามารถเปิดใช้งาน PvP ได้ มีผู้เล่นอื่นอยู่ในพื้นที่: @1
+PvP is @1 in area @2.=PvP อยู่ที่ @1 ในพื้นที่ @2
+enabled=เปิดใช้งาน
+disabled=พิการ
+
+### hud.lua ###
+
+Areas:=พื้นที่:
+Open=เปิด
+PvP enabled=เปิดใช้งาน PvP แล้ว
+PvP disabled=PvP ปิดการใช้งาน
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 ได้รับการคุ้มครองโดย @2
+Wow, wow, take it easy!=ว้าว ว้าว ใจเย็นๆ นะ!
+PvP is not allowed in this area!=ไม่อนุญาตให้ใช้ PvP ในพื้นที่นี้!
+
+### internal.lua ###
+
+Area is too big.=พื้นที่มีขนาดใหญ่เกินไป
+
+Self protection is disabled or you do not have the necessary privilege.=การป้องกันตนเองถูกปิดใช้งานหรือคุณไม่มีสิทธิ์ที่จำเป็น
+
+The area intersects with @1 [@2] (@3).=พื้นที่ตัดกับ @1 [@2] (@3)
+
+You have reached the maximum amount of areas that you are allowed to protect.=คุณได้เข้าถึงพื้นที่สูงสุดที่คุณได้รับอนุญาตให้ปกป้องแล้ว
+Target player has reached the maximum amount of areas they are allowed to protect.=ผู้เล่นเป้าหมายได้เข้าถึงพื้นที่สูงสุดที่พวกเขาได้รับอนุญาตให้ปกป้องแล้ว
+
+### pos.lua ###
+
+<not set>=<ไม่ได้ตั้งค่า>
+Area @1 selected.=เลือกพื้นที่ @1 แล้ว
+Area position @1 set to @2=ตำแหน่งพื้นที่ @1 ตั้งค่าเป็น @2
+Position @1 set to @2=ตำแหน่ง @1 ตั้งค่าเป็น @2
+Position @1:=ตำแหน่ง @1:
+Select an area by ID.=เลือกพื้นที่ตาม ID
+Select position @1 by punching a node.=เลือกตำแหน่ง @1 โดยเจาะโหนด
+Select positions by punching two nodes.=เลือกตำแหน่งโดยเจาะสองโหนด
+
+Set area protection region position @1 to your location or the one specified=ตั้งค่าตำแหน่งขอบเขตการคุ้มครองพื้นที่ @1 เป็นตำแหน่งของคุณหรือตำแหน่งที่ระบุ
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=ตั้งค่าขอบเขตการป้องกันพื้นที่ ตำแหน่ง 1 หรือตำแหน่ง 2 โดยการเจาะโหนดหรือแสดงขอบเขต
+
+The area @1 does not exist.=ไม่มีพื้นที่ @1
+Unable to get position.=ไม่สามารถรับตำแหน่งได้
+Unknown subcommand: @1=คำสั่งย่อยที่ไม่รู้จัก: @1
