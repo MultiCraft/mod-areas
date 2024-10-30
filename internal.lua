@@ -21,7 +21,6 @@ function areas:save()
 end
 
 local function migrate_by_strings(self)
-	local t1 = core.get_us_time()
 	local migrated = 0
 	for _, area in pairs(self.areas) do
 		-- Search without a pattern (the "true" argument) as it is much faster
