@@ -9,12 +9,48 @@ end
 
 -- Save the areas table to a file
 function areas:save()
-	local datastr = minetest.write_json(self.areas, true)
+	-- HACK: Add the version code at the end so that areas can be downgraded
+	-- without issue, minetest.parse_json ignores extra data at the end of the
+	-- string.
+	local datastr = minetest.write_json(self.areas, true) .. "\nv2"
 	if not datastr then
 		minetest.log("error", "[areas] Failed to serialize area data!")
 		return
 	end
 	return minetest.safe_file_write(self.config.filename, datastr)
+end
+
+local function migrate_by_strings(self)
+	local t1 = core.get_us_time()
+	local migrated = 0
+	for _, area in pairs(self.areas) do
+		-- Search without a pattern (the "true" argument) as it is much faster
+		local position = area.name:find("\27(T@areas)", 1, true)
+		if position then
+			-- Parse the "(by <name>)" suffix and store in the "prev_owner" field
+			if not area.prev_owner then
+				area.prev_owner = area.name:match("\27%(T@areas%)%(by \27F([A-Za-z0-9_%-]-)\27E%)\27E$")
+			end
+
+			-- Remove the translation escape sequence from the area name
+			area.name = area.name:sub(1, position - 1):gsub(" $", "")
+
+			migrated = migrated + 1
+		end
+
+		-- Remove broken by strings
+		position = area.name:find(" (by ", 1, true)
+		if position then
+			area.name = area.name:sub(1, position - 1)
+		end
+	end
+
+	-- No need to bother saving the database, if it doesn't get saved this
+	-- migration will just get run again on the next restart
+	if migrated > 0 then
+		minetest.log("action", "[areas] Migrated " .. migrated ..
+			" \"(by <player>)\" strings in area names")
+	end
 end
 
 -- Load the areas table from the save file
@@ -25,7 +61,12 @@ function areas:load()
 		return err
 	end
 	local data = file:read("*a")
+	local need_migration = true
 	if data:sub(1, 1) == "[" then
+		if data:sub(-3) == "\nv2" then
+			data = data:sub(1, -4)
+			need_migration = false
+		end
 		self.areas, err = minetest.parse_json(data)
 	else
 		self.areas, err = minetest.deserialize(data)
@@ -38,6 +79,9 @@ function areas:load()
 			tostring(err))
 	end
 	file:close()
+	if need_migration then
+		migrate_by_strings(self)
+	end
 	self:populateStore()
 end
 

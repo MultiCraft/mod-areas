@@ -6,10 +6,19 @@ areas.hud = {}
 
 local vround = vector.round
 local tconcat, tinsert = table.concat, table.insert
+local sub8 = utf8.sub
 local creative_mode = minetest.settings:get_bool("creative_mode")
 
+local function trim_area_name(name)
+	return sub8(name, 1, areas.config.max_area_name_length)
+end
+
 local function createAreaString(area, id)
-	local parts = {"🛡️ ", area.name, " [", id, "] (", area.owner, ")"}
+	local parts = {"🛡️ ", trim_area_name(area.name), " [", id, "] (", area.owner, ")"}
+	if area.prev_owner then
+		tinsert(parts, 3, " " .. S("(by @1)", area.prev_owner))
+	end
+
 	if area.open then
 		tinsert(parts, " [" .. S("Open") .. "]")
 	end
@@ -25,7 +34,7 @@ local function createAreaString(area, id)
 		end
 	end
 
-	return tconcat(parts):trim()
+	return tconcat(parts)
 end
 
 local function updateHud(player, name, pos)
