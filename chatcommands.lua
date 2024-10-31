@@ -169,6 +169,7 @@ minetest.register_chatcommand("rename_area", {
 		newName = sub8(newName, 1, areas.config.max_area_name_length)
 
 		areas.areas[id].name = newName
+		areas.areas[id].prev_owner = nil
 		areas:save()
 		return true, S("Area renamed.")
 	end
