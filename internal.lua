@@ -44,11 +44,11 @@ local function migrate_by_strings(self)
 		end
 	end
 
-	-- No need to bother saving the database, if it doesn't get saved this
-	-- migration will just get run again on the next restart
 	if migrated > 0 then
 		minetest.log("action", "[areas] Migrated " .. migrated ..
 			" \"(by <player>)\" strings in area names")
+
+		self:save()
 	end
 end
 
