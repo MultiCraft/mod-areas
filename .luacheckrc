@@ -10,6 +10,7 @@ read_globals = {
 	"AreaStore",
 	"default",
 	"mesecon",
+	"utf8",
 	table = { fields = { "copy", "getn", "indexof" } }
 }
 

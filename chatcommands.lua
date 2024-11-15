@@ -1,5 +1,6 @@
 local S = areas.S
 
+local sub8 = utf8.sub
 local anticurse_exists = minetest.global_exists("chat_anticurse")
 
 minetest.register_chatcommand("protect", {
@@ -21,6 +22,8 @@ minetest.register_chatcommand("protect", {
 				return
 			end
 		end
+
+		param = sub8(param, 1, areas.config.max_area_name_length)
 
 		minetest.log("action", "/protect invoked, owner="..name..
 				" AreaName="..param..
@@ -112,6 +115,8 @@ minetest.register_chatcommand("add_owner", {
 			end
 		end
 
+		areaName = sub8(param, 1, areas.config.max_area_name_length)
+
 		minetest.log("action", name.." runs /add_owner. Owner = "..ownerName..
 				" AreaName = "..areaName.." ParentID = "..pid..
 				" StartPos = "..pos1.x..","..pos1.y..","..pos1.z..
@@ -125,7 +130,7 @@ minetest.register_chatcommand("add_owner", {
 		end
 
 		local id = areas:add(ownerName, areaName, pos1, pos2, pid)
-		areas.areas[id].name = areaName .. " " .. S("(by @1)", name)
+		areas.areas[id].prev_owner = name
 		areas:save()
 
 		minetest.chat_send_player(ownerName,
@@ -161,7 +166,10 @@ minetest.register_chatcommand("rename_area", {
 			end
 		end
 
+		newName = sub8(newName, 1, areas.config.max_area_name_length)
+
 		areas.areas[id].name = newName
+		areas.areas[id].prev_owner = nil
 		areas:save()
 		return true, S("Area renamed.")
 	end
@@ -302,7 +310,7 @@ minetest.register_chatcommand("change_owner", {
 					.." or is not owned by you.", id)
 		end
 		areas.areas[id].owner = newOwner
-		areas.areas[id].name = areas.areas[id].name .. " " .. S("(by @1)", name)
+		areas.areas[id].prev_owner = name
 		areas:save()
 		minetest.chat_send_player(newOwner,
 			S("@1 has given you control over the area \"@2\" (ID @3).",
