@@ -1,4 +1,7 @@
 # textdomain: areas
+Can administer areas=Может администрировать зоны
+Can protect more, bigger areas=Может защищать больше и более крупные зоны
+Can protect areas=Может защищать зоны
 
 ### chatcommands.lua ###
 
@@ -7,7 +10,7 @@
 <ParentID>=<РодственныйID>
 <PlayerName>=<ИмяИгрока>
 <newName>=<НовоеИмя>
-@1 has given you control over the area "@2" (ID @3).=@1 дал вам контроль над областью "@2" (ID @3).
+@1 has given you control over the area "@2" (ID @3).=@1 дал вам контроль над областью «@2» (ID @3).
 @1 spanning up to @2x@3x@4.=@1 охватыв. до @2x@3x@4.
 A regular expression is required.=Требуется регулярное выражение.
 Area @1 does not exist or is not owned by you.=Область @1 не существует или не принадлежит вам.
@@ -36,7 +39,7 @@ No matches found.=Совпадения не найдены.
 No visible areas.=Нет видимых зон.
 Too many areas to list all!=Слишком много зон, чтобы показать все.
 Owner changed.=Владелец изменён.
-Players with the "@1" privilege can protect up to @2 areas=Игроки с привилегией "@1" могут защитить до @2 областей
+Players with the "@1" privilege can protect up to @2 areas=Игроки с привилегией «@1» могут защитить до @2 областей
 
 Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Защитите область между двумя позициями и предоставьте игроку доступ к ней, без установки родительской области на любую существующую область
 
@@ -50,14 +53,14 @@ Rename an area that you own=Переименовывает зону которо
 Self protection is disabled.=Защита отключена.
 Self protection is enabled.=Защита включена.
 That area doesn't exist.=Эта зона не существует.
-The player "@1" does not exist.=Игрок "@1" не существует.
+The player "@1" does not exist.=Игрок «@1» не существует.
 Toggle an area open (anyone can interact) or closed=Делает зону открытой (любой может взаимодействовать) или закрытой
 Toggle an area open/closed for members in your faction.=Переключить состояние открыто/закрыто для членов вашей фракции.
 You are an area administrator ("areas" privilege).=Вы являетесь администратором зон (привилегия "areas").
 You can protect areas=Вы можете защитить зону
 You can't protect that area.=Вы не можете защитить зону.
 You can't protect that area: @1=Вы не можете защитить зону: @1
-You don't have the necessary privilege ("@1").=Вы не имеете нужной привилегии ("@1").
+You don't have the necessary privilege ("@1").=Вы не имеете нужной привилегии («@1»).
 You don't own that area.=Вы не владеете этой зоной.
 You have @1 areas.=Вы имеете @1 зон.
 
@@ -65,7 +68,7 @@ You have been granted control over area #@1. Type /list_areas to show your areas
 
 You have extended area protection limits ("areas_high_limit" privilege).=У вас есть расширенные пределы защиты зоны (привилегия "area_high_limit").
 
-You have the necessary privilege ("@1").=У вас есть необходимая привилегия ("@1").
+You have the necessary privilege ("@1").=У вас есть необходимая привилегия («@1»).
 You need to select an area first.=Вам нужно выбрать зону вначале.
 
 You cannot enable PvP, there are other players in the area: @1.=Вы не можете включить PvP, в зоне есть другие игроки: @1.

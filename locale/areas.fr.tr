@@ -1,4 +1,7 @@
 # textdomain: areas
+Can administer areas=Peut administrer des domaines
+Can protect more, bigger areas=Peut protéger des zones plus nombreuses et plus étendues
+Can protect areas=Peut protéger des zones
 
 ### chatcommands.lua ###
 
