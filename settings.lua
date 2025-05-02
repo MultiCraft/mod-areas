@@ -38,5 +38,11 @@ setting("string",   "self_protection_privilege", "interact")
 setting("position", "self_protection_max_size", {x = 128, y = 128, z = 128})
 setting("number",   "self_protection_max_areas", 16)
 -- For players with the areas_high_limit privilege.
-setting("position", "self_protection_max_size_high", {x = 512, y = 512, z = 512})
-setting("number",   "self_protection_max_areas_high", 64)
+local base_size = areas.config["self_protection_max_size"]
+local base_areas = areas.config["self_protection_max_areas"]
+setting("position", "self_protection_max_size_high", {
+	x = base_size.x * 4,
+	y = base_size.y * 4,
+	z = base_size.z * 4
+})
+setting("number",   "self_protection_max_areas_high", base_areas * 4)
