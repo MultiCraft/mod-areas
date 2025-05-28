@@ -521,12 +521,8 @@ minetest.register_chatcommand("area_pvp", {
 			end
 		end
 
-		if areas.config.pvp_by_default == not canPvP then
-			-- Save the default value as nil to avoid inflating the DB.
-			areas.areas[id].canPvP = nil
-		else
-			areas.areas[id].canPvP = not canPvP
-		end
+		-- Save false as nil to avoid inflating the DB.
+		areas.areas[id].canPvP = (not canPvP) or nil
 		areas:save()
 		return true, S("PvP is @1 in area @2.",
 			not canPvP and S("enabled") or S("disabled"), id)
