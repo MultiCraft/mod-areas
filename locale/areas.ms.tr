@@ -1,0 +1,120 @@
+# textdomain: areas
+Can administer areas=Boleh mentadbir kawasan
+Can protect more, bigger areas=Boleh melindungi kawasan yang lebih luas dan lebih besar
+Can protect areas=Boleh melindungi kawasan
+
+### chatcommands.lua ###
+
+<AreaName>=<AreaName>
+<NewOwner>=<NewOwner>
+<ParentID>=<ParentID>
+<PlayerName>=<PlayerName>
+<newName>=<newName>
+@1 has given you control over the area "@2" (ID @3).=@1 telah memberikan anda kawalan ke atas kawasan "@2" (ID @3).
+@1 spanning up to @2x@3x@4.=@1 merentasi sehingga @2x@3x@4.
+A regular expression is required.=Ungkapan biasa diperlukan.
+Area @1 does not exist or is not owned by you.=Kawasan @1 tidak wujud atau tidak dimiliki oleh anda.
+Area closed for faction members.=Kawasan ditutup untuk ahli-ahli faksi.
+Area closed.=Kawasan ditutup.
+Area does not exist.=Kawasan tidak wujud.
+Area opened for faction members.=Kawasan dibuka untuk ahli-ahli faksi.
+Area opened.=Kawasan dibuka.
+Area protected. ID: @1=Kawasan dilindungi. ID: @1
+Area renamed.=Kawasan dinamakan semula.
+Area successfully moved.=Kawasan berjaya dipindahkan.
+Change the owner of an area using its ID=Tukar pemilik kawasan menggunakan IDnya
+Find areas using a Lua regular expression=Cari kawasan menggunakan ungkapan biasa Lua
+Get information about area configuration and usage.=Dapatkan maklumat mengenai konfigurasi dan penggunaan kawasan.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Berikan pemain akses ke sub-kawasan antara dua kedudukan yang telah dilindungi, Gunakan set_owner jika anda tidak mahu induk ditetapkan.
+
+(by @1)=(oleh @1)
+
+Invalid regular expression.=Ungkapan biasa tidak sah.
+Limit: @1 areas=Had: @1 kawasan
+Limit: no area count limit=Had: tiada had kiraan kawasan
+List your areas=Senaraikan kawasan anda
+Move (or resize) an area to the current positions.=Gerakkan (atau ubah saiz) kawasan ke kedudukan semasa.
+No matches found.=Tiada padanan ditemui.
+No visible areas.=Tiada kawasan yang dapat dilihat.
+Too many areas to list all!=Terlalu banyak kawasan untuk disenaraikan semua!
+Owner changed.=Pemilik telah berubah.
+Players with the "@1" privilege can protect up to @2 areas=Pemain dengan keistimewaan '@1' boleh melindungi sehingga @2 kawasan
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Lindungi kawasan antara dua kedudukan dan berikan pemain akses kepadanya tanpa menetapkan induk kawasan kepada mana-mana kawasan yang ada
+
+Protect your own area=Lindungi kawasan anda sendiri
+Recursively remove areas using an ID=Buang kawasan secara berulang menggunakan ID
+Remove an area using an ID=Buang kawasan menggunakan ID
+Removed area @1=Kawasan @1 telah dibuang
+Removed area @1 and it's sub areas.=Kawasan @1 dan sub kawasan telah dibuang.
+Removes all ownerless areas=Membuang semua kawasan tanpa pemilik
+Rename an area that you own=Namakan semula kawasan yang anda miliki
+Self protection is disabled.=Perlindungan diri dinyahaktifkan.
+Self protection is enabled.=Perlindungan diri didayakan.
+That area doesn't exist.=Kawasan itu tidak wujud.
+The player "@1" does not exist.=Pemain '@1' tidak wujud.
+Toggle an area open (anyone can interact) or closed=Togol kawasan terbuka (sesiapa sahaja boleh berinteraksi) atau tertutup
+Toggle an area open/closed for members in your faction.=Togol kawasan terbuka/tertutup untuk ahli dalam faksi anda.
+You are an area administrator ("areas" privilege).=Anda adalah pentadbir kawasan (keistimewaan "kawasan").
+You can protect areas=Anda boleh melindungi kawasan
+You can't protect that area.=Anda tidak boleh melindungi kawasan itu.
+You can't protect that area: @1=Anda tidak boleh melindungi kawasan itu: @1
+You don't have the necessary privilege ("@1").=Anda tidak mempunyai keistimewaan yang diperlukan ("@1").
+You don't own that area.=Anda tidak memiliki kawasan itu.
+You have @1 areas.=Anda mempunyai @1 kawasan.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Anda telah diberikan kawalan ke atas kawasan #@1. Taip /list_areas untuk menunjukkan kawasan anda.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Anda mempunyai had perlindungan kawasan yang diperluaskan (keistimewaan "areas_high_limit").
+
+You have the necessary privilege ("@1").=Anda mempunyai keistimewaan yang diperlukan ("@1").
+You need to select an area first.=Anda perlu memilih kawasan terlebih dahulu.
+
+You cannot enable PvP, there are other players in the area: @1.=Anda tidak boleh mengaktifkan PvP, terdapat pemain lain di kawasan ini: @1.
+PvP is @1 in area @2.=PvP adalah @1 di kawasan @2.
+enabled=dibolehkan
+disabled=dinyahdayakan
+
+### hud.lua ###
+
+Areas:=Kawasan:
+Open=Buka
+PvP enabled=PvP didayakan
+PvP disabled=PvP dinyahdayakan
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 dilindungi oleh @2.
+Wow, wow, take it easy!=Wow, wow, bertenang!
+PvP is not allowed in this area!=PvP tidak dibenarkan di kawasan ini!
+
+### internal.lua ###
+
+Area is too big.=Kawasan terlalu besar.
+
+Self protection is disabled or you do not have the necessary privilege.=Perlindungan diri dinyahdayakan atau anda tidak mempunyai keistimewaan yang diperlukan.
+
+The area intersects with @1 [@2] (@3).=Kawasan ini bersilang dengan @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Anda telah mencapai jumlah maksimum kawasan yang dibenarkan untuk dilindungi.
+Target player has reached the maximum amount of areas they are allowed to protect.=Pemain sasaran telah mencapai jumlah maksimum kawasan yang dibenarkan untuk dilindungi.
+
+### pos.lua ###
+
+<not set>=<not set>
+Area @1 selected.=Kawasan @1 dipilih.
+Area position @1 set to @2=Kedudukan kawasan @1 ditetapkan kepada @2
+Position @1 set to @2=Kedudukan @1 ditetapkan kepada @2
+Position @1:=Kedudukan @1:
+Select an area by ID.=Pilih kawasan mengikut ID.
+Select position @1 by punching a node.=Pilih kedudukan @1 dengan menebuk nod.
+Select positions by punching two nodes.=Pilih kedudukan dengan menebuk dua nod.
+
+Set area protection region position @1 to your location or the one specified=Tetapkan kedudukan kawasan perlindungan kawasan @1 kepada lokasi anda atau yang dinyatakan
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Tetapkan kawasan perlindungan kawasan, kedudukan 1, atau kedudukan 2 dengan menebuk nod, atau paparkan kawasan
+
+The area @1 does not exist.=Kawasan @1 tidak wujud.
+Unable to get position.=Tidak dapat mendapatkan kedudukan.
+Unknown subcommand: @1=Subperintah tidak diketahui: @1
