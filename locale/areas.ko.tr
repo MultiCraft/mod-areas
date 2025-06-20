@@ -1,0 +1,120 @@
+# textdomain: areas
+Can administer areas=영역 관리 가능
+Can protect more, bigger areas=더 넓은 영역을 보호할 수 있습니다.
+Can protect areas=영역 보호 가능
+
+### chatcommands.lua ###
+
+<AreaName>=<지역 이름>
+<NewOwner>=<새 소유자>
+<ParentID>=<부모ID>
+<PlayerName>=<플레이어 이름>
+<newName>=<새이름>
+@1 has given you control over the area "@2" (ID @3).=@1은 "@2"(ID @3) 영역을 제어할 수 있는 권한을 부여했습니다.
+@1 spanning up to @2x@3x@4.=@1은 최대 @2x@3x@4에 걸쳐 있습니다.
+A regular expression is required.=정규식이 필요합니다.
+Area @1 does not exist or is not owned by you.=영역 @1이 존재하지 않거나 회원님이 소유하지 않습니다.
+Area closed for faction members.=진영원이 출입할 수 없는 구역입니다.
+Area closed.=지역 폐쇄.
+Area does not exist.=영역이 존재하지 않습니다.
+Area opened for faction members.=진영원에게 개방된 지역입니다.
+Area opened.=영역이 열렸습니다.
+Area protected. ID: @1=영역 보호. ID: @1
+Area renamed.=영역 이름이 변경되었습니다.
+Area successfully moved.=영역이 성공적으로 이동했습니다.
+Change the owner of an area using its ID=ID를 사용하여 영역의 소유자 변경
+Find areas using a Lua regular expression=Lua 정규식을 사용하여 영역 찾기
+Get information about area configuration and usage.=영역 구성 및 사용법에 대한 정보를 확인하세요.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=플레이어에게 이미 보호된 두 위치 사이의 하위 영역에 대한 액세스 권한을 부여하고, 부모가 설정되지 않도록 하려면 set_owner를 사용하세요.
+
+(by @1)=(작성자: @1)
+
+Invalid regular expression.=잘못된 정규식입니다.
+Limit: @1 areas=제한: @1 영역
+Limit: no area count limit=제한: 면적 수 제한 없음
+List your areas=영역 나열
+Move (or resize) an area to the current positions.=영역을 현재 위치로 이동(또는 크기 조정)합니다.
+No matches found.=일치하는 항목이 없습니다.
+No visible areas.=표시되는 영역이 없습니다.
+Too many areas to list all!=나열하기에는 너무 많은 영역이 있습니다!
+Owner changed.=소유자가 변경되었습니다.
+Players with the "@1" privilege can protect up to @2 areas="@1" 권한을 가진 플레이어는 최대 @2 영역까지 보호할 수 있습니다.
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=두 위치 사이의 영역을 보호하고 플레이어에게 영역의 부모를 기존 영역으로 설정하지 않고 해당 영역에 대한 액세스 권한을 부여합니다.
+
+Protect your own area=나만의 영역 보호
+Recursively remove areas using an ID=ID를 사용하여 재귀적으로 영역 제거
+Remove an area using an ID=ID를 사용하여 영역 제거
+Removed area @1=제거된 영역 @1
+Removed area @1 and it's sub areas.=제거된 영역 @1과 하위 영역입니다.
+Removes all ownerless areas=소유자가 없는 모든 영역을 제거합니다.
+Rename an area that you own=소유한 영역의 이름 바꾸기
+Self protection is disabled.=자체 보호 기능이 비활성화되어 있습니다.
+Self protection is enabled.=자체 보호가 활성화되어 있습니다.
+That area doesn't exist.=해당 영역은 존재하지 않습니다.
+The player "@1" does not exist.=플레이어 '@1'이 존재하지 않습니다.
+Toggle an area open (anyone can interact) or closed=영역을 공개(누구나 상호 작용 가능) 또는 비공개로 전환합니다.
+Toggle an area open/closed for members in your faction.=내 진영의 구성원에게 지역을 개방/폐쇄할 수 있습니다.
+You are an area administrator ("areas" privilege).=회원님은 영역 관리자('영역' 권한)입니다.
+You can protect areas=영역을 보호할 수 있습니다.
+You can't protect that area.=그 영역은 보호할 수 없습니다.
+You can't protect that area: @1=그 영역은 보호할 수 없습니다: @1
+You don't have the necessary privilege ("@1").=필요한 권한("@1")이 없습니다.
+You don't own that area.=해당 영역은 회원님의 소유가 아닙니다.
+You have @1 areas.=@1 영역이 있습니다.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=영역 #@1에 대한 제어 권한이 부여되었습니다. 영역을 표시하려면 /list_areas를 입력합니다.
+
+You have extended area protection limits ("areas_high_limit" privilege).=영역 보호 한도('areas_high_limit' 권한)를 확장했습니다.
+
+You have the necessary privilege ("@1").=필요한 권한("@1")이 있습니다.
+You need to select an area first.=먼저 영역을 선택해야 합니다.
+
+You cannot enable PvP, there are other players in the area: @1.=해당 지역에 다른 플레이어가 있어 플레이어 간 전투를 활성화할 수 없습니다: @1.
+PvP is @1 in area @2.=지역 @2에서 플레이어 간 전투는 @1입니다.
+enabled=활성화
+disabled=비활성화됨
+
+### hud.lua ###
+
+Areas:=영역:
+Open=열기
+PvP enabled=PvP 활성화
+PvP disabled=PvP 비활성화
+
+### interact.lua ###
+
+@1 is protected by @2.=@1은 @2로 보호됩니다.
+Wow, wow, take it easy!=와우, 와우, 진정하세요!
+PvP is not allowed in this area!=이 지역에서는 PvP가 허용되지 않습니다!
+
+### internal.lua ###
+
+Area is too big.=면적이 너무 큽니다.
+
+Self protection is disabled or you do not have the necessary privilege.=자기 보호 기능이 비활성화되어 있거나 필요한 권한이 없습니다.
+
+The area intersects with @1 [@2] (@3).=이 영역은 @1 [@2](@3)와 교차합니다.
+
+You have reached the maximum amount of areas that you are allowed to protect.=보호할 수 있는 최대 영역에 도달했습니다.
+Target player has reached the maximum amount of areas they are allowed to protect.=대상 플레이어가 보호할 수 있는 최대 구역에 도달했습니다.
+
+### pos.lua ###
+
+<not set>=<설정되지 않음
+Area @1 selected.=영역 @1이 선택되었습니다.
+Area position @1 set to @2=영역 위치 @1을 @2로 설정
+Position @1 set to @2=위치 @1을 @2로 설정
+Position @1:=위치 @1:
+Select an area by ID.=ID로 영역을 선택합니다.
+Select position @1 by punching a node.=노드를 펀칭하여 @1 위치를 선택합니다.
+Select positions by punching two nodes.=두 개의 노드를 펀칭하여 위치를 선택합니다.
+
+Set area protection region position @1 to your location or the one specified=지역 보호 영역 위치 @1을 사용자 위치 또는 지정된 위치로 설정합니다.
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=노드를 펀칭하여 영역 보호 영역, 위치 1 또는 위치 2를 설정하거나 영역을 표시합니다.
+
+The area @1 does not exist.=영역 @1이 존재하지 않습니다.
+Unable to get position.=위치를 파악할 수 없습니다.
+Unknown subcommand: @1=알 수 없는 하위 명령입니다: @1

@@ -1,0 +1,120 @@
+# textdomain: areas
+Can administer areas=可管理的领域
+Can protect more, bigger areas=可以保护更多、更大的区域
+Can protect areas=可保护区域
+
+### chatcommands.lua ###
+
+<AreaName>=<区域名称>
+<NewOwner>=<新业主>
+<ParentID>=<家长 ID>
+<PlayerName>=<玩家名称>
+<newName>=<新名称>
+@1 has given you control over the area "@2" (ID @3).=@1 允许您控制“@2”区域（ID @3）。
+@1 spanning up to @2x@3x@4.=@1 跨度可达 @2x@3x@4。
+A regular expression is required.=需要正则表达式。
+Area @1 does not exist or is not owned by you.=区域 @1 不存在或不属于您。
+Area closed for faction members.=该区域对派别成员关闭。
+Area closed.=区域关闭。
+Area does not exist.=区域不存在。
+Area opened for faction members.=为派别成员开放的区域。
+Area opened.=开放的区域。
+Area protected. ID: @1=保护区。ID：@1
+Area renamed.=区域重新命名。
+Area successfully moved.=成功移动的区域。
+Change the owner of an area using its ID=使用 ID 更改区域的所有者
+Find areas using a Lua regular expression=使用 Lua 正则表达式查找区域
+Get information about area configuration and usage.=获取有关区域配置和使用情况的信息。
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=让玩家进入两个已被保护的位置之间的子区域，如果不想设置父区域，请使用 set_owner。
+
+(by @1)=（由 @1）
+
+Invalid regular expression.=正则表达式无效。
+Limit: @1 areas=限制：@1 个区域
+Limit: no area count limit=限制：无区域计数限制
+List your areas=列出您的领域
+Move (or resize) an area to the current positions.=将一个区域移动（或调整大小）到当前位置。
+No matches found.=未找到匹配项。
+No visible areas.=无可见区域。
+Too many areas to list all!=领域太多，无法一一列举！
+Owner changed.=业主已变更。
+Players with the "@1" privilege can protect up to @2 areas=拥有“@1”权限的玩家最多可以保护 @2 个区域
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=保护两个位置之间的区域，让玩家可以进入该区域，而无需将该区域的父区域设置为任何现有区域
+
+Protect your own area=保护自己的区域
+Recursively remove areas using an ID=使用 ID 递归移除区域
+Remove an area using an ID=使用 ID 删除区域
+Removed area @1=删除区域 @1
+Removed area @1 and it's sub areas.=删除区域 @1 及其子区域。
+Removes all ownerless areas=删除所有无主区域
+Rename an area that you own=重新命名您拥有的区域
+Self protection is disabled.=自我保护被禁用。
+Self protection is enabled.=启用自我保护功能。
+That area doesn't exist.=那个区域并不存在。
+The player "@1" does not exist.=玩家“@1”不存在。
+Toggle an area open (anyone can interact) or closed=切换开放（任何人都可以互动）或关闭的区域
+Toggle an area open/closed for members in your faction.=为派别成员打开/关闭区域。
+You are an area administrator ("areas" privilege).=您是区域管理员（"区域 "权限）。
+You can protect areas=您可以保护以下区域
+You can't protect that area.=你无法保护那个区域。
+You can't protect that area: @1=你无法保护那个区域：@1
+You don't have the necessary privilege ("@1").=您没有必要的权限（“@1”）。
+You don't own that area.=那片区域不属于你。
+You have @1 areas.=您有 @1 个区域。
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=您已获得 #@1 区域的控制权。 输入 /list_areas 显示您的区域。
+
+You have extended area protection limits ("areas_high_limit" privilege).=您拥有扩展的区域保护限制（"area_high_limit" 权限）。
+
+You have the necessary privilege ("@1").=您拥有必要的权限（“@1”）。
+You need to select an area first.=您需要先选择一个区域。
+
+You cannot enable PvP, there are other players in the area: @1.=您无法启用 PvP，因为该区域还有其他玩家：@1.
+PvP is @1 in area @2.=PvP 在 @1 区域 @2.
+enabled=启用
+disabled=残
+
+### hud.lua ###
+
+Areas:=地区
+Open=开放
+PvP enabled=启用 PvP
+PvP disabled=禁用 PvP
+
+### interact.lua ###
+
+@1 is protected by @2.=@1 受 @2 保护。
+Wow, wow, take it easy!=哇，哇，别紧张！
+PvP is not allowed in this area!=该区域不允许 PvP！
+
+### internal.lua ###
+
+Area is too big.=面积太大。
+
+Self protection is disabled or you do not have the necessary privilege.=自我保护被禁用或您没有必要的权限。
+
+The area intersects with @1 [@2] (@3).=该区域与 @1 [@2] (@3) 相交。
+
+You have reached the maximum amount of areas that you are allowed to protect.=您已达到允许保护的最大区域数量。
+Target player has reached the maximum amount of areas they are allowed to protect.=目标玩家可保护的区域已达到上限。
+
+### pos.lua ###
+
+<not set>=<未设置
+Area @1 selected.=区域 @1 已选定。
+Area position @1 set to @2=区域位置 @1 设置为 @2
+Position @1 set to @2=位置 @1 设置为 @2
+Position @1:=位置 @1：
+Select an area by ID.=按 ID 选择区域。
+Select position @1 by punching a node.=通过打孔选择位置 @1。
+Select positions by punching two nodes.=通过冲压两个节点来选择位置。
+
+Set area protection region position @1 to your location or the one specified=将区域保护区域位置 @1 设置为您的位置或指定的位置
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=通过打孔节点设置区域保护区域、位置 1 或位置 2，或显示区域
+
+The area @1 does not exist.=区域 @1 不存在。
+Unable to get position.=无法定位。
+Unknown subcommand: @1=未知子命令：@1

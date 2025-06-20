@@ -1,4 +1,7 @@
 # textdomain: areas
+Can administer areas=Lahko upravljate območja
+Can protect more, bigger areas=Zaščitite lahko več in večja območja
+Can protect areas=Lahko zaščiti območja
 
 ### chatcommands.lua ###
 
@@ -78,6 +81,7 @@ disabled=onemogočeno
 Areas:=Področja:
 Open=Odpri
 PvP enabled=Omogočen PvP
+PvP disabled=Onemogočen PvP
 
 ### interact.lua ###
 
