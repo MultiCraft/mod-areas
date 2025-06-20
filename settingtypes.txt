@@ -9,6 +9,9 @@ areas.pvp_by_default (PvP by default) bool false
 # Maximum length of the area name
 max_area_name_length (max area name length) int 40
 
+# PvP Cooldown
+pvp_cooldown (PvP cooldown) int 0.2
+
 # Allow players with a privilege create their own areas using /protect
 # within the specified size and amount limits.
 areas.self_protection (Self protection) bool false

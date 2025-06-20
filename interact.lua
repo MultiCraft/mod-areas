@@ -2,6 +2,8 @@ local S = areas.S
 
 local enable_damage = minetest.settings:get_bool("enable_damage")
 
+local COOLDOWN = areas.config.pvp_cooldown
+
 local old_is_protected = minetest.is_protected
 function minetest.is_protected(pos, name)
 	if not areas:canInteract(pos, name) then
@@ -63,7 +65,7 @@ minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 	local player_name = hitter:get_player_name()
 
 	-- It is possible to use cheats
-	if time_from_last_punch < 0.25 then
+	if time_from_last_punch < COOLDOWN then
 		minetest.chat_send_player(player_name, S("Wow, wow, take it easy!"))
 		return true
 	end
@@ -81,7 +83,7 @@ end)
 local old_calculate_knockback = minetest.calculate_knockback
 function minetest.calculate_knockback(player, hitter, time_from_last_punch, ...)
 	if player:is_player() and hitter and hitter:is_player() and
-			(time_from_last_punch < 0.25 or not can_pvp_at(player:get_pos()) or
+			(time_from_last_punch < COOLDOWN or not can_pvp_at(player:get_pos()) or
 			not can_pvp_at(hitter:get_pos())) then
 		return 0
 	end

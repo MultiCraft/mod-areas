@@ -30,6 +30,7 @@ end
 setting("string",  "filename", world_path.."/areas.dat")
 setting("boolean", "pvp_by_default", false)
 setting("number",  "max_area_name_length", 40)
+setting("number",  "pvp_cooldown", 0.2)
 
 -- Allow players with a privilege create their own areas
 -- within the maximum size and number.
