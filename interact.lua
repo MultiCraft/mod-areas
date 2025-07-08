@@ -12,14 +12,10 @@ function minetest.is_protected(pos, name)
 	return old_is_protected(pos, name)
 end
 
-local tconcat = table.concat
 minetest.register_on_protection_violation(function(pos, name)
 	if not areas:canInteract(pos, name) then
-		local owners = areas:getNodeOwners(pos)
 		minetest.chat_send_player(name,
-			S("@1 is protected by @2.",
-				minetest.pos_to_string(pos),
-				tconcat(owners, ", ")))
+			S("This area @1 is protected by another player.", minetest.pos_to_string(pos)))
 
 		-- Little damage player
 		local player = minetest.get_player_by_name(name)

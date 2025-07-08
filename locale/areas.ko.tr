@@ -85,7 +85,7 @@ PvP disabled=PvP 비활성화
 
 ### interact.lua ###
 
-@1 is protected by @2.=@1은 @2로 보호됩니다.
+This area @1 is protected by another player.=이 영역 @1은 다른 플레이어가 보호하고 있습니다.
 Wow, wow, take it easy!=와우, 와우, 진정하세요!
 PvP is not allowed in this area!=이 지역에서는 PvP가 허용되지 않습니다!
 

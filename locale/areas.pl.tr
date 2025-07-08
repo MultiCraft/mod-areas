@@ -85,7 +85,7 @@ PvP disabled=PvP wyłączone
 
 ### interact.lua ###
 
-@1 is protected by @2.=@1 jest chroniony przez @2.
+This area @1 is protected by another player.=Obszar @1 jest chroniony przez innego gracza.
 Wow, wow, take it easy!=Wow, wow, spokojnie!
 PvP is not allowed in this area!=PvP nie jest dozwolone na tym obszarze!
 

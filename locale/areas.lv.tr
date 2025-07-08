@@ -85,7 +85,7 @@ PvP disabled=PvP atspējots
 
 ### interact.lua ###
 
-@1 is protected by @2.=@1 ir aizsargāts ar @2.
+This area @1 is protected by another player.=Šo laukumu @1 aizsargā cits spēlētājs.
 Wow, wow, take it easy!=Wow, wow, ņemiet to mierīgi!
 PvP is not allowed in this area!=PvP šajā zonā nav atļauts!
 

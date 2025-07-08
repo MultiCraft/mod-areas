@@ -85,7 +85,7 @@ PvP disabled=PvP poistettu käytöstä
 
 ### interact.lua ###
 
-@1 is protected by @2.=@1 on @2:n suojaama.
+This area @1 is protected by another player.=Tätä aluetta @1 suojaa toinen pelaaja.
 Wow, wow, take it easy!=Vau, vau, ota rauhallisesti!
 PvP is not allowed in this area!=PvP ei ole sallittua tällä alueella!
 

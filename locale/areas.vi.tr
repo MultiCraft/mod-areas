@@ -85,7 +85,7 @@ PvP disabled=PvP bị vô hiệu hóa
 
 ### interact.lua ###
 
-@1 is protected by @2.=@1 được bảo vệ bởi @2.
+This area @1 is protected by another player.=Khu vực này @1 được bảo vệ bởi một người chơi khác.
 Wow, wow, take it easy!=Chà, từ từ!
 PvP is not allowed in this area!=PvP bị tắt trong khu vực này!
 

@@ -85,7 +85,7 @@ PvP disabled=PvP letiltva
 
 ### interact.lua ###
 
-@1 is protected by @2.=Az @1-et az @2 védi.
+This area @1 is protected by another player.=Ezt a területet @1 egy másik játékos védi.
 Wow, wow, take it easy!=Hűha, hűha, nyugalom!
 PvP is not allowed in this area!=A PvP nem megengedett ezen a területen!
 

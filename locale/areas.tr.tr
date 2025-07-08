@@ -85,7 +85,7 @@ PvP disabled=PvP devre dışı
 
 ### interact.lua ###
 
-@1 is protected by @2.=@1, @2 tarafından korunmaktadır.
+This area @1 is protected by another player.=Bu alan @1 başka bir oyuncu tarafından korunmaktadır.
 Wow, wow, take it easy!=Vay, vay, sakin ol!
 PvP is not allowed in this area!=Bu alanda PvP'ye izin verilmez!
 

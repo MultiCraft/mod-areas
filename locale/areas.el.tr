@@ -85,7 +85,7 @@ PvP disabled=PvP απενεργοποιημένο
 
 ### interact.lua ###
 
-@1 is protected by @2.=Το @1 προστατεύεται από το @2.
+This area @1 is protected by another player.=Αυτή η περιοχή @1 προστατεύεται από άλλον παίκτη.
 Wow, wow, take it easy!=Ουάου, ουάου, ηρέμησε!
 PvP is not allowed in this area!=Το PvP δεν επιτρέπεται σε αυτή την περιοχή!
 

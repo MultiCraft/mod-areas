@@ -85,7 +85,7 @@ PvP disabled=تم تعطيل حماية الأصناف النباتية
 
 ### interact.lua ###
 
-@1 is protected by @2.=@1 محمي بواسطة @2.
+This area @1 is protected by another player.=هذه المنطقة @1 محمية من قبل لاعب آخر.
 Wow, wow, take it easy!=واو ، واو ، خذها بسهولة!
 PvP is not allowed in this area!=PvP غير مسموح به في هذه المنطقة!
 
