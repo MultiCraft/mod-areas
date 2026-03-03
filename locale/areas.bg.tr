@@ -2,6 +2,7 @@
 Can administer areas=Може да администрира области
 Can protect more, bigger areas=Може да защитава повече и по-големи площи
 Can protect areas=Може да защитава области
+You have reached the limit of areas.=Достигнахте максималния брой зони.
 
 ### chatcommands.lua ###
 

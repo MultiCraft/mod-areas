@@ -252,6 +252,16 @@ function areas:getChildren(id)
 	return children
 end
 
+function areas:getAreasCount(name)
+	local count = 0
+	for _, area in pairs(self.areas) do
+		if area.owner == name then
+			count = count + 1
+		end
+	end
+	return count
+end
+
 -- Checks if the user has sufficient privileges.
 -- If the player is not a administrator it also checks
 -- if the area intersects other areas that they do not own.
@@ -260,6 +270,10 @@ end
 function areas:canPlayerAddArea(pos1, pos2, name)
 	local privs = minetest.get_player_privs(name)
 	if privs.areas then
+		if areas:getAreasCount(name) >= self.config.self_max_areas_per_player then
+			return false, S("You have reached the limit of areas.")
+		end
+
 		return true
 	end
 
@@ -282,16 +296,10 @@ function areas:canPlayerAddArea(pos1, pos2, name)
 	end
 
 	-- Check number of areas the user has and make sure it not above the max
-	local count = 0
-	for _, area in pairs(self.areas) do
-		if area.owner == name then
-			count = count + 1
-		end
-	end
 	local max_areas = privs.areas_high_limit and
 			self.config.self_protection_max_areas_high or
 			self.config.self_protection_max_areas
-	if count >= max_areas then
+	if areas:getAreasCount(name) >= max_areas then
 		return false, S("You have reached the maximum amount of"
 				.." areas that you are allowed to protect.")
 	end
@@ -310,6 +318,10 @@ end
 function areas:canPlayerAddOwner(pos1, pos2, name)
 	local privs = minetest.get_player_privs(name)
 	if privs.areas then
+		if areas:getAreasCount(name) >= self.config.self_max_areas_per_player then
+			return false, S("You have reached the limit of areas.")
+		end
+
 		return true
 	end
 
@@ -324,16 +336,10 @@ function areas:canPlayerAddOwner(pos1, pos2, name)
 	end
 
 	-- Check number of areas the user has and make sure it not above the max
-	local count = 0
-	for _, area in pairs(self.areas) do
-		if area.owner == name then
-			count = count + 1
-		end
-	end
 	local max_areas = privs.areas_high_limit and
 			self.config.self_protection_max_areas_high or
 			self.config.self_protection_max_areas
-	if count >= max_areas then
+	if areas:getAreasCount(name) >= max_areas then
 		return false, S("Target player has reached the maximum amount of"
 				.. " areas they are allowed to protect.")
 	end

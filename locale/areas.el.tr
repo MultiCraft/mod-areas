@@ -2,6 +2,7 @@
 Can administer areas=Μπορεί να διαχειριστεί περιοχές
 Can protect more, bigger areas=Μπορεί να προστατεύσει περισσότερες, μεγαλύτερες περιοχές
 Can protect areas=Μπορεί να προστατεύσει περιοχές
+You have reached the limit of areas.=Έχετε φτάσει το όριο περιοχών.
 
 ### chatcommands.lua ###
 

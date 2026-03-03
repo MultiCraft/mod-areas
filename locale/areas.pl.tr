@@ -2,6 +2,7 @@
 Can administer areas=Może zarządzać obszarami
 Can protect more, bigger areas=Może chronić więcej, większych obszarów
 Can protect areas=Może chronić obszary
+You have reached the limit of areas.=Osiągnięto limit obszarów.
 
 ### chatcommands.lua ###
 

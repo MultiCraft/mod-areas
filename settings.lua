@@ -47,3 +47,4 @@ setting("position", "self_protection_max_size_high", {
 	z = base_size.z * 4
 })
 setting("number",   "self_protection_max_areas_high", base_areas * 4)
+setting("number",   "self_max_areas_per_player", 1024)

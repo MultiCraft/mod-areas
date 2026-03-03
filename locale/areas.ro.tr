@@ -2,6 +2,7 @@
 Can administer areas=Poate administra zone
 Can protect more, bigger areas=Poate proteja mai multe zone, mai mari
 Can protect areas=Poate proteja zonele
+You have reached the limit of areas.=Ai atins limita de zone.
 
 ### chatcommands.lua ###
 

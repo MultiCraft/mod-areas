@@ -2,6 +2,7 @@
 Can administer areas=Alanları yönetebilir
 Can protect more, bigger areas=Daha fazla, daha büyük alanları koruyabilir
 Can protect areas=Alanları koruyabilir
+You have reached the limit of areas.=Alan sınırına ulaştın.
 
 ### chatcommands.lua ###
 

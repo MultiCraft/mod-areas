@@ -2,6 +2,7 @@
 Can administer areas=영역 관리 가능
 Can protect more, bigger areas=더 넓은 영역을 보호할 수 있습니다.
 Can protect areas=영역 보호 가능
+You have reached the limit of areas.=지역 한도에 도달했습니다.
 
 ### chatcommands.lua ###
 

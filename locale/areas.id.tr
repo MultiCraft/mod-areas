@@ -2,6 +2,7 @@
 Can administer areas=Dapat mengelola area
 Can protect more, bigger areas=Dapat melindungi lebih banyak, area yang lebih luas
 Can protect areas=Dapat melindungi area
+You have reached the limit of areas.=Kamu sudah mencapai batas area.
 
 ### chatcommands.lua ###
 

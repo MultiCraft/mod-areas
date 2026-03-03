@@ -2,6 +2,7 @@
 Can administer areas=Gali administruoti sritis
 Can protect more, bigger areas=Gali apsaugoti daugiau ir didesnių plotų
 Can protect areas=Gali apsaugoti sritis
+You have reached the limit of areas.=Pasiektas didžiausias leidžiamas sričių skaičius.
 
 ### chatcommands.lua ###
 

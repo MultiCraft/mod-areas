@@ -2,6 +2,7 @@
 Can administer areas=Kan administrere områder
 Can protect more, bigger areas=Kan beskytte flere og større områder
 Can protect areas=Kan beskytte områder
+You have reached the limit of areas.=Du har nået grænsen for områder.
 
 ### chatcommands.lua ###
 

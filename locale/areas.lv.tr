@@ -2,6 +2,7 @@
 Can administer areas=Var pārvaldīt jomas
 Can protect more, bigger areas=Var aizsargāt vairāk un lielākas platības
 Can protect areas=Var aizsargāt teritorijas
+You have reached the limit of areas.=Jūs esat sasniedzis zonu skaita limitu.
 
 ### chatcommands.lua ###
 
