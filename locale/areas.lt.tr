@@ -5,11 +5,11 @@ Can protect areas=Gali apsaugoti sritis
 
 ### chatcommands.lua ###
 
-<AreaName>=<AreaName>
+<AreaName>=<Vietovės pavadinimas>
 <NewOwner>=<Naujasis savininkas>
-<ParentID>=<ParentID>
-<PlayerName>=<PlayerName>
-<newName>=<naujas pavadinimas>
+<ParentID>=<Tėvo ID>
+<PlayerName>=<Žaidėjo vardas>
+<NewName>=<Naujas pavadinimas>
 @1 has given you control over the area "@2" (ID @3).="@1" suteikė jums valdyti sritį "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1, apimantis iki @2x@3x@4.
 A regular expression is required.=Būtina reguliarioji išraiška.

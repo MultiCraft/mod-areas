@@ -6,10 +6,10 @@ Can protect areas=Pode proteger áreas
 ### chatcommands.lua ###
 
 <AreaName>=<AreaNome>
-<NewOwner>=<NewOwner>
-<ParentID>=<ParentID>
+<NewOwner>=<Novo Proprietário>
+<ParentID>=<IDdospais>
 <PlayerName>=<Nome do Jogador>
-<newName>=<novoNome>
+<NewName>=<Novo nome>
 @1 has given you control over the area "@2" (ID @3).=@1 deu-lhe controlo sobre a área "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 abrangendo até @2x@3x@4.
 A regular expression is required.=É necessária uma expressão regular.

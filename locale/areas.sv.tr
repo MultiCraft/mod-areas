@@ -7,9 +7,9 @@ Can protect areas=Kan skydda områden
 
 <AreaName>=<Områdesnamn>
 <NewOwner>=<Ny ägare>
-<ParentID>=<ParentID>
+<ParentID>=<Föräldra-ID>
 <PlayerName>=<Spelarnamn>
-<newName>=<nyttNamn>
+<NewName>=<Nytt namn>
 @1 has given you control over the area "@2" (ID @3).=@1 har gett dig kontroll över området "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 spänner upp till @2x@3x@4.
 A regular expression is required.=Ett reguljärt uttryck krävs.

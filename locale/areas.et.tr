@@ -6,10 +6,10 @@ Can protect areas=Võib kaitsta alasid
 ### chatcommands.lua ###
 
 <AreaName>=<AreaNimi>
-<NewOwner>=<NewOwner>
+<NewOwner>=<Uus omanik>
 <ParentID>=<ParentID>
 <PlayerName>=<MängijaNimi>
-<newName>=<newName>
+<NewName>=<Uus nimi>
 @1 has given you control over the area "@2" (ID @3).=@1 on andnud teile kontrolli ala "@2" (ID @3) üle.
 @1 spanning up to @2x@3x@4.=@1, mis ulatub kuni @2x@3x@4.
 A regular expression is required.=Vajalik on regulaaravaldis.
@@ -28,7 +28,7 @@ Get information about area configuration and usage.=Saate teavet piirkonna konfi
 
 Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Anda mängijale ligipääs kahe juba kaitstud positsiooni vahelisele alale, Kasuta set_owner, kui sa ei taha, et vanem oleks määratud.
 
-(by @1)=(by @1)
+(by @1)=(autor: @1)
 
 Invalid regular expression.=Lubamatu regulaaravaldis.
 Limit: @1 areas=Piirang: @1 ala

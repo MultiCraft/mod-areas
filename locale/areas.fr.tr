@@ -7,9 +7,9 @@ Can protect areas=Peut protéger des zones
 
 <AreaName>=<Nom de la zone>
 <NewOwner>=<Nouveau propriétaire>
-<ParentID>=<ParentID>
+<ParentID>=<IDParent>
 <PlayerName>=<Nom du joueur>
-<newName>=<nouveauNom>
+<NewName>=<Nouveau nom>
 @1 has given you control over the area "@2" (ID @3).=@1 vous a donné le contrôle de la zone "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 s'étendant jusqu'à @2x@3x@4.
 A regular expression is required.=Une expression régulière est requise.

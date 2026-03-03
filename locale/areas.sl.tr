@@ -6,10 +6,10 @@ Can protect areas=Lahko zaščiti območja
 ### chatcommands.lua ###
 
 <AreaName>=<Naziv območja>
-<NewOwner>=<NewOwner>
+<NewOwner>=<Nov lastnik>
 <ParentID>=<ParentID>
 <PlayerName>=<Ime igralca>
-<newName>=<novo ime>
+<NewName>=<Novo ime>
 @1 has given you control over the area "@2" (ID @3).=@1 vam je dodelil nadzor nad območjem "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1, ki se razteza do @2x@3x@4.
 A regular expression is required.=Zahteva se regularni izraz.

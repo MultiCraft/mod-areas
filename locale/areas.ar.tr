@@ -5,11 +5,11 @@ Can protect areas=يمكن حماية المناطق
 
 ### chatcommands.lua ###
 
-<AreaName>=<AreaName>
+<AreaName>=<اسم المنطقة>
 <NewOwner>=<المالك الجديد>
 <ParentID>=<معرف الوالدين>
-<PlayerName>=<PlayerName>
-<newName>=<newName>
+<PlayerName>=<اسم اللاعب>
+<NewName>=<الاسم الجديد>
 @1 has given you control over the area "@2" (ID @3).=لقد منحك @1 التحكم في المنطقة "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 تمتد حتى @2x @3x @4.
 A regular expression is required.=مطلوب تعبير عادي.

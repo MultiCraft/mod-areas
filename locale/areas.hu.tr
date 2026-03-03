@@ -6,10 +6,10 @@ Can protect areas=Védheti a területeket
 ### chatcommands.lua ###
 
 <AreaName>=<TerületNév>
-<NewOwner>=<NewOwner>
-<ParentID>=<ParentID>
+<NewOwner>=<Új tulajdonos>
+<ParentID>=<Szülőazonosító>
 <PlayerName>=<JátékosNév>
-<newName>=<newName>
+<NewName>=<Új név>
 @1 has given you control over the area "@2" (ID @3).=@1 átadta neked az irányítást a "@2" terület felett (ID @3).
 @1 spanning up to @2x@3x@4.=@1, amely @2x@3x@4-ig terjed.
 A regular expression is required.=Szükség van egy reguláris kifejezésre.
@@ -74,7 +74,7 @@ You need to select an area first.=Először ki kell választania egy területet.
 You cannot enable PvP, there are other players in the area: @1.=Nem engedélyezheted a PvP-t, más játékosok is vannak a területen: @1.
 PvP is @1 in area @2.=PvP @1 a @2 területen.
 enabled=engedélyezve
-disabled=disabled
+disabled=kikapcsolva
 
 ### hud.lua ###
 

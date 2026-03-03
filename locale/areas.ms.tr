@@ -5,11 +5,11 @@ Can protect areas=Boleh melindungi kawasan
 
 ### chatcommands.lua ###
 
-<AreaName>=<AreaName>
-<NewOwner>=<NewOwner>
-<ParentID>=<ParentID>
-<PlayerName>=<PlayerName>
-<newName>=<newName>
+<AreaName>=<Nama Kawasan>
+<NewOwner>=<PemilikBaru>
+<ParentID>=<ID Ibu Bapa>
+<PlayerName>=<NamaPemain>
+<NewName>=<Nama Baru>
 @1 has given you control over the area "@2" (ID @3).=@1 telah memberikan anda kawalan ke atas kawasan "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 merentasi sehingga @2x@3x@4.
 A regular expression is required.=Ungkapan biasa diperlukan.
@@ -102,7 +102,7 @@ Target player has reached the maximum amount of areas they are allowed to protec
 
 ### pos.lua ###
 
-<not set>=<not set>
+<not set>=<tidak ditetapkan>
 Area @1 selected.=Kawasan @1 dipilih.
 Area position @1 set to @2=Kedudukan kawasan @1 ditetapkan kepada @2
 Position @1 set to @2=Kedudukan @1 ditetapkan kepada @2

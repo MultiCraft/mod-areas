@@ -142,7 +142,7 @@ minetest.register_chatcommand("add_owner", {
 
 
 minetest.register_chatcommand("rename_area", {
-	params = "<ID>".." "..S("<newName>"),
+	params = "<ID>".." "..S("<NewName>"),
 	description = S("Rename an area that you own"),
 	func = function(name, param)
 		local id, newName = param:match("^(%d+)%s(.+)$")

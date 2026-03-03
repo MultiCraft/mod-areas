@@ -5,11 +5,11 @@ Can protect areas=Poate proteja zonele
 
 ### chatcommands.lua ###
 
-<AreaName>=<AreaName>
-<NewOwner>=<NewOwner>
-<ParentID>=<ParentID>
+<AreaName>=<Numele zonei>
+<NewOwner>=<Noul proprietar>
+<ParentID>=<ID părinte>
 <PlayerName>=<Numejucător>
-<newName>=<newName>
+<NewName>=<Nume nou>
 @1 has given you control over the area "@2" (ID @3).=@1 v-a acordat controlul asupra zonei "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 care se întinde până la @2x@3x@4.
 A regular expression is required.=Este necesară o expresie regulată.

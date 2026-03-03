@@ -9,7 +9,7 @@ Can protect areas=Kan gebieden beschermen
 <NewOwner>=<NewOwner>
 <ParentID>=<ouderID>
 <PlayerName>=<Spelersnaam>
-<newName>=<nieuwe naam>
+<NewName>=<Nieuwe naam>
 @1 has given you control over the area "@2" (ID @3).=@1 heeft u de controle gegeven over het gebied "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 overlopend tot @2x@3x@4.
 A regular expression is required.=Een reguliere expressie is vereist.
@@ -79,7 +79,7 @@ disabled=uitgeschakeld
 ### hud.lua ###
 
 Areas:=Gebieden:
-Open=Open
+Open=Openen
 PvP enabled=PvP ingeschakeld
 PvP disabled=PvP uitgeschakeld
 

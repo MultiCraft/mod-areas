@@ -5,11 +5,11 @@ Can protect areas=Voi suojella alueita
 
 ### chatcommands.lua ###
 
-<AreaName>=<AreaName>
-<NewOwner>=<NewOwner>
-<ParentID>=<ParentID>
+<AreaName>=<Alueen nimi>
+<NewOwner>=<Uusi omistaja>
+<ParentID>=<Vanhemman tunnus>
 <PlayerName>=<Pelaajan nimi>
-<newName>=<newName>
+<NewName>=<Uusi nimi>
 @1 has given you control over the area "@2" (ID @3).=@1 on antanut sinulle määräysvallan alueella "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 ulottuu @2x@3x@4:ään asti.
 A regular expression is required.=Säännöllinen lauseke vaaditaan.
@@ -74,7 +74,7 @@ You need to select an area first.=Sinun on ensin valittava alue.
 You cannot enable PvP, there are other players in the area: @1.=Et voi ottaa PvP:tä käyttöön, koska alueella on muita pelaajia: @1.
 PvP is @1 in area @2.=PvP on @1 alueella @2.
 enabled=käytössä
-disabled=disabled
+disabled=pois käytöstä
 
 ### hud.lua ###
 
