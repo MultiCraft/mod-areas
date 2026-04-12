@@ -6,9 +6,9 @@ You have reached the limit of areas.=Osiągnięto limit obszarów.
 
 ### chatcommands.lua ###
 
-<AreaName>=<AreaName>.
-<NewOwner>=<NewOwner>.
-<ParentID>=<ParentID>.
+<AreaName>=<NazwaObszaru>
+<NewOwner>=<NowyWłaściciel>
+<ParentID>=<IDNadrzędne>
 <PlayerName>=<NazwaGracza>
 <NewName>=<NowaNazwa>
 @1 has given you control over the area "@2" (ID @3).=@1 przekazał Ci kontrolę nad obszarem "@2" (ID @3).
@@ -80,8 +80,8 @@ disabled=wyłączony
 ### hud.lua ###
 
 Areas:=Obszary:
-Open=Otwórz
-PvP enabled=Włączony PvP
+Open=Otwarte
+PvP enabled=PvP włączone
 PvP disabled=PvP wyłączone
 
 ### interact.lua ###
@@ -103,7 +103,7 @@ Target player has reached the maximum amount of areas they are allowed to protec
 
 ### pos.lua ###
 
-<not set>=<nie ustawiono>.
+<not set>=<nie ustawiono>
 Area @1 selected.=Obszar @1 wybrany.
 Area position @1 set to @2=Pozycja obszaru @1 ustawiona na @2
 Position @1 set to @2=Pozycja @1 ustawiona na @2
