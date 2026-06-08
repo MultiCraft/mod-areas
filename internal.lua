@@ -8,7 +8,7 @@ function areas:player_exists(name)
 end
 
 -- Save the areas table to a file
-function areas:save()
+function areas:save_now()
 	-- HACK: Add the version code at the end so that areas can be downgraded
 	-- without issue, minetest.parse_json ignores extra data at the end of the
 	-- string.
@@ -19,6 +19,25 @@ function areas:save()
 	end
 	return minetest.safe_file_write(self.config.filename, datastr)
 end
+
+-- Save areas once per 10s
+local delayed_save = false
+function areas:save()
+	if not delayed_save then
+		delayed_save = true
+		minetest.after(10, function()
+			self:save_now()
+			delayed_save = false
+		end)
+	end
+end
+
+-- Save areas on shutdown if a delayed save is scheduled
+minetest.register_on_shutdown(function()
+	if delayed_save then
+		areas:save_now()
+	end
+end)
 
 local function migrate_by_strings(self)
 	local migrated = 0
