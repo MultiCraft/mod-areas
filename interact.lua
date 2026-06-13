@@ -2,7 +2,7 @@ local S = areas.S
 
 local enable_damage = minetest.settings:get_bool("enable_damage")
 
-local COOLDOWN = areas.config.pvp_cooldown
+local COOLDOWN = math.max(0.05, areas.config.pvp_cooldown)
 
 local old_is_protected = minetest.is_protected
 function minetest.is_protected(pos, name)
