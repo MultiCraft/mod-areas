@@ -7,8 +7,8 @@ You have reached the limit of areas.=Je hebt het maximum aantal gebieden bereikt
 ### chatcommands.lua ###
 
 <AreaName>=<RuimteNaam>
-<NewOwner>=<NewOwner>
-<ParentID>=<ouderID>
+<NewOwner>=<NieuweEigenaar>
+<ParentID>=<OuderID>
 <PlayerName>=<Spelersnaam>
 <NewName>=<Nieuwe naam>
 @1 has given you control over the area "@2" (ID @3).=@1 heeft u de controle gegeven over het gebied "@2" (ID @3).

@@ -1,0 +1,121 @@
+# textdomain: areas
+Can administer areas=Može upravljati područjima
+Can protect more, bigger areas=Može zaštititi veći broj većih područja
+Can protect areas=Može štititi područja
+You have reached the limit of areas.=Dosegnut je limit područja.
+
+### chatcommands.lua ###
+
+<AreaName>=<NazivPodručja>
+<NewOwner>=<Novi vlasnik>
+<ParentID>=<ID roditelja>
+<PlayerName>=<Ime igrača>
+<NewName>=Novo ime
+@1 has given you control over the area "@2" (ID @3).=@1 ti je dao kontrolu nad područjem „@2” (ID @3).
+@1 spanning up to @2x@3x@4.=@1 obuhvaća do @2x@3x@4.
+A regular expression is required.=Potreban je regularni izraz.
+Area @1 does not exist or is not owned by you.=Područje @1 ne postoji ili nije u tvom vlasništvu.
+Area closed for faction members.=Područje je zatvoreno za članove frakcije.
+Area closed.=Područje je zatvoreno.
+Area does not exist.=Područje ne postoji.
+Area opened for faction members.=Područje je otvoreno za članove frakcije.
+Area opened.=Područje je otvoreno.
+Area protected. ID: @1=Područje je zaštićeno. ID: @1
+Area renamed.=Područje je preimenovano.
+Area successfully moved.=Područje je uspješno premješteno.
+Change the owner of an area using its ID=Promijeni vlasnika područja pomoću njegovog ID-a
+Find areas using a Lua regular expression=Pronađi područja pomoću regularnog izraza u Luau
+Get information about area configuration and usage.=Saznaj više o konfiguraciji i upotrebi područja.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=Omogući igraču pristup podpodručju između dviju pozicija koje su već zaštićene. Upotrijebi set_owner ako ne želiš postaviti nadređenu poziciju.
+
+(by @1)=(autor: @1)
+
+Invalid regular expression.=Nevažeći regularni izraz.
+Limit: @1 areas=Ograničenje: @1 područja
+Limit: no area count limit=Ograničenje: nema ograničenja broja područja
+List your areas=Navedi svoja područja
+Move (or resize) an area to the current positions.=Pomakni (ili promijeni veličinu) područja na trenutačne položaje.
+No matches found.=Nema pronađenih podudaranja.
+No visible areas.=Nema vidljivih područja.
+Too many areas to list all!=Previše područja da bi se sva navela!
+Owner changed.=Vlasnik je promijenjen.
+Players with the "@1" privilege can protect up to @2 areas=Igrači s privilegijom „@1” mogu zaštititi do @2 područja
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Zaštiti područje između dviju pozicija i omogući igraču pristup tom području bez postavljanja roditeljskog područja na bilo koje postojeće područje
+
+Protect your own area=Zaštiti svoje područje
+Recursively remove areas using an ID=Rekurzivno ukloni područja pomoću ID-a
+Remove an area using an ID=Ukloni područje pomoću ID-a
+Removed area @1=Uklonjeno područje @1
+Removed area @1 and it's sub areas.=Uklonjeno područje @1 i njegova podpodručja.
+Removes all ownerless areas=Uklanja sva područja bez vlasnika
+Rename an area that you own=Preimenuj područje koje posjeduješ
+Self protection is disabled.=Samozaštita je isključena.
+Self protection is enabled.=Samozaštita je omogućena.
+That area doesn't exist.=To područje ne postoji.
+The player "@1" does not exist.=Igrač „@1” ne postoji.
+Toggle an area open (anyone can interact) or closed=Uključi/isključi područje (svatko može komunicirati) ili zatvori
+Toggle an area open/closed for members in your faction.=Uključi/isključi pristup području za članove svoje frakcije.
+You are an area administrator ("areas" privilege).=Ti si administrator područja (ovlast „područja”).
+You can protect areas=Možeš zaštititi područja
+You can't protect that area.=Ne možeš zaštititi to područje.
+You can't protect that area: @1=Ne možeš zaštititi to područje: @1
+You don't have the necessary privilege ("@1").=Nemaš potrebnu privilegiju („@1”).
+You don't own that area.=To područje nije u tvom vlasništvu.
+You have @1 areas.=Imaš @1 područja.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Dodijeljena ti je kontrola nad područjem #@1. Upiši /list_areas da vidiš svoja područja.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Imaš proširena ograničenja zaštite područja (privilegija „areas_high_limit”).
+
+You have the necessary privilege ("@1").=Imaš potrebnu privilegiju („@1”).
+You need to select an area first.=Prvo moraš odabrati područje.
+
+You cannot enable PvP, there are other players in the area: @1.=Ne možeš uključiti PvP jer su drugi igrači u području: @1.
+PvP is @1 in area @2.=PvP je @1 u području @2.
+enabled=omogućeno
+disabled=onemogućeno
+
+### hud.lua ###
+
+Areas:=Područja:
+Open=Otvori
+PvP enabled=PvP omogućen
+PvP disabled=PvP je onemogućen
+
+### interact.lua ###
+
+This area @1 is protected by another player.=Ovo područje @1 štiti drugi igrač.
+Wow, wow, take it easy!=Ajme, ajme, polako!
+PvP is not allowed in this area!=PvP nije dopušten u ovom području!
+
+### internal.lua ###
+
+Area is too big.=Područje je preveliko.
+
+Self protection is disabled or you do not have the necessary privilege.=Samozaštita je onemogućena ili nemaš potrebnu privilegiju.
+
+The area intersects with @1 [@2] (@3).=Područje se presijeca s @1 [@2] (@3).
+
+You have reached the maximum amount of areas that you are allowed to protect.=Dosegnut je maksimalni broj područja koja možeš zaštititi.
+Target player has reached the maximum amount of areas they are allowed to protect.=Ciljani igrač dosegao je maksimalan broj područja koja može štititi.
+
+### pos.lua ###
+
+<not set>=Nije postavljeno
+Area @1 selected.=Odabrano područje @1.
+Area position @1 set to @2=Položaj područja @1 postavljen na @2
+Position @1 set to @2=Položaj @1 postavljen na @2
+Position @1:=Pozicija @1:
+Select an area by ID.=Odaberi područje prema ID-u.
+Select position @1 by punching a node.=Odaberi poziciju @1 udarcem u čvor.
+Select positions by punching two nodes.=Odaberi položaje tako što ćeš udariti dva čvora.
+
+Set area protection region position @1 to your location or the one specified=Postavi položaj zaštićene zone @1 na svoju lokaciju ili na onu koja je navedena
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Postavi područje zaštite, poziciju 1 ili poziciju 2 udarcem u čvorove ili prikaži područje
+
+The area @1 does not exist.=Područje @1 ne postoji.
+Unable to get position.=Nije moguće dobiti položaj.
+Unknown subcommand: @1=Nepoznata podnaredba: @1

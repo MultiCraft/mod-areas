@@ -1,0 +1,115 @@
+# textdomain: areas
+Can administer areas=Hududlarni boshqara oladi
+Can protect more, bigger areas=Ko'proq va kattaroq hududlarni himoya qilish imkoniyati
+Can protect areas=Hududlarni himoya qilish imkoniyati
+You have reached the limit of areas.=Siz hududlar soni chegarasiga yetdingiz.
+
+### chatcommands.lua ###
+
+@1 has given you control over the area "@2" (ID @3).=@1 sizga “@2” (ID @3) hududi ustidan nazorat berdi.
+@1 spanning up to @2x@3x@4.=@1 @2x@3x@4 gacha uzilgan.
+A regular expression is required.=Regular ifoda talab qilinadi.
+Area @1 does not exist or is not owned by you.=@1 hududi mavjud emas yoki sizga tegishli emas.
+Area closed for faction members.=Bu hudud fraksiya a'zolariga yopiq.
+Area closed.=Mintaqa yopiq.
+Area does not exist.=Mintaqa mavjud emas.
+Area opened for faction members.=Fraksiya a'zolariga ochilgan hudud.
+Area opened.=Mintaqa ochildi.
+Area protected. ID: @1=Himoyalangan hudud. ID: @1
+Area renamed.=Mintaqaning nomi o'zgartirildi.
+Area successfully moved.=Mintaqa muvaffaqiyatli ko'chirildi.
+Change the owner of an area using its ID=Uning ID yordamida hududning egasini o'zgartiring
+Find areas using a Lua regular expression=Lua muntazam ifodasi yordamida hududlarni toping
+Get information about area configuration and usage.=Mintaqaning konfiguratsiyasi va foydalanishini bilib oling.
+
+Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set.=O'yinchiga allaqachon himoyalangan ikki pozitsiya o'rtasidagi sub-zonaga kirish huquqini bering. Agar siz asosiy zonani belgilashni istamasangiz, set_owner-dan foydalaning.
+
+(by @1)=(@1 tomonidan)
+
+Invalid regular expression.=Yaroqsiz muntazam ifoda.
+Limit: @1 areas=Cheklash: @1 hudud
+Limit: no area count limit=Cheklash: maydon soni cheklanmaydi
+List your areas=O'z hududlaringizni ro'yxatlang
+Move (or resize) an area to the current positions.=Hududni hozirgi joylarga ko'chiring (yoki o'lchamini o'zgartiring).
+No matches found.=Hech qanday mos kelish topilmadi.
+No visible areas.=Koʻrinadigan maydonlar yoʻq.
+Too many areas to list all!=Hammasini sanab bo'lmaydigan darajada ko'p hududlar mavjud!
+Owner changed.=Egalik o'zgartirildi.
+Players with the "@1" privilege can protect up to @2 areas=“@1” imtiyoziga ega o'yinchilar @2 ta hududni himoya qilishlari mumkin
+
+Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area=Ikki pozitsiya o'rtasidagi hududni himoya qiling va hududning ust hududini mavjud hududlardan hech biriga belgilamasdan, o'yinchiga unga kirish imkonini bering
+
+Protect your own area=O'z hududingizni himoya qiling
+Recursively remove areas using an ID=ID yordamida maydonlarni takrorlash usulida olib tashlang
+Remove an area using an ID=ID yordamida hududni olib tashlang
+Removed area @1=@1 hududi olib tashlandi
+Removed area @1 and it's sub areas.=@1 hududi va uning ichki hududlari olib tashlandi.
+Removes all ownerless areas=Egasi bo'lmagan barcha hududlarni olib tashlaydi
+Rename an area that you own=O'zingizga tegishli hududni qayta nomlang
+Self protection is disabled.=O'zini himoya qilish o'chirilgan.
+Self protection is enabled.=O'zini himoya qilish rejimi faol.
+That area doesn't exist.=Ushbu hudud mavjud emas.
+The player "@1" does not exist.=“@1” o'yinchisi mavjud emas.
+Toggle an area open (anyone can interact) or closed=Maydonni ochiq (har kim o'zgartirishi mumkin) yoki yopiq qilishni o'zgartiring
+Toggle an area open/closed for members in your faction.=O'z fraksiyangiz a'zolari uchun hududni ochiq/yopiq qilishni o'zgartiring.
+You are an area administrator ("areas" privilege).=Siz hudud administratorisiz ("hududlar" imtiyoziga egasiz).
+You can protect areas=Siz hududlarni himoya qilishingiz mumkin
+You can't protect that area.=Siz o'sha hududni himoya qila olmaysiz.
+You can't protect that area: @1=Siz o'sha hududni himoya qila olmaysiz: @1
+You don't have the necessary privilege ("@1").=Sizda kerakli imtiyoz (“@1”) mavjud emas.
+You don't own that area.=Sizga bu hudud tegishli emas.
+You have @1 areas.=Sizda @1 maydon mavjud.
+
+You have been granted control over area #@1. Type /list_areas to show your areas.=Sizga #@1 hududi ustidan nazorat berildi. O'z hududlaringizni ko'rish uchun /list_areas deb yozing.
+
+You have extended area protection limits ("areas_high_limit" privilege).=Siz hududlarni himoya qilish chegaralarini kengaytirdingiz ("areas_high_limit" imtiyoz).
+
+You have the necessary privilege ("@1").=Sizda kerakli imtiyoz (“@1”) mavjud.
+You need to select an area first.=Avval maydonni tanlashingiz kerak.
+
+You cannot enable PvP, there are other players in the area: @1.=PvP-ni faol qilish mumkin emas, chunki hududda boshqa o'yinchilar bor: @1.
+PvP is @1 in area @2.=PvP @2 hududida @1.
+enabled=faol
+disabled=oʻchirilgan
+
+### hud.lua ###
+
+Areas:=Hududlar:
+Open=Ochish
+PvP enabled=PvP faol
+PvP disabled=PvP o'chirilgan
+
+### interact.lua ###
+
+This area @1 is protected by another player.=@1 hududi boshqa o'yinchi tomonidan himoya qilinadi.
+Wow, wow, take it easy!=Vau, vau, tinchlan!
+PvP is not allowed in this area!=Bu hududda PvP-ga ruxsat berilmaydi!
+
+### internal.lua ###
+
+Area is too big.=Hudud haddan ortiq katta.
+
+Self protection is disabled or you do not have the necessary privilege.=O'zini himoya qilish o'chirilgan yoki sizda kerakli imtiyoz yo'q.
+
+The area intersects with @1 [@2] (@3).=Mintaqa @1 [@2] (@3) bilan kesishadi.
+
+You have reached the maximum amount of areas that you are allowed to protect.=Siz himoya qilishga ruxsat berilgan hududlar sonining maksimal chegarasiga yetdingiz.
+Target player has reached the maximum amount of areas they are allowed to protect.=Maqsadli o'yinchi himoya qilishga ruxsat berilgan hududlar sonining maksimal chegarasiga yetdi.
+
+### pos.lua ###
+
+Area @1 selected.=@1 maydoni tanlandi.
+Area position @1 set to @2=@1 maydon pozitsiyasi @2 ga o'rnatildi
+Position @1 set to @2=@1 pozitsiyasi @2 ga o'rnatildi
+Position @1:=@1 pozitsiyasi:
+Select an area by ID.=ID orqali hududni tanlang.
+Select position @1 by punching a node.=Tugmachani bosib @1 pozitsiyasini tanlang.
+Select positions by punching two nodes.=Ikki tugunni bosib, o'rinlarni tanlang.
+
+Set area protection region position @1 to your location or the one specified=@1 hududni himoya qilish mintaqasini o'zingizning joylashgan joyingizga yoki belgilangan joyga o'rnating
+
+Set area protection region, position 1, or position 2 by punching nodes, or display the region=Tugmachalarni bosib, himoya hududini, 1-pozitsiyani yoki 2-pozitsiyani belgilang yoki hududni ko'rsating
+
+The area @1 does not exist.=@1 hududi mavjud emas.
+Unable to get position.=O'rningizni aniqlash mumkin emas.
+Unknown subcommand: @1=Noma'lum subbuyruq: @1
