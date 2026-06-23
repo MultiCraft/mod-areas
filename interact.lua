@@ -48,6 +48,15 @@ local function can_pvp_at(pos)
 	return default
 end
 
+local function pvp_allowed(hitter, player)
+	return can_pvp_at(hitter:get_pos()) and can_pvp_at(player:get_pos())
+end
+
+local punch_pvp = {
+	hitter = nil, victim = nil, allowed = false, ms = 0
+}
+local last_kb = {}
+
 minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 	if not enable_damage then
 		return true
@@ -67,7 +76,12 @@ minetest.register_on_punchplayer(function(player, hitter, time_from_last_punch)
 	end
 
 	-- Allow PvP if both players are in a PvP area
-	if can_pvp_at(hitter:get_pos()) and can_pvp_at(player:get_pos()) then
+	local allowed = pvp_allowed(hitter, player)
+	punch_pvp.hitter = player_name
+	punch_pvp.victim = player:get_player_name()
+	punch_pvp.allowed = allowed
+	punch_pvp.ms = minetest.get_us_time() / 1000
+	if allowed then
 		return false
 	end
 
@@ -78,10 +92,34 @@ end)
 
 local old_calculate_knockback = minetest.calculate_knockback
 function minetest.calculate_knockback(player, hitter, time_from_last_punch, ...)
-	if player:is_player() and hitter and hitter:is_player() and
-			(time_from_last_punch < COOLDOWN or not can_pvp_at(player:get_pos()) or
-			not can_pvp_at(hitter:get_pos())) then
-		return 0
+	if player:is_player() and hitter and hitter:is_player() then
+		if time_from_last_punch < COOLDOWN then
+			return 0
+		end
+
+		local now = minetest.get_us_time() / 1000
+		local hname, vname = hitter:get_player_name(), player:get_player_name()
+
+		local allowed
+		if punch_pvp.hitter == hname and punch_pvp.victim == vname and
+				(now - punch_pvp.ms) < 1 then
+			allowed = punch_pvp.allowed
+		else
+			allowed = pvp_allowed(hitter, player)
+		end
+		if not allowed then
+			return 0
+		end
+
+		local prev = last_kb[vname]
+		if prev and (now - prev) < COOLDOWN * 1000 then
+			return 0
+		end
+		last_kb[vname] = now
 	end
 	return old_calculate_knockback(player, hitter, time_from_last_punch, ...)
 end
+
+minetest.register_on_leaveplayer(function(player)
+	last_kb[player:get_player_name()] = nil
+end)
