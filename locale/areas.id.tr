@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(oleh @1)
 
 Invalid regular expression.=Ekspresi reguler tidak valid.
+Invalid usage, see /help @1.=Penggunaan tidak valid, lihat /help @1.
 Limit: @1 areas=Batas: @1 area
 Limit: no area count limit=Batas: tidak ada batas jumlah area
 List your areas=Buat daftar area Anda
 Move (or resize) an area to the current positions.=Memindahkan (atau mengubah ukuran) area ke posisi saat ini.
 No matches found.=Tidak ada kecocokan yang ditemukan.
 No visible areas.=Tidak ada area yang terlihat.
-Too many areas to list all!=Terlalu banyak area untuk dicantumkan semua!
+Too many areas to list all.=Terlalu banyak area untuk dicantumkan semua.
 Owner changed.=Pemilik berubah.
 Players with the "@1" privilege can protect up to @2 areas=Pemain dengan hak istimewa "@1" bisa melindungi hingga @2 area
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Menghapus area menggunakan ID
 Removed area @1=Area yang dihapus @1
 Removed area @1 and it's sub areas.=Menghapus area @1 dan sub area.
 Removes all ownerless areas=Menghapus semua area tanpa pemilik
+Total areas: @1, Removed: @2 areas. New count: @3.=Total area: @1, Dihapus: @2 area. Jumlah baru: @3.
 Rename an area that you own=Mengganti nama area yang Anda miliki
 Self protection is disabled.=Perlindungan diri dinonaktifkan.
 Self protection is enabled.=Perlindungan diri diaktifkan.

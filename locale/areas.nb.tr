@@ -6,10 +6,10 @@ You have reached the limit of areas.=Du har nådd grensen for områder.
 
 ### chatcommands.lua ###
 
-<AreaName>=<AreaName> <Områdenavn
-<NewOwner>=<NewOwner> (ny eier)
-<ParentID>=<ParentID> <ParentID
-<PlayerName>=<PlayerName> (spillernavn)
+<AreaName>=<Områdenavn>
+<NewOwner>=<Ny eier>
+<ParentID>=<ForelderID>
+<PlayerName>=<Spillernavn>
 <NewName>=<Nytt navn>
 @1 has given you control over the area "@2" (ID @3).=@1 har gitt deg kontroll over området "@2" (ID @3).
 @1 spanning up to @2x@3x@4.=@1 som spenner opp til @2x@3x@4.
@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(av @1)
 
 Invalid regular expression.=Ugyldig regulært uttrykk.
+Invalid usage, see /help @1.=Ugyldig bruk, se /help @1.
 Limit: @1 areas=Begrensning: @1 områder
 Limit: no area count limit=Begrensning: ingen grense for arealtelling
 List your areas=Oppgi dine områder
 Move (or resize) an area to the current positions.=Flytt (eller endre størrelse på) et område til gjeldende posisjoner.
 No matches found.=Ingen treff funnet.
 No visible areas.=Ingen synlige områder.
-Too many areas to list all!=For mange områder til å liste opp alle!
+Too many areas to list all.=For mange områder til å liste opp alle.
 Owner changed.=Endret eier.
 Players with the "@1" privilege can protect up to @2 areas=Spillere med "@1"-rettighet kan beskytte opptil @2-områder.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Fjern et område ved hjelp av en ID
 Removed area @1=Fjernet område @1
 Removed area @1 and it's sub areas.=Fjernet område @1 og dets underområder.
 Removes all ownerless areas=Fjerner alle eierløse områder
+Total areas: @1, Removed: @2 areas. New count: @3.=Områder totalt: @1, Fjernet: @2 områder. Nytt antall: @3.
 Rename an area that you own=Gi nytt navn til et område du eier
 Self protection is disabled.=Selvbeskyttelse er deaktivert.
 Self protection is enabled.=Selvbeskyttelse er aktivert.
@@ -103,7 +105,7 @@ Target player has reached the maximum amount of areas they are allowed to protec
 
 ### pos.lua ###
 
-<not set>=<not set> (ikke angitt)
+<not set>=<ikke angitt>
 Area @1 selected.=Område @1 valgt.
 Area position @1 set to @2=Områdeposisjon @1 satt til @2
 Position @1 set to @2=Posisjon @1 satt til @2

@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(av @1)
 
 Invalid regular expression.=Ogiltigt reguljärt uttryck.
+Invalid usage, see /help @1.=Ogiltig användning, se /help @1.
 Limit: @1 areas=Begränsning: @1 områden
 Limit: no area count limit=Begränsning: ingen begränsning av antalet områden
 List your areas=Lista dina områden
 Move (or resize) an area to the current positions.=Flytta (eller ändra storlek) ett område till de aktuella positionerna.
 No matches found.=Inga matcher hittades.
 No visible areas.=Inga synliga områden.
-Too many areas to list all!=Det finns för många områden för att räkna upp alla!
+Too many areas to list all.=Det finns för många områden för att räkna upp alla.
 Owner changed.=Ägaren har bytt ägare.
 Players with the "@1" privilege can protect up to @2 areas=Spelare med privilegiet "@1" kan skydda upp till @2 områden.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Ta bort ett område med hjälp av ett ID
 Removed area @1=Borttaget område @1
 Removed area @1 and it's sub areas.=Område @1 och dess delområden har tagits bort.
 Removes all ownerless areas=Alla områden utan ägare tas bort.
+Total areas: @1, Removed: @2 areas. New count: @3.=Områden totalt: @1, Borttagna: @2 områden. Nytt antal: @3.
 Rename an area that you own=Byt namn på ett område som du äger
 Self protection is disabled.=Självskyddet är inaktiverat.
 Self protection is enabled.=Självskyddet är aktiverat.

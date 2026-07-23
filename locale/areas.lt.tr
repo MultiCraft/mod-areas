@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(pagal @1)
 
 Invalid regular expression.=Netinkama reguliarioji išraiška.
+Invalid usage, see /help @1.=Neteisingas naudojimas, žr. /help @1.
 Limit: @1 areas=riba: @1 sritis
 Limit: no area count limit=Apribojimas: nėra ploto skaičiaus apribojimo
 List your areas=Išvardykite savo sritis
 Move (or resize) an area to the current positions.=Perkelkite (arba pakeiskite dydį) sritį į dabartines pozicijas.
 No matches found.=Rungtynių nerasta.
 No visible areas.=Nėra matomų sričių.
-Too many areas to list all!=Per daug sričių, kad jas visas išvardytume!
+Too many areas to list all.=Per daug sričių, kad jas visas išvardytume.
 Owner changed.=Pasikeitė savininkas.
 Players with the "@1" privilege can protect up to @2 areas=Žaidėjai, turintys "@1" privilegiją, gali apsaugoti iki @2 sričių.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Pašalinti sritį naudojant ID
 Removed area @1=Pašalinta sritis @1
 Removed area @1 and it's sub areas.=Pašalinta @1 sritis ir jos dalinės sritys.
 Removes all ownerless areas=Pašalinamos visos bešeimininkės teritorijos
+Total areas: @1, Removed: @2 areas. New count: @3.=Iš viso sričių: @1, Pašalinta: @2 sričių. Naujas skaičius: @3.
 Rename an area that you own=Pervardykite jums priklausančią sritį
 Self protection is disabled.=Savisauga išjungta.
 Self protection is enabled.=Įjungta savisauga.

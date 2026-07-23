@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(@1)
 
 Invalid regular expression.=Érvénytelen reguláris kifejezés.
+Invalid usage, see /help @1.=Érvénytelen használat, lásd: /help @1.
 Limit: @1 areas=Határérték: @1 terület
 Limit: no area count limit=Korlátozás: nincs területszám-korlátozás
 List your areas=Sorolja fel a területeit
 Move (or resize) an area to the current positions.=Egy terület áthelyezése (vagy méretének módosítása) az aktuális pozíciókhoz.
 No matches found.=Nincs találat.
 No visible areas.=Nincsenek látható területek.
-Too many areas to list all!=Túl sok területet nem lehet felsorolni!
+Too many areas to list all.=Túl sok területet nem lehet felsorolni.
 Owner changed.=Tulajdonos változott.
 Players with the "@1" privilege can protect up to @2 areas=Az "@1" kiváltsággal rendelkező játékosok legfeljebb @2 területet védhetnek.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Egy terület eltávolítása egy azonosító használ
 Removed area @1=Eltávolított terület @1
 Removed area @1 and it's sub areas.=Eltávolítottuk az @1 területet és annak alterületeit.
 Removes all ownerless areas=Eltávolítja az összes tulajdonos nélküli területet
+Total areas: @1, Removed: @2 areas. New count: @3.=Összes terület: @1, Eltávolítva: @2 terület. Új szám: @3.
 Rename an area that you own=A tulajdonában lévő terület átnevezése
 Self protection is disabled.=Az önvédelem ki van kapcsolva.
 Self protection is enabled.=Az önvédelem engedélyezve van.

@@ -1,8 +1,8 @@
 # textdomain: areas
-Can administer areas=可管理的领域
+Can administer areas=可管理的区域
 Can protect more, bigger areas=可以保护更多、更大的区域
 Can protect areas=可保护区域
-You have reached the limit of areas.=你已達到區域上限。
+You have reached the limit of areas.=你已达到区域上限。
 
 ### chatcommands.lua ###
 
@@ -10,7 +10,7 @@ You have reached the limit of areas.=你已達到區域上限。
 <NewOwner>=<新业主>
 <ParentID>=<家长 ID>
 <PlayerName>=<玩家名称>
-<NewName>=<新名稱>
+<NewName>=<新名称>
 @1 has given you control over the area "@2" (ID @3).=@1 允许您控制“@2”区域（ID @3）。
 @1 spanning up to @2x@3x@4.=@1 跨度可达 @2x@3x@4。
 A regular expression is required.=需要正则表达式。
@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=（由 @1）
 
 Invalid regular expression.=正则表达式无效。
+Invalid usage, see /help @1.=用法无效，请参阅 /help @1。
 Limit: @1 areas=限制：@1 个区域
 Limit: no area count limit=限制：无区域计数限制
-List your areas=列出您的领域
+List your areas=列出您的区域
 Move (or resize) an area to the current positions.=将一个区域移动（或调整大小）到当前位置。
 No matches found.=未找到匹配项。
 No visible areas.=无可见区域。
-Too many areas to list all!=领域太多，无法一一列举！
+Too many areas to list all.=区域太多，无法一一列举。
 Owner changed.=业主已变更。
 Players with the "@1" privilege can protect up to @2 areas=拥有“@1”权限的玩家最多可以保护 @2 个区域
 
@@ -50,6 +51,7 @@ Remove an area using an ID=使用 ID 删除区域
 Removed area @1=删除区域 @1
 Removed area @1 and it's sub areas.=删除区域 @1 及其子区域。
 Removes all ownerless areas=删除所有无主区域
+Total areas: @1, Removed: @2 areas. New count: @3.=总区域数：@1，已删除：@2 个区域。新数量：@3。
 Rename an area that you own=重新命名您拥有的区域
 Self protection is disabled.=自我保护被禁用。
 Self protection is enabled.=启用自我保护功能。
@@ -57,7 +59,7 @@ That area doesn't exist.=那个区域并不存在。
 The player "@1" does not exist.=玩家“@1”不存在。
 Toggle an area open (anyone can interact) or closed=切换开放（任何人都可以互动）或关闭的区域
 Toggle an area open/closed for members in your faction.=为派别成员打开/关闭区域。
-You are an area administrator ("areas" privilege).=您是区域管理员（"区域 "权限）。
+You are an area administrator ("areas" privilege).=您是区域管理员（"区域"权限）。
 You can protect areas=您可以保护以下区域
 You can't protect that area.=你无法保护那个区域。
 You can't protect that area: @1=你无法保护那个区域：@1
@@ -67,19 +69,19 @@ You have @1 areas.=您有 @1 个区域。
 
 You have been granted control over area #@1. Type /list_areas to show your areas.=您已获得 #@1 区域的控制权。 输入 /list_areas 显示您的区域。
 
-You have extended area protection limits ("areas_high_limit" privilege).=您拥有扩展的区域保护限制（"area_high_limit" 权限）。
+You have extended area protection limits ("areas_high_limit" privilege).=您拥有扩展的区域保护限制（"areas_high_limit" 权限）。
 
 You have the necessary privilege ("@1").=您拥有必要的权限（“@1”）。
 You need to select an area first.=您需要先选择一个区域。
 
-You cannot enable PvP, there are other players in the area: @1.=您无法启用 PvP，因为该区域还有其他玩家：@1.
-PvP is @1 in area @2.=PvP 在 @1 区域 @2.
+You cannot enable PvP, there are other players in the area: @1.=您无法启用 PvP，因为该区域还有其他玩家：@1。
+PvP is @1 in area @2.=PvP 在 @1 区域 @2。
 enabled=启用
-disabled=残
+disabled=禁用
 
 ### hud.lua ###
 
-Areas:=地区
+Areas:=区域：
 Open=开放
 PvP enabled=启用 PvP
 PvP disabled=禁用 PvP
@@ -103,7 +105,7 @@ Target player has reached the maximum amount of areas they are allowed to protec
 
 ### pos.lua ###
 
-<not set>=<未设置
+<not set>=<未设置>
 Area @1 selected.=区域 @1 已选定。
 Area position @1 set to @2=区域位置 @1 设置为 @2
 Position @1 set to @2=位置 @1 设置为 @2

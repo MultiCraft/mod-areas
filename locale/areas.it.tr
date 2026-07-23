@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(da @1)
 
 Invalid regular expression.=Espressione regolare non valida.
+Invalid usage, see /help @1.=Utilizzo non valido, vedere /help @1.
 Limit: @1 areas=Limite: @1 aree
 Limit: no area count limit=Limite: nessun limite di numero di aree
 List your areas=Elencate le vostre aree
 Move (or resize) an area to the current positions.=Sposta (o ridimensiona) un'area nelle posizioni correnti.
 No matches found.=Nessuna corrispondenza trovata.
 No visible areas.=Nessuna area visibile.
-Too many areas to list all!=Troppe aree per elencarle tutte!
+Too many areas to list all.=Troppe aree per elencarle tutte.
 Owner changed.=Il proprietario è cambiato.
 Players with the "@1" privilege can protect up to @2 areas=I giocatori con il privilegio "@1" possono proteggere fino a @2 aree.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Rimuovere un'area utilizzando un ID
 Removed area @1=Area rimossa @1
 Removed area @1 and it's sub areas.=Rimossa l'area @1 e le sue sottoaree.
 Removes all ownerless areas=Rimuove tutte le aree senza proprietario
+Total areas: @1, Removed: @2 areas. New count: @3.=Aree totali: @1, Rimosse: @2 aree. Nuovo conteggio: @3.
 Rename an area that you own=Rinominare un'area di proprietà
 Self protection is disabled.=L'autoprotezione è disattivata.
 Self protection is enabled.=L'autoprotezione è attivata.

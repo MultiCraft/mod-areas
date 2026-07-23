@@ -2,13 +2,13 @@
 Can administer areas=Kann Bereiche verwalten
 Can protect more, bigger areas=Kann mehr und größere Bereiche schützen
 Can protect areas=Kann Bereiche schützen
-You have reached the limit of areas.=Du hast die maximale Anzahl an Bereichen erreicht.
+You have reached the limit of areas.=Sie haben die maximale Anzahl an Bereichen erreicht.
 
 ### chatcommands.lua ###
 
 <AreaName>=<Bereichsname>
 <NewOwner>=<Neuer Besitzer>
-<ParentID>=<Eltern-Id>>
+<ParentID>=<Eltern-Id>
 <PlayerName>=<Spielername>
 <NewName>=<Neuer Name>
 @1 has given you control over the area "@2" (ID @3).=@1 hat Ihnen die Kontrolle über den Bereich „@2“ (ID @3) gegeben.
@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(von @1)
 
 Invalid regular expression.=Ungültiger regulärer Ausdruck.
+Invalid usage, see /help @1.=Ungültige Verwendung, siehe /help @1.
 Limit: @1 areas=Limit: @1 Bereiche
 Limit: no area count limit=Limit: keine Begrenzung der Flächenanzahl
 List your areas=Listen Sie Ihre Bereiche auf
 Move (or resize) an area to the current positions.=Verschieben (oder Ändern der Größe) eines Bereichs an die aktuellen Positionen.
 No matches found.=Keine Treffer gefunden.
 No visible areas.=Keine sichtbaren Bereiche.
-Too many areas to list all!=Zu viele Bereiche, um alle aufzulisten!
+Too many areas to list all.=Zu viele Bereiche, um alle aufzulisten.
 Owner changed.=Besitzer gewechselt.
 Players with the "@1" privilege can protect up to @2 areas=Spieler mit der Berechtigung „@1“ können bis zu @2 Bereiche schützen
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Entfernen Sie einen Bereich mithilfe einer ID
 Removed area @1=Bereich @1 entfernt
 Removed area @1 and it's sub areas.=Bereich @1 und seine Unterbereiche entfernt.
 Removes all ownerless areas=Entfernt alle herrenlosen Bereiche
+Total areas: @1, Removed: @2 areas. New count: @3.=Bereiche insgesamt: @1, Entfernt: @2 Bereiche. Neue Anzahl: @3.
 Rename an area that you own=Benennen Sie einen Bereich um, der Ihnen gehört
 Self protection is disabled.=Der Selbstschutz ist deaktiviert.
 Self protection is enabled.=Der Selbstschutz ist aktiviert.
@@ -72,10 +74,10 @@ You have extended area protection limits ("areas_high_limit" privilege).=Sie ver
 You have the necessary privilege ("@1").=Sie verfügen über das erforderliche Privileg („@1“).
 You need to select an area first.=Sie müssen zunächst einen Bereich auswählen.
 
-You cannot enable PvP, there are other players in the area: @1.=Du kannst PvP nicht aktivieren, es sind andere Spieler in der Gegend: @1.
+You cannot enable PvP, there are other players in the area: @1.=Sie können PvP nicht aktivieren, es sind andere Spieler in dem Bereich: @1.
 PvP is @1 in area @2.=PvP ist @1 im Bereich @2.
-enabled=ermöglicht
-disabled=Behinderte
+enabled=aktiviert
+disabled=deaktiviert
 
 ### hud.lua ###
 

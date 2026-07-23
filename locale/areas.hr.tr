@@ -10,7 +10,7 @@ You have reached the limit of areas.=Dosegnut je limit područja.
 <NewOwner>=<Novi vlasnik>
 <ParentID>=<ID roditelja>
 <PlayerName>=<Ime igrača>
-<NewName>=Novo ime
+<NewName>=<Novo ime>
 @1 has given you control over the area "@2" (ID @3).=@1 ti je dao kontrolu nad područjem „@2” (ID @3).
 @1 spanning up to @2x@3x@4.=@1 obuhvaća do @2x@3x@4.
 A regular expression is required.=Potreban je regularni izraz.
@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(autor: @1)
 
 Invalid regular expression.=Nevažeći regularni izraz.
+Invalid usage, see /help @1.=Nevažeća upotreba, pogledajte /help @1.
 Limit: @1 areas=Ograničenje: @1 područja
 Limit: no area count limit=Ograničenje: nema ograničenja broja područja
 List your areas=Navedi svoja područja
 Move (or resize) an area to the current positions.=Pomakni (ili promijeni veličinu) područja na trenutačne položaje.
 No matches found.=Nema pronađenih podudaranja.
 No visible areas.=Nema vidljivih područja.
-Too many areas to list all!=Previše područja da bi se sva navela!
+Too many areas to list all.=Previše područja da bi se sva navela.
 Owner changed.=Vlasnik je promijenjen.
 Players with the "@1" privilege can protect up to @2 areas=Igrači s privilegijom „@1” mogu zaštititi do @2 područja
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Ukloni područje pomoću ID-a
 Removed area @1=Uklonjeno područje @1
 Removed area @1 and it's sub areas.=Uklonjeno područje @1 i njegova podpodručja.
 Removes all ownerless areas=Uklanja sva područja bez vlasnika
+Total areas: @1, Removed: @2 areas. New count: @3.=Ukupno područja: @1, Uklonjeno: @2 područja. Novi broj: @3.
 Rename an area that you own=Preimenuj područje koje posjeduješ
 Self protection is disabled.=Samozaštita je isključena.
 Self protection is enabled.=Samozaštita je omogućena.
@@ -103,7 +105,7 @@ Target player has reached the maximum amount of areas they are allowed to protec
 
 ### pos.lua ###
 
-<not set>=Nije postavljeno
+<not set>=<Nije postavljeno>
 Area @1 selected.=Odabrano područje @1.
 Area position @1 set to @2=Položaj područja @1 postavljen na @2
 Position @1 set to @2=Položaj @1 postavljen na @2

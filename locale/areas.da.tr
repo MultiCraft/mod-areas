@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(af @1)
 
 Invalid regular expression.=Ugyldigt regulært udtryk.
+Invalid usage, see /help @1.=Ugyldig brug, se /help @1.
 Limit: @1 areas=Grænse: @1 områder
 Limit: no area count limit=Grænse: ingen grænse for antal områder
 List your areas=Liste over dine områder
 Move (or resize) an area to the current positions.=Flyt (eller ændre størrelsen) et område til de aktuelle positioner.
 No matches found.=Der blev ikke fundet nogen kampe.
 No visible areas.=Ingen synlige områder.
-Too many areas to list all!=Der er for mange områder til at opregne dem alle!
+Too many areas to list all.=Der er for mange områder til at opregne dem alle.
 Owner changed.=Ejeren skiftede.
 Players with the "@1" privilege can protect up to @2 areas=Spillere med "@1"-rettighederne kan beskytte op til @2 områder
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Fjern et område ved hjælp af et ID
 Removed area @1=Fjernet område @1
 Removed area @1 and it's sub areas.=Fjernet område @1 og dets underområder.
 Removes all ownerless areas=Fjerner alle områder uden ejer
+Total areas: @1, Removed: @2 areas. New count: @3.=Områder i alt: @1, Fjernet: @2 områder. Nyt antal: @3.
 Rename an area that you own=Omdøbe et område, som du ejer
 Self protection is disabled.=Selvbeskyttelse er deaktiveret.
 Self protection is enabled.=Selvbeskyttelse er aktiveret.

@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(door @1)
 
 Invalid regular expression.=Ongeldige reguliere uitdrukking.
+Invalid usage, see /help @1.=Ongeldig gebruik, zie /help @1.
 Limit: @1 areas=Limiet: @1 gebieden
 Limit: no area count limit=Limiet: geen limiet voor het aantal gebieden
 List your areas=Maak een lijst van uw gebieden
 Move (or resize) an area to the current positions.=Verplaats (of resize) een gebied naar de huidige posities.
 No matches found.=Geen overeenkomsten gevonden.
 No visible areas.=Geen zichtbare gebieden.
-Too many areas to list all!=Te veel gebieden om allemaal op te noemen!
+Too many areas to list all.=Te veel gebieden om allemaal op te noemen.
 Owner changed.=Eigenaar veranderd.
 Players with the "@1" privilege can protect up to @2 areas=Spelers met de "@1" privilege kunnen tot @2 gebieden beschermen
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Verwijder een gebied met behulp van een ID
 Removed area @1=Verwijderd gebied @1
 Removed area @1 and it's sub areas.=Gebied @1 en zijn subgebieden verwijderd.
 Removes all ownerless areas=Verwijdert alle eigenaarloze gebieden
+Total areas: @1, Removed: @2 areas. New count: @3.=Totaal aantal gebieden: @1, Verwijderd: @2 gebieden. Nieuw aantal: @3.
 Rename an area that you own=Hernoem een gebied dat u bezit
 Self protection is disabled.=Zelfbescherming is uitgeschakeld.
 Self protection is enabled.=Zelfbescherming is ingeschakeld.

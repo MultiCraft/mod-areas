@@ -6,6 +6,11 @@ You have reached the limit of areas.=Siz hududlar soni chegarasiga yetdingiz.
 
 ### chatcommands.lua ###
 
+<AreaName>=<Hudud nomi>
+<NewOwner>=<Yangi egasi>
+<ParentID>=<Ota ID>
+<PlayerName>=<O'yinchi nomi>
+<NewName>=<Yangi nom>
 @1 has given you control over the area "@2" (ID @3).=@1 sizga “@2” (ID @3) hududi ustidan nazorat berdi.
 @1 spanning up to @2x@3x@4.=@1 @2x@3x@4 gacha uzilgan.
 A regular expression is required.=Regular ifoda talab qilinadi.
@@ -27,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(@1 tomonidan)
 
 Invalid regular expression.=Yaroqsiz muntazam ifoda.
+Invalid usage, see /help @1.=Foydalanish noto'g'ri, qarang: /help @1.
 Limit: @1 areas=Cheklash: @1 hudud
 Limit: no area count limit=Cheklash: maydon soni cheklanmaydi
 List your areas=O'z hududlaringizni ro'yxatlang
 Move (or resize) an area to the current positions.=Hududni hozirgi joylarga ko'chiring (yoki o'lchamini o'zgartiring).
 No matches found.=Hech qanday mos kelish topilmadi.
 No visible areas.=Koʻrinadigan maydonlar yoʻq.
-Too many areas to list all!=Hammasini sanab bo'lmaydigan darajada ko'p hududlar mavjud!
+Too many areas to list all.=Hammasini sanab bo'lmaydigan darajada ko'p hududlar mavjud.
 Owner changed.=Egalik o'zgartirildi.
 Players with the "@1" privilege can protect up to @2 areas=“@1” imtiyoziga ega o'yinchilar @2 ta hududni himoya qilishlari mumkin
 
@@ -45,6 +51,7 @@ Remove an area using an ID=ID yordamida hududni olib tashlang
 Removed area @1=@1 hududi olib tashlandi
 Removed area @1 and it's sub areas.=@1 hududi va uning ichki hududlari olib tashlandi.
 Removes all ownerless areas=Egasi bo'lmagan barcha hududlarni olib tashlaydi
+Total areas: @1, Removed: @2 areas. New count: @3.=Jami hududlar: @1, Olib tashlandi: @2 ta. Yangi son: @3.
 Rename an area that you own=O'zingizga tegishli hududni qayta nomlang
 Self protection is disabled.=O'zini himoya qilish o'chirilgan.
 Self protection is enabled.=O'zini himoya qilish rejimi faol.
@@ -98,6 +105,7 @@ Target player has reached the maximum amount of areas they are allowed to protec
 
 ### pos.lua ###
 
+<not set>=<o'rnatilmagan>
 Area @1 selected.=@1 maydoni tanlandi.
 Area position @1 set to @2=@1 maydon pozitsiyasi @2 ga o'rnatildi
 Position @1 set to @2=@1 pozitsiyasi @2 ga o'rnatildi

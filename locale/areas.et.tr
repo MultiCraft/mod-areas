@@ -8,7 +8,7 @@ You have reached the limit of areas.=Oled jõudnud alade limiidini.
 
 <AreaName>=<AreaNimi>
 <NewOwner>=<Uus omanik>
-<ParentID>=<ParentID>
+<ParentID>=<VanemaID>
 <PlayerName>=<MängijaNimi>
 <NewName>=<Uus nimi>
 @1 has given you control over the area "@2" (ID @3).=@1 on andnud teile kontrolli ala "@2" (ID @3) üle.
@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(autor: @1)
 
 Invalid regular expression.=Lubamatu regulaaravaldis.
+Invalid usage, see /help @1.=Vale kasutus, vaadake /help @1.
 Limit: @1 areas=Piirang: @1 ala
 Limit: no area count limit=Piirang: pindalalimiit puudub
 List your areas=Loetlege oma valdkonnad
 Move (or resize) an area to the current positions.=Liigutage (või muutke suuruse järgi) ala praegustele positsioonidele.
 No matches found.=Vasteid ei leitud.
 No visible areas.=Ei ole nähtavad alad.
-Too many areas to list all!=Liiga palju valdkondi, et neid kõiki loetleda!
+Too many areas to list all.=Liiga palju valdkondi, et neid kõiki loetleda.
 Owner changed.=Omanik muutunud.
 Players with the "@1" privilege can protect up to @2 areas="@1" privileegiga mängijad võivad kaitsta kuni @2 ala.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Piirkonna eemaldamine ID abil
 Removed area @1=Eemaldatud ala @1
 Removed area @1 and it's sub areas.=Eemaldatud ala @1 ja selle alampiirkonnad.
 Removes all ownerless areas=Eemaldab kõik omanikuta alad
+Total areas: @1, Removed: @2 areas. New count: @3.=Alasid kokku: @1, Eemaldatud: @2 ala. Uus arv: @3.
 Rename an area that you own=Oma ala ümbernimetamine
 Self protection is disabled.=Enesekaitse on välja lülitatud.
 Self protection is enabled.=Enesekaitse on lubatud.

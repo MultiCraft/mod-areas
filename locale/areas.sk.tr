@@ -8,7 +8,7 @@ You have reached the limit of areas.=Dosiahli ste limit oblastí.
 
 <AreaName>=<Názov oblasti>
 <NewOwner>=<Nový majiteľ>
-<ParentID>=<ParentID>
+<ParentID>=<ID rodiča>
 <PlayerName>=<Názov hráča>
 <NewName>=<Nové meno>
 @1 has given you control over the area "@2" (ID @3).=@1 vám dal kontrolu nad oblasťou "@2" (ID @3).
@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(podľa @1)
 
 Invalid regular expression.=Neplatný regulárny výraz.
+Invalid usage, see /help @1.=Neplatné použitie, pozri /help @1.
 Limit: @1 areas=Limit: @1 oblasti
 Limit: no area count limit=Limit: bez obmedzenia počtu plôch
 List your areas=Uveďte svoje oblasti
 Move (or resize) an area to the current positions.=Presunutie (alebo zmena veľkosti) oblasti na aktuálne pozície.
 No matches found.=Nenašli sa žiadne zhody.
 No visible areas.=Žiadne viditeľné oblasti.
-Too many areas to list all!=Príliš veľa oblastí na to, aby sme ich všetky vymenovali!
+Too many areas to list all.=Príliš veľa oblastí na to, aby sme ich všetky vymenovali.
 Owner changed.=Majiteľ sa zmenil.
 Players with the "@1" privilege can protect up to @2 areas=Hráči s oprávnením "@1" môžu chrániť až @2 oblasti
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Odstránenie oblasti pomocou ID
 Removed area @1=Odstránená oblasť @1
 Removed area @1 and it's sub areas.=Odstránená oblasť @1 a jej podoblasti.
 Removes all ownerless areas=Odstráni všetky oblasti bez vlastníka
+Total areas: @1, Removed: @2 areas. New count: @3.=Celkovo oblastí: @1, Odstránené: @2 oblastí. Nový počet: @3.
 Rename an area that you own=Premenovanie oblasti, ktorú vlastníte
 Self protection is disabled.=Vlastná ochrana je vypnutá.
 Self protection is enabled.=Vlastná ochrana je povolená.

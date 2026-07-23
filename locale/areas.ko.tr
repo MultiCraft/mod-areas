@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(작성자: @1)
 
 Invalid regular expression.=잘못된 정규식입니다.
+Invalid usage, see /help @1.=잘못된 사용법입니다. /help @1 을(를) 참조하세요.
 Limit: @1 areas=제한: @1 영역
 Limit: no area count limit=제한: 면적 수 제한 없음
 List your areas=영역 나열
 Move (or resize) an area to the current positions.=영역을 현재 위치로 이동(또는 크기 조정)합니다.
 No matches found.=일치하는 항목이 없습니다.
 No visible areas.=표시되는 영역이 없습니다.
-Too many areas to list all!=나열하기에는 너무 많은 영역이 있습니다!
+Too many areas to list all.=나열하기에는 너무 많은 영역이 있습니다.
 Owner changed.=소유자가 변경되었습니다.
 Players with the "@1" privilege can protect up to @2 areas="@1" 권한을 가진 플레이어는 최대 @2 영역까지 보호할 수 있습니다.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=ID를 사용하여 영역 제거
 Removed area @1=제거된 영역 @1
 Removed area @1 and it's sub areas.=제거된 영역 @1과 하위 영역입니다.
 Removes all ownerless areas=소유자가 없는 모든 영역을 제거합니다.
+Total areas: @1, Removed: @2 areas. New count: @3.=총 영역: @1, 제거됨: @2 영역. 새 개수: @3.
 Rename an area that you own=소유한 영역의 이름 바꾸기
 Self protection is disabled.=자체 보호 기능이 비활성화되어 있습니다.
 Self protection is enabled.=자체 보호가 활성화되어 있습니다.
@@ -103,7 +105,7 @@ Target player has reached the maximum amount of areas they are allowed to protec
 
 ### pos.lua ###
 
-<not set>=<설정되지 않음
+<not set>=<설정되지 않음>
 Area @1 selected.=영역 @1이 선택되었습니다.
 Area position @1 set to @2=영역 위치 @1을 @2로 설정
 Position @1 set to @2=위치 @1을 @2로 설정

@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(@1 tarafından)
 
 Invalid regular expression.=Geçersiz normal ifade.
+Invalid usage, see /help @1.=Geçersiz kullanım, bkz. /help @1.
 Limit: @1 areas=Sınır: @1 alan
 Limit: no area count limit=Limit: alan sayımı limiti yok
 List your areas=Alanlarınızı listeleyin
 Move (or resize) an area to the current positions.=Bir alanı mevcut konumlarına taşıyın (veya yeniden boyutlandırın).
 No matches found.=Hiçbir sonuç bulunamadı.
 No visible areas.=Görünür alan yok.
-Too many areas to list all!=Hepsini listelemek için çok fazla alan var!
+Too many areas to list all.=Hepsini listelemek için çok fazla alan var.
 Owner changed.=Sahibi değişti.
 Players with the "@1" privilege can protect up to @2 areas="@1" ayrıcalığına sahip oyuncular en fazla @2 alanını koruyabilir
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Kimlik kullanarak bir alanı kaldırın
 Removed area @1=Kaldırılan alan @1
 Removed area @1 and it's sub areas.=@1 alanı ve alt alanları kaldırıldı.
 Removes all ownerless areas=Tüm sahipsiz alanları kaldırır
+Total areas: @1, Removed: @2 areas. New count: @3.=Toplam alan: @1, Kaldırıldı: @2 alan. Yeni sayı: @3.
 Rename an area that you own=Sahibi olduğunuz bir alanı yeniden adlandırın
 Self protection is disabled.=Kişisel koruma devre dışı.
 Self protection is enabled.=Kişisel koruma etkinleştirildi.

@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(līdz @1)
 
 Invalid regular expression.=Nederīga regulārā izteiksme.
+Invalid usage, see /help @1.=Nederīga lietošana, skatiet /help @1.
 Limit: @1 areas=Ierobežojums: @1 apgabals
 Limit: no area count limit=Ierobežojums: nav platību skaita ierobežojuma
 List your areas=Uzskaitiet savas jomas
 Move (or resize) an area to the current positions.=Pārvietot (vai mainīt izmēru) apgabalu uz pašreizējām pozīcijām.
 No matches found.=Nav atrasts neviens sakritenis.
 No visible areas.=Nav redzamu laukumu.
-Too many areas to list all!=Pārāk daudz jomu, lai uzskaitītu visas!
+Too many areas to list all.=Pārāk daudz jomu, lai uzskaitītu visas.
 Owner changed.=Mainīts īpašnieks.
 Players with the "@1" privilege can protect up to @2 areas=Spēlētāji ar "@1" privilēģiju var aizsargāt līdz pat @2 apgabaliem.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Noņemt apgabalu, izmantojot ID
 Removed area @1=Noņemtais apgabals @1
 Removed area @1 and it's sub areas.=Noņemts apgabals @1 un tā apakšapgabali.
 Removes all ownerless areas=Noņem visus apgabalus bez īpašnieka
+Total areas: @1, Removed: @2 areas. New count: @3.=Kopā apgabalu: @1, Noņemts: @2 apgabali. Jaunais skaits: @3.
 Rename an area that you own=Pārdēvēt jums piederošu apgabalu
 Self protection is disabled.=Pašaizsardzība ir atspējota.
 Self protection is enabled.=Pašaizsardzība ir iespējota.

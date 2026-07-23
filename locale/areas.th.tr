@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(โดย @1)
 
 Invalid regular expression.=นิพจน์ปกติไม่ถูกต้อง
+Invalid usage, see /help @1.=การใช้งานไม่ถูกต้อง โปรดดู /help @1
 Limit: @1 areas=จำกัด: @1 พื้นที่
 Limit: no area count limit=ขีดจำกัด: ไม่มีขีดจำกัดจำนวนพื้นที่
 List your areas=ระบุพื้นที่ของคุณ
 Move (or resize) an area to the current positions.=ย้าย (หรือปรับขนาด) พื้นที่ไปยังตำแหน่งปัจจุบัน
 No matches found.=ไม่พบผลลัพธ์ที่ตรงกัน
 No visible areas.=ไม่มีพื้นที่ที่มองเห็นได้
-Too many areas to list all!=มีพื้นที่มากเกินกว่าจะระบุได้ทั้งหมด!
+Too many areas to list all.=มีพื้นที่มากเกินกว่าจะระบุได้ทั้งหมด.
 Owner changed.=เปลี่ยนเจ้าของแล้ว
 Players with the "@1" privilege can protect up to @2 areas=ผู้เล่นที่มีสิทธิ์ "@1" สามารถปกป้องพื้นที่ได้ถึง @2 พื้นที่
 
@@ -50,6 +51,7 @@ Remove an area using an ID=ลบพื้นที่โดยใช้ ID
 Removed area @1=ลบพื้นที่ @1 ออกแล้ว
 Removed area @1 and it's sub areas.=ลบพื้นที่ @1 และพื้นที่ย่อยออกแล้ว
 Removes all ownerless areas=ลบพื้นที่ที่ไม่มีเจ้าของทั้งหมด
+Total areas: @1, Removed: @2 areas. New count: @3.=พื้นที่ทั้งหมด: @1, ลบแล้ว: @2 พื้นที่ จำนวนใหม่: @3
 Rename an area that you own=เปลี่ยนชื่อพื้นที่ที่คุณเป็นเจ้าของ
 Self protection is disabled.=การป้องกันตัวเองถูกปิดใช้งาน
 Self protection is enabled.=การป้องกันตัวเองถูกเปิดใช้งาน

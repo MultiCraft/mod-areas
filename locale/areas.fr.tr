@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(par @1)
 
 Invalid regular expression.=Expression régulière invalide.
+Invalid usage, see /help @1.=Utilisation invalide, voir /help @1.
 Limit: @1 areas=Limite : @1 zones
 Limit: no area count limit=Limite : pas de limite de nombre de zones
 List your areas=Listez vos domaines
 Move (or resize) an area to the current positions.=Déplace (ou redimensionne) une zone aux positions actuelles.
 No matches found.=Aucune correspondance trouvée.
 No visible areas.=Aucune zone visible.
-Too many areas to list all!=Trop de domaines pour tous les énumérer !
+Too many areas to list all.=Trop de domaines pour tous les énumérer.
 Owner changed.=Le propriétaire a changé.
 Players with the "@1" privilege can protect up to @2 areas=Les joueurs ayant le privilège "@1" peuvent protéger jusqu'à @2 zones.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Supprimer une zone en utilisant un ID
 Removed area @1=Zone supprimée @1
 Removed area @1 and it's sub areas.=Suppression de la zone @1 et de ses sous-zones.
 Removes all ownerless areas=Supprime toutes les zones sans propriétaire
+Total areas: @1, Removed: @2 areas. New count: @3.=Zones totales : @1, Supprimées : @2 zones. Nouveau total : @3.
 Rename an area that you own=Renommer une zone qui vous appartient
 Self protection is disabled.=L'autoprotection est désactivée.
 Self protection is enabled.=L'autoprotection est activée.
@@ -82,7 +84,7 @@ disabled=désactivé
 Areas:=Zones :
 Open=Ouvrir
 PvP enabled=JcJ activé
-PvP disabled=PvP désactivé
+PvP disabled=JcJ désactivé
 
 ### interact.lua ###
 

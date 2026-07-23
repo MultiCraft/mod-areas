@@ -32,13 +32,14 @@ Give a player access to a sub-area between two positions that have already been 
 (by @1)=(de @1)
 
 Invalid regular expression.=Expresie regulată invalidă.
+Invalid usage, see /help @1.=Utilizare invalidă, vedeți /help @1.
 Limit: @1 areas=Limită: @1 zone
 Limit: no area count limit=Limită: nu există o limită a numărului de zone
 List your areas=Enumerați domeniile dvs.
 Move (or resize) an area to the current positions.=Deplasează (sau redimensionează) o zonă în pozițiile curente.
 No matches found.=Nu s-a găsit nicio potrivire.
 No visible areas.=Nu există zone vizibile.
-Too many areas to list all!=Prea multe domenii pentru a le enumera pe toate!
+Too many areas to list all.=Prea multe domenii pentru a le enumera pe toate.
 Owner changed.=Proprietar schimbat.
 Players with the "@1" privilege can protect up to @2 areas=Jucătorii cu privilegiul "@1" pot proteja până la @2 zone.
 
@@ -50,6 +51,7 @@ Remove an area using an ID=Îndepărtarea unei zone cu ajutorul unui ID
 Removed area @1=Zona eliminată @1
 Removed area @1 and it's sub areas.=Eliminat zona @1 și subzonele sale.
 Removes all ownerless areas=Elimină toate zonele fără proprietar
+Total areas: @1, Removed: @2 areas. New count: @3.=Total zone: @1, Eliminate: @2 zone. Număr nou: @3.
 Rename an area that you own=Redenumiți o zonă pe care o dețineți
 Self protection is disabled.=Autoprotecția este dezactivată.
 Self protection is enabled.=Autoprotecția este activată.
